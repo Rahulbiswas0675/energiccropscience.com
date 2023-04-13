@@ -18,8 +18,8 @@ function AppBar() {
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
                         <Navbar.Offcanvas id={`offcanvasNavbar-expand-${expand}`} aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`} placement="end">
                             <Offcanvas.Header closeButton>
-                                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                                    <img src={BrandData.brand_logo} alt="logo" />
+                                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`} className="sidebar-band">
+                                    <img src={BrandData.brand_logo} alt="logo"  className="logo"/>
                                     {BrandData.brand_name}
                                 </Offcanvas.Title>
                             </Offcanvas.Header>
