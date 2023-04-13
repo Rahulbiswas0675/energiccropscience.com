@@ -24,8 +24,6 @@ function CarouselsSlider() {
                         </Carousel.Item>
                     ))
                 }
-
-
             </Carousel>
         </div>
     )
