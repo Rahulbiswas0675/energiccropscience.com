@@ -10,7 +10,7 @@ function AppBar() {
         <>
             {['lg'].map((expand) => (
                 <Navbar key={expand} bg="light" expand={expand} className="mb-3 Navbar-Components">
-                    <Container fluid>
+                    <Container fluid className="nav-container">
                         <Navbar.Brand href="/" className="brand-container">
                             <img src={BrandData.brand_logo} alt="logo" className="logo"/>
                             {BrandData.brand_name}

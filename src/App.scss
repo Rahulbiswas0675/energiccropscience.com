@@ -1,15 +1,14 @@
 .App {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    text-align: center;
-
     h1 {
-        margin-top: 3.5rem;
+        width: 100%;
+        text-align: center;
+        margin-top: 5rem;
         color: green;
     }
 
     h3 {
+        width: 100%;
+        text-align: center;
         color: tomato;
     }
 }
@@ -20,20 +19,24 @@
     top: 0;
     width: 100%;
     position: fixed !important;
-    z-index: 10000;
-    height: 3.5rem;
-    // border: 1px solid red;
+    z-index: 1000;
 
-    .brand-container {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        font-size: 35px;
-        font-weight: bold;
-        font-family:Georgia, 'Times New Roman', Times, serif;
+    .nav-container {
+        .brand-container {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+            .logo {
+                height: 50px;
+
+            }
+        }
     }
 
-    .logo {
-        height: 50px;
-    }
 }
