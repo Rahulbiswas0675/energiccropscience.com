@@ -1,10 +1,39 @@
-
-.App{
+.App {
+    margin: 0;
+    padding: 0;
+    width: 100%;
     text-align: center;
-    h1{
+
+    h1 {
+        margin-top: 3.5rem;
         color: green;
     }
-    h3{
+
+    h3 {
         color: tomato;
+    }
+}
+
+
+// Navbar-Components===============================================
+.Navbar-Components {
+    top: 0;
+    width: 100%;
+    position: fixed !important;
+    z-index: 10000;
+    height: 3.5rem;
+    // border: 1px solid red;
+
+    .brand-container {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .logo {
+        height: 50px;
     }
 }

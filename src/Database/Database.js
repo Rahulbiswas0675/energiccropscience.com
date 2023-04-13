@@ -1,7 +1,9 @@
+import Logo from '../Logos/Navlogo.jpg';
+
 
 export const BrandData = {
     brand_name: "Energiccropscience",
-    brand_logo: "logo.png",
+    brand_logo: Logo,
     brand_tagline: "Somethings",
 }
 
@@ -20,15 +22,15 @@ export const NavbarItems = [
     },
     {
         item_id: 3,
-        item_name: "About Us",
-        item_icon: "about",
-        item_link: "/about"
-    },
-    {
-        item_id: 4,
         item_name: "Infrastructure",
         item_icon: "infrastructure",
         item_link: "/infrastructure"
+    },
+    {
+        item_id: 4,
+        item_name: "About Us",
+        item_icon: "about",
+        item_link: "/about"
     },
     {
         item_id: 5,
