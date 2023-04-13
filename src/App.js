@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <AppBar/>
       <HomePage/>
-      {/* <PageUnderCon /> */}
+      <PageUnderCon />
     </div>
   );
 }
