@@ -8,7 +8,7 @@ import { BrandData, NavbarItems } from '../../Database/Database';
 function AppBar() {
     return (
         <>
-            {['md'].map((expand) => (
+            {['lg'].map((expand) => (
                 <Navbar key={expand} bg="light" expand={expand} className="mb-3 Navbar-Components">
                     <Container fluid>
                         <Navbar.Brand href="/" className="brand-container">
