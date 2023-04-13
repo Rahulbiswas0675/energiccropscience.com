@@ -63,3 +63,12 @@ export const CompanyInfo = {
     company_ceo : "qwertyui",
     company_dir : "sdfghjkjh",
 }
+
+export const CarouselsItems = [
+    {
+        id : 1,
+        label : "First slide label",
+        paragraph : "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+        image : "https://www.artofliving.org/sites/www.artofliving.org/files/styles/original_image/public/landing_page_uploads/full_carousel/natural%20farming%20hero%20desktop.jpg?itok=ekErY45d",
+    }
+]
