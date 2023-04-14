@@ -70,5 +70,30 @@ export const CarouselsItems = [
         label : "First slide label",
         paragraph : "Nulla vitae elit libero, a pharetra augue mollis interdum.",
         image : "https://www.artofliving.org/sites/www.artofliving.org/files/styles/original_image/public/landing_page_uploads/full_carousel/natural%20farming%20hero%20desktop.jpg?itok=ekErY45d",
+    },
+    {
+        id : 2,
+        label : "Second slide label",
+        paragraph : "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+        image : "https://www.artofliving.org/sites/www.artofliving.org/files/styles/original_image/public/landing_page_uploads/full_carousel/natural%20farming%20hero%20desktop.jpg?itok=ekErY45d",
+    },
+    {
+        id : 3,
+        label : "Third slide label",
+        paragraph : "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+        image : "https://www.artofliving.org/sites/www.artofliving.org/files/styles/original_image/public/landing_page_uploads/full_carousel/natural%20farming%20hero%20desktop.jpg?itok=ekErY45d",
+    },
+    {
+        id : 4,
+        label : "Fourth slide label",
+        paragraph : "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+        image : "https://www.artofliving.org/sites/www.artofliving.org/files/styles/original_image/public/landing_page_uploads/full_carousel/natural%20farming%20hero%20desktop.jpg?itok=ekErY45d",
+    },
+    {
+        id : 5,
+        label : "Fifth slide label",
+        paragraph : "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+        image : "https://www.artofliving.org/sites/www.artofliving.org/files/styles/original_image/public/landing_page_uploads/full_carousel/natural%20farming%20hero%20desktop.jpg?itok=ekErY45d",
     }
 ]
+

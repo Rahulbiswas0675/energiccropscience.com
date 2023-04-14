@@ -34,13 +34,14 @@
             font-family: Georgia, 'Times New Roman', Times, serif;
 
             .logo {
-                height: 50px;
+                height: 40px;
 
             }
         }
     }
-    
+
 }
+
 // SideBar-Components===============================================
 .sidebar-band {
     padding: 0;
@@ -59,11 +60,103 @@
 }
 
 // Home-Components
-.Home-Components{
+.Home-Components {
     margin-top: 3.6rem;
     // border: 1px solid red;
 
-    .CarouselsSlider-components{
+    .CarouselsSlider-components {
         // border: 1px solid red;
+    }
+}
+
+// Contact-Components=================
+.Contact-Components {
+    margin-top: 1rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eee;
+
+    .contact-head {
+        width: 80%;
+        padding: 8px;
+        border-bottom: 1px solid #adadad;
+        h3 {
+            margin: 0;
+            font-weight: bold;
+            color: black;
+        }
+    }
+
+    .contact-container {
+        width: 80%;
+        margin-top: 20px;
+        display: flex;
+        .right-container {
+            width: 40%;
+
+            .form {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                .item {
+                    width: 100%;
+                    height: 3rem;
+
+                    .input-fild {
+                        width: 100%;
+                        height: 2rem;
+                        border: 1px solid black;
+                    }
+
+                    .errors {
+                        margin: 0;
+                        font-size: 16px;
+                        color: red;
+                        font-weight: bold;
+                    }
+
+                    .number::-webkit-inner-spin-button {
+                        display: none;
+                    }
+
+                    .input-fild:focus {
+                        outline: none;
+                    }
+                }
+
+                .item-text {
+                    height: 8rem;
+                    width: 100%;
+
+                    .input-fild-textarea {
+                        border: none;
+                        width: 100%;
+                        border: 1px solid black;
+                        max-height: 6.5rem;
+                        min-height: 6.5rem;
+                    }
+
+                    .errors {
+                        margin: 0;
+                        font-size: 16px;
+                        color: red;
+                        font-weight: bold;
+                    }
+
+                    .input-fild-textarea:focus {
+                        outline: none;
+                    }
+                }
+
+                .send-btn{
+                    height: 2rem;
+                    border: 1px solid black;
+                }
+            }
+        }
     }
 }
