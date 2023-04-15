@@ -1,4 +1,12 @@
+$light_green :#DBF9DB;
+$errors_red : #FF2400;
+$border_bottom : #adadad;
+$light_black : #36454F;
+$hover_btn : #C2E5D3;
+
 .App {
+    background-color: $light_green;
+
     h1 {
         width: 100%;
         text-align: center;
@@ -76,16 +84,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #eee;
 
     .contact-head {
         width: 80%;
         padding: 8px;
-        border-bottom: 1px solid #adadad;
+        border-bottom: 1px solid $border_bottom;
+
         h3 {
             margin: 0;
-            font-weight: bold;
-            color: black;
+            color: $light_black;
         }
     }
 
@@ -93,8 +100,50 @@
         width: 80%;
         margin-top: 20px;
         display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .left-container {
+            width: 60%;
+            color: $light_black;
+
+            .items {
+
+                h3 {
+                    color: $light_black;
+                    padding: 8px;
+                }
+
+                .details {
+                    padding: 16px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    h6 {
+                        font-weight: bold;
+                        font-size: 1.1rem;
+                    }
+
+                    .item {
+                        text-align: center;
+                        margin-bottom: 16px;
+
+                        p {
+                            margin: 0;
+                            font-size: 0.9rem;
+                            font-weight: bold;
+                        }
+                    }
+
+                }
+
+            }
+        }
+
         .right-container {
-            width: 80%;
+            width: 35%;
+            padding: 16px;
 
             .form {
                 width: 100%;
@@ -109,13 +158,16 @@
                     .input-fild {
                         width: 100%;
                         height: 2rem;
-                        border: 1px solid black;
+                        border: none;
+                        background: none;
+                        border-bottom: 1px solid $light_black;
+                        background-color: none;
                     }
 
                     .errors {
                         margin: 0;
                         font-size: 16px;
-                        color: red;
+                        color: $errors_red;
                         font-weight: bold;
                     }
 
@@ -135,15 +187,16 @@
                     .input-fild-textarea {
                         border: none;
                         width: 100%;
-                        border: 1px solid black;
                         max-height: 6.5rem;
                         min-height: 6.5rem;
+                        background: none;
+                        border: 1px solid $light_black;
                     }
 
                     .errors {
                         margin: 0;
                         font-size: 16px;
-                        color: red;
+                        color: $errors_red;
                         font-weight: bold;
                     }
 
@@ -152,10 +205,52 @@
                     }
                 }
 
-                .send-btn{
+                .send-btn {
                     height: 2rem;
-                    border: 1px solid black;
+                    border: 1px solid $light_black;
+                    background: none;
+                    color: #36454F;
                 }
+
+                .send-btn:hover {
+                    background-color: $hover_btn;
+                }
+            }
+        }
+    }
+}
+
+
+// footer-components===========================================
+.footer-components {
+    margin-top: 1rem;
+    text-align: center;
+    padding: 16px;
+
+    p {
+        margin: 0;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+
+
+// Media-Screen=====================================
+@media (max-width: 992px) {
+
+    .Contact-Components {
+
+        .contact-container {
+            flex-direction: column-reverse;
+
+            .left-container {
+                margin-top: 2rem;
+                width: 100%;
+            }
+
+            .right-container {
+                width: 100%;
             }
         }
     }

@@ -49,17 +49,19 @@ export const NavbarItems = [
 export const CompanyInfo = {
     company_name: "Energiccropscience pvt. ltd.",
     company_address: {
-        floor : "000",
-        city : "abc",
-        state : "bcd",
-        country : "cde",
-        pin : "111111",
+        floor : "67/878n, BN Road",
+        city : "Krishnagar",
+        dist : "Nadia",
+        state : "West Benagal",
+        country : "India",
+        pin : "740001",
     },
-    company_email : "rahulbiswas@gmailcom",
+    company_email : "energiccropscience@gmail.com",
+    support_mail : "support@energiccropscience.in",
     company_reg_no : "12345667796",
     company_gst_no : "wertyuiopfgh",
-    company_phn_no : "12345678978",
-    company_helpline : "23456789876",
+    company_phn_no : "9876543212",
+    company_helpline : "9876543211",
     company_ceo : "qwertyui",
     company_dir : "sdfghjkjh",
 }
@@ -97,3 +99,4 @@ export const CarouselsItems = [
     }
 ]
 
+export const Footer_peragraph = "© 2023 Energiccropscience Copyright Reserved"
