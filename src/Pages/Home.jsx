@@ -1,7 +1,7 @@
 import React from 'react';
 import CarouselsSlider from '../Components/Home/CarouselsSlider';
 
-function HomePage() {
+function Home() {
   return (
     <div className="Home-Components">
         <CarouselsSlider/>
@@ -9,4 +9,4 @@ function HomePage() {
   )
 }
 
-export default HomePage
+export default Home
