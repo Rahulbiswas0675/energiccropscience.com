@@ -3,6 +3,7 @@ $errors_red : #FF2400;
 $border_bottom : #adadad;
 $light_black : #36454F;
 $hover_btn : #C2E5D3;
+$blur_green : #008B8B;
 
 .App {
     background-color: $light_green;
@@ -75,6 +76,79 @@ $hover_btn : #C2E5D3;
     .CarouselsSlider-components {
         // border: 1px solid red;
     }
+}
+
+// AboutUs-Components==================
+.AboutUs-Components {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .about-container {
+        width: 80%;
+
+        .about-head {
+            padding: 16px;
+            color: $light_black;
+            border-bottom: 1px solid $border_bottom;
+        }
+
+        .about-items {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .left {
+                width: 35%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .right {
+                width: 65%;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+
+                h4 {
+                    color: $light_black;
+                }
+
+                h3 {
+                    font-weight: bold;
+                    color: $blur_green;
+                }
+
+                p {
+                    margin: 0;
+                    text-align: center;
+                    color: $light_black;
+                }
+
+                button {
+                    border: none;
+                    width: 10rem;
+                    height: 2rem;
+                    margin-top: 1rem;
+                    background: none;
+                    border: 1px solid $border_bottom;
+                }
+
+                button:hover {
+                    background-color: $hover_btn;
+                }
+            }
+        }
+    }
+
 }
 
 // Contact-Components=================
@@ -238,6 +312,25 @@ $hover_btn : #C2E5D3;
 
 // Media-Screen=====================================
 @media (max-width: 992px) {
+
+    .AboutUs-Components {
+        .about-container {
+
+            .about-items {
+                flex-direction: column;
+
+                .left {
+                    width: 90%;
+                }
+
+                .right {
+                    margin-top: 2rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
 
     .Contact-Components {
 

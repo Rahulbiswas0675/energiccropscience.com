@@ -6,13 +6,15 @@ import AppBar from './Components/Navbar/AppBar';
 import Home from './Pages/Home';
 import Contact from './Pages/Contact';
 import Footer from './Pages/Footer';
+import AboutUs from './Pages/AboutUs';
 function App() {
 
   return (
     <div className="App">
       <AppBar/>
       <Home/>
-      <PageUnderCon />
+      <PageUnderCon/>
+      <AboutUs/>
       <Contact/>
       <Footer/>
     </div>

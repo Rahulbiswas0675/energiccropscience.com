@@ -1,5 +1,5 @@
 import Logo from '../Logos/Navlogo.jpg';
-
+import About_Img from '../Image/Pesticides & Fertilizer.png';
 
 export const BrandData = {
     brand_name: "Energiccropscience",
@@ -99,4 +99,10 @@ export const CarouselsItems = [
     }
 ]
 
+export const Aboutus = {
+    img : About_Img,
+    we_are : "We Are The Leader In",
+    tag : "Manufacturer of Pesticides & Fertilizer",
+    pera : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa corrupti sed sequi placeat. Laborum iure maxime fugiat voluptates iste et distinctio nulla, neque beatae! Ipsa sit est facilis accusamus odio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa corrupti sed sequi placeat. Laborum iure maxime fugiat voluptates iste et distinctio nulla, neque beatae!",
+}
 export const Footer_peragraph = "© 2023 Energiccropscience Copyright Reserved"
