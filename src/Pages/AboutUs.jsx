@@ -14,6 +14,7 @@ function AboutUs() {
               <h4>{Aboutus.we_are}</h4>
               <h3>{Aboutus.tag}</h3>
               <p>{Aboutus.pera}</p>
+              <p>{Aboutus.pera2}</p>
               <button>Lern More</button>
           </div>
         </div>

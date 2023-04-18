@@ -102,6 +102,7 @@ export const Aboutus = {
     img : About_Img,
     we_are : "We Are The Leader In",
     tag : "Manufacturer of Pesticides & Fertilizer",
-    pera : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa corrupti sed sequi placeat. Laborum iure maxime fugiat voluptates iste et distinctio nulla, neque beatae! Ipsa sit est facilis accusamus odio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa corrupti sed sequi placeat. Laborum iure maxime fugiat voluptates iste et distinctio nulla, neque beatae!",
+    pera : "Energic Crop Science was well-established in the year 2022 with more than 20 years of experience in agro chemical industries with energetic people, the company is dealing in all kinds of chemicals and PGR products which are used in major agriculture crops",
+    pera2 : "We are committed to maintain industry standards and best practices for a pollution-free production activity and make sure that our products are environmentally safe and secure"
 }
 export const Footer_peragraph = "© 2023 Energic Crop Science Copyright Reserved"
