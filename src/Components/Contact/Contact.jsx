@@ -31,7 +31,7 @@ function Contact() {
               <h6>Call Us</h6>
               <div className="item">
                 <p>Office : {CompanyInfo.company_phn_no}</p>
-                <p>Or {CompanyInfo.company_sec_phn_no}</p>
+                <p>Support : {CompanyInfo.company_sec_phn_no}</p>
                 <p>Helpline : {CompanyInfo.company_helpline}</p>
               </div>
 
