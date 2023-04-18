@@ -31,7 +31,8 @@ function Contact() {
               <h6>Call Us</h6>
               <div className="item">
                 <p>Office : {CompanyInfo.company_phn_no}</p>
-                <p>24*7 Helpline : {CompanyInfo.company_helpline}</p>
+                <p>Or {CompanyInfo.company_sec_phn_no}</p>
+                <p>Helpline : {CompanyInfo.company_helpline}</p>
               </div>
 
               <h6>Email</h6>
@@ -42,9 +43,9 @@ function Contact() {
 
               <h6>Address</h6>
               <div className="item">
-                <p>{CompanyInfo.company_address.floor}</p>
-                <p> {CompanyInfo.company_address.city}, {CompanyInfo.company_address.dist}</p>
-                <p>{CompanyInfo.company_address.state}, {CompanyInfo.company_address.country}, {CompanyInfo.company_address.pin}</p>
+                <p>{CompanyInfo.company_address.floor}, {CompanyInfo.company_address.city}</p>
+                <p>{CompanyInfo.company_address.dist}, {CompanyInfo.company_address.state}</p>
+                <p> {CompanyInfo.company_address.country}, {CompanyInfo.company_address.pin}</p>
               </div>
 
 

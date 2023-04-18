@@ -1,10 +1,8 @@
-import Logo from '../Logos/Navlogo.jpg';
+import Logo from '../Logos/LOGO FINAL.jpg';
 import About_Img from '../Image/Pesticides & Fertilizer.png';
 
 export const BrandData = {
-    brand_name: "Energiccropscience",
     brand_logo: Logo,
-    brand_tagline: "Somethings",
 }
 
 export const NavbarItems = [
@@ -47,21 +45,22 @@ export const NavbarItems = [
 ]
 
 export const CompanyInfo = {
-    company_name: "Energiccropscience pvt. ltd.",
+    company_name: "Energic Crop Science",
     company_address: {
-        floor : "67/878n, BN Road",
-        city : "Krishnagar",
-        dist : "Nadia",
+        floor : "117/B",
+        city : "Hem Chandra Naskar Road",
+        dist : "Kolkata",
         state : "West Benagal",
         country : "India",
-        pin : "740001",
+        pin : "700010",
     },
+
     company_email : "energiccropscience@gmail.com",
-    support_mail : "support@energiccropscience.in",
-    company_reg_no : "12345667796",
-    company_gst_no : "wertyuiopfgh",
-    company_phn_no : "9876543212",
-    company_helpline : "9876543211",
+    support_mail : "support@energiccropscience.com",
+    company_phn_no : "+91 6292006000",
+    company_sec_phn_no : "+91 6292007000",
+    company_helpline : "+91 6292009000",
+
     company_ceo : "qwertyui",
     company_dir : "sdfghjkjh",
 }
@@ -105,4 +104,4 @@ export const Aboutus = {
     tag : "Manufacturer of Pesticides & Fertilizer",
     pera : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa corrupti sed sequi placeat. Laborum iure maxime fugiat voluptates iste et distinctio nulla, neque beatae! Ipsa sit est facilis accusamus odio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa corrupti sed sequi placeat. Laborum iure maxime fugiat voluptates iste et distinctio nulla, neque beatae!",
 }
-export const Footer_peragraph = "© 2023 Energiccropscience Copyright Reserved"
+export const Footer_peragraph = "© 2023 Energic Crop Science Copyright Reserved"
