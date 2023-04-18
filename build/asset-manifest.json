@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.72b1d2ab.css",
-    "main.js": "/static/js/main.e2026ae1.js",
+    "main.js": "/static/js/main.b3a38e42.js",
     "static/js/787.e5f53c23.chunk.js": "/static/js/787.e5f53c23.chunk.js",
     "static/media/Pesticides & Fertilizer.png": "/static/media/Pesticides & Fertilizer.5b72f78b274ecbb3c652.png",
     "static/media/LOGO FINAL.jpg": "/static/media/LOGO FINAL.f2ff33b24c9b9bcdeedc.jpg",
     "index.html": "/index.html",
     "main.72b1d2ab.css.map": "/static/css/main.72b1d2ab.css.map",
-    "main.e2026ae1.js.map": "/static/js/main.e2026ae1.js.map",
+    "main.b3a38e42.js.map": "/static/js/main.b3a38e42.js.map",
     "787.e5f53c23.chunk.js.map": "/static/js/787.e5f53c23.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.72b1d2ab.css",
-    "static/js/main.e2026ae1.js"
+    "static/js/main.b3a38e42.js"
   ]
 }
