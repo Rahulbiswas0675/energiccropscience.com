@@ -7,19 +7,20 @@ $blur_green : #008B8B;
 
 .App {
     background-color: $light_green;
+    text-align: center;
 
-    h1 {
-        width: 100%;
-        text-align: center;
-        margin-top: 5rem;
-        color: green;
-    }
+    // h1 {
+    //     width: 100%;
+    //     text-align: center;
+    //     margin-top: 5rem;
+    //     color: green;
+    // }
 
-    h3 {
-        width: 100%;
-        text-align: center;
-        color: tomato;
-    }
+    // h3 {
+    //     width: 100%;
+    //     text-align: center;
+    //     color: tomato;
+    // }
 }
 
 
@@ -62,7 +63,7 @@ $blur_green : #008B8B;
     }
 }
 
-// Home-Components
+// Home-Components===================
 .Home-Components {
     margin-top: 3.6rem;
     // border: 1px solid red;
@@ -71,6 +72,98 @@ $blur_green : #008B8B;
         // border: 1px solid red;
     }
 }
+
+//Product-Components=================
+.Product-Components {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .product-header {
+        width: 80%;
+        padding: 16px;
+        color: $light_black;
+        border-bottom: 1px solid $border_bottom;
+    }
+
+    .product-container {
+        width: inherit;
+        margin-top: 1rem;
+        position: relative;
+
+        .products {
+            width: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: inherit;
+                opacity: 0.7;
+            }
+
+            .product-cat {
+                width: 70%;
+                position: absolute;
+                top: 2rem;
+
+                h4 {
+                    color: $blur_green;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
+            }
+
+            .Product-imageslider {
+                top: 10rem;
+                width: 100%;
+                position: absolute;
+
+                .product-slide {
+                    width: 100%;
+
+                    .slider-item {
+                        width: inherit;
+
+                        .item-cont {
+                            display: flex;
+                            width: 80%;
+                            margin-left: 10%;
+                            justify-content: space-between;
+
+                            .product-img {
+                                height: 18rem;
+                                width: auto;
+                            }
+
+                            .details {
+                                width: 40%;
+                                margin-top: 4rem;
+                                height: auto;
+
+                                h4 {
+                                    font-weight: bold;
+                                }
+
+                                p {
+                                    margin: 0;
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        }
+
+
+    }
+}
+
+
 
 // AboutUs-Components==================
 .AboutUs-Components {
@@ -114,7 +207,6 @@ $blur_green : #008B8B;
 
                 h4 {
                     color: $light_black;
-                    border-bottom: 2px solid $blur_green;
                 }
 
                 h3 {
@@ -308,7 +400,43 @@ $blur_green : #008B8B;
 // Media-Screen=====================================
 @media (max-width: 992px) {
 
+    .Product-Components {
+        .product-container {
+            margin-top: 0 !important;
+            .products {
+                .product-cat {
+                    width: 90%;
+                }
+            }
+
+            .Product-imageslider {
+                margin-top: 4rem;
+
+                .product-slide {
+
+                    .slider-item {
+
+                        .item-cont {
+                            width: 100% !important;
+                            margin-left: 0 !important;
+                            justify-content: space-around;
+                            align-items: center;
+
+                            .details{
+                                width: auto !important;
+                                // height: auto !important;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
     .AboutUs-Components {
+        margin-top: 18rem;
         .about-container {
 
             .about-items {

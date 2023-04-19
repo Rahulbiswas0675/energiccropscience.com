@@ -1,6 +1,35 @@
 import Logo from '../Logos/LOGO FINAL.jpg';
 import About_Img from '../Image/Pesticides & Fertilizer.png';
 
+import product1 from '../Image/Products/1st.png';
+import product2 from '../Image/Products/3rd.png';
+import product3 from '../Image/Products/4th.png';
+import product4 from '../Image/Products/5th.png';
+import product5 from '../Image/Products/12.png';
+import product6 from '../Image/Products/15.png';
+import product7 from '../Image/Products/17.png';
+import product8 from '../Image/Products/18.png';
+import product9 from '../Image/Products/19.png';
+import product10 from '../Image/Products/20.png';
+import product11 from '../Image/Products/25.png';
+
+
+import product12 from '../Image/Products/2nd.png';
+import product13 from '../Image/Products/24.png';
+import product14 from '../Image/Products/6th.png';
+import product15 from '../Image/Products/7th.png';
+import product16 from '../Image/Products/8th.png';
+import product17 from '../Image/Products/9th.png';
+import product18 from '../Image/Products/10th.png';
+import product19 from '../Image/Products/11.png';
+import product20 from '../Image/Products/13.png';
+import product21 from '../Image/Products/14.png';
+import product22 from '../Image/Products/16.png';
+import product23 from '../Image/Products/21.png';
+import product24 from '../Image/Products/22.png';
+import product25 from '../Image/Products/23.png';
+
+
 export const BrandData = {
     brand_logo: Logo,
 }
@@ -98,6 +127,190 @@ export const CarouselsItems = [
     }
 ]
 
+export const ProductsItems = {
+    product_head : "Product Category",
+    product_pera : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde, corporis eligendi odio, dignissimos itaque adipisci ipsa, pariatur deleniti dolores necessitatibus veniam facere sit deserunt quasi esse quia voluptate corrupti.",
+
+    productsA : [
+        {
+            id : 1,
+            product_name : "Product 1",
+            product_tag : "Something",
+            product_about : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde, corporis eligendi odio",
+            product_img : product1,
+        },
+        {
+            id : 2,
+            product_name : "Product 2",
+            product_tag : "Something",
+            product_about : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde, corporis eligendi odio",
+            product_img : product2,
+        },
+        {
+            id : 3,
+            product_name : "Product 3",
+            product_tag : "Something",
+            product_about : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde, corporis eligendi odio",
+            product_img : product3,
+        },
+        {
+            id : 4,
+            product_name : "Product 4",
+            product_tag : "Something",
+            product_about : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde, corporis eligendi odio",
+            product_img : product4,
+        },
+        {
+            id : 5,
+            product_name : "Product 5",
+            product_tag : "Something",
+            product_about : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde, corporis eligendi odio",
+            product_img : product5,
+        },
+        {
+            id : 6,
+            product_name : "Product 6",
+            product_tag : "Something",
+            product_about : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde, corporis eligendi odio",
+            product_img : product6,
+        },
+        {
+            id : 7,
+            product_name : "Product 7",
+            product_tag : "Something",
+            product_about : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde, corporis eligendi odio",
+            product_img : product7,
+        },
+        {
+            id : 8,
+            product_name : "Product 8",
+            product_tag : "Something",
+            product_about : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde, corporis eligendi odio",
+            product_img : product8,
+        },
+        {
+            id : 9,
+            product_name : "Product 9",
+            product_tag : "Something",
+            product_about : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde, corporis eligendi odio",
+            product_img : product9,
+        },
+        {
+            id : 10,
+            product_name : "Product 10",
+            product_tag : "Something",
+            product_about : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde, corporis eligendi odio",
+            product_img : product10,
+        },
+        {
+            id : 11,
+            product_name : "Product 11",
+            product_tag : "Something",
+            product_about : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde, corporis eligendi odio",
+            product_img : product11,
+        },
+        {
+            id : 12,
+            product_name : "Product 12",
+            product_tag : "Something",
+            product_about : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde, corporis eligendi odio",
+            product_img : product12,
+        },
+        {
+            id : 13,
+            product_name : "Product 13",
+            product_tag : "Something",
+            product_about : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde, corporis eligendi odio",
+            product_img : product13,
+        },
+        {
+            id : 14,
+            product_name : "Product 14",
+            product_tag : "Something",
+            product_about : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde, corporis eligendi odio",
+            product_img : product14,
+        },
+        {
+            id : 15,
+            product_name : "Product 15",
+            product_tag : "Something",
+            product_about : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde, corporis eligendi odio",
+            product_img : product15,
+        },
+        {
+            id : 16,
+            product_name : "Product 16",
+            product_tag : "Something",
+            product_about : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde, corporis eligendi odio",
+            product_img : product16,
+        },
+        {
+            id : 17,
+            product_name : "Product 17",
+            product_tag : "Something",
+            product_about : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde, corporis eligendi odio",
+            product_img : product17,
+        },
+        {
+            id : 18,
+            product_name : "Product 18",
+            product_tag : "Something",
+            product_about : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde, corporis eligendi odio",
+            product_img : product18,
+        },
+        {
+            id : 19,
+            product_name : "Product 19",
+            product_tag : "Something",
+            product_about : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde, corporis eligendi odio",
+            product_img : product19,
+        },
+        {
+            id : 20,
+            product_name : "Product 20",
+            product_tag : "Something",
+            product_about : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde, corporis eligendi odio",
+            product_img : product20,
+        },
+        {
+            id : 21,
+            product_name : "Product 21",
+            product_tag : "Something",
+            product_about : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde, corporis eligendi odio",
+            product_img : product21,
+        },
+        {
+            id : 22,
+            product_name : "Product 22",
+            product_tag : "Something",
+            product_about : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde, corporis eligendi odio",
+            product_img : product22,
+        },
+        {
+            id : 23,
+            product_name : "Product 23",
+            product_tag : "Something",
+            product_about : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde, corporis eligendi odio",
+            product_img : product23,
+        },
+        {
+            id : 24,
+            product_name : "Product 24",
+            product_tag : "Something",
+            product_about : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde, corporis eligendi odio",
+            product_img : product24,
+        },
+        {
+            id : 25,
+            product_name : "Product 25",
+            product_tag : "Something",
+            product_about : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde, corporis eligendi odio",
+            product_img : product25,
+        },
+    ],
+
+}
+
 export const Aboutus = {
     img : About_Img,
     we_are : "We Are The Leader In",
@@ -105,4 +318,6 @@ export const Aboutus = {
     pera : "Energic Crop Science was well-established in the year 2022 with more than 20 years of experience in agro chemical industries with energetic people, the company is dealing in all kinds of chemicals and PGR products which are used in major agriculture crops",
     pera2 : "We are committed to maintain industry standards and best practices for a pollution-free production activity and make sure that our products are environmentally safe and secure"
 }
+
+
 export const Footer_peragraph = "© 2023 Energic Crop Science Copyright Reserved"
