@@ -1,7 +1,5 @@
 import React from 'react'
 import ImageSlider from '../Components/Product/ImageSlider'
-import bgimg from '../Image/background.jpg';
-import bgimg2 from '../Image/background2.jpg';
 import { ProductsItems } from '../Database/Database';
 function Products() {
   return (

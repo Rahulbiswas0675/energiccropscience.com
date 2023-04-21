@@ -1,10 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.74e99b67.css",
-    "main.js": "/static/js/main.3dc0d0fc.js",
+    "main.css": "/static/css/main.c9245985.css",
+    "main.js": "/static/js/main.8b509318.js",
     "static/js/787.e5f53c23.chunk.js": "/static/js/787.e5f53c23.chunk.js",
-    "static/media/background2.jpg": "/static/media/background2.0ce19a735792e11b0758.jpg",
-    "static/media/background.jpg": "/static/media/background.a642f50b5ed56364ca77.jpg",
     "static/media/Pesticides & Fertilizer.png": "/static/media/Pesticides & Fertilizer.5b72f78b274ecbb3c652.png",
     "static/media/20.png": "/static/media/20.db42178be5f810d23af1.png",
     "static/media/5th.png": "/static/media/5th.92386b07b8e6ae9731a4.png",
@@ -33,12 +31,12 @@
     "static/media/7th.png": "/static/media/7th.9b971bb6965440cf1807.png",
     "static/media/3rd.png": "/static/media/3rd.b01d430ea5ef3228aeae.png",
     "index.html": "/index.html",
-    "main.74e99b67.css.map": "/static/css/main.74e99b67.css.map",
-    "main.3dc0d0fc.js.map": "/static/js/main.3dc0d0fc.js.map",
+    "main.c9245985.css.map": "/static/css/main.c9245985.css.map",
+    "main.8b509318.js.map": "/static/js/main.8b509318.js.map",
     "787.e5f53c23.chunk.js.map": "/static/js/787.e5f53c23.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.74e99b67.css",
-    "static/js/main.3dc0d0fc.js"
+    "static/css/main.c9245985.css",
+    "static/js/main.8b509318.js"
   ]
 }

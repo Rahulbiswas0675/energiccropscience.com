@@ -1,5 +1,6 @@
 import Logo from '../Logos/LOGO FINAL.jpg';
 import About_Img from '../Image/Pesticides & Fertilizer.png';
+import { FaBeer } from 'react-icons/fa';
 
 import product1 from '../Image/Products/1st.png';
 import product2 from '../Image/Products/3rd.png';
@@ -319,5 +320,11 @@ export const Aboutus = {
     pera2 : "We are committed to maintain industry standards and best practices for a pollution-free production activity and make sure that our products are environmentally safe and secure"
 }
 
-
+export const Reviews = [
+    {
+        id : 1,
+        head : "",
+        icon : ""
+    }
+]
 export const Footer_peragraph = "© 2023 Energic Crop Science Copyright Reserved"

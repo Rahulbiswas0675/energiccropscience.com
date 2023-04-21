@@ -26,7 +26,6 @@ $blur_green : #008B8B;
 
 }
 
-
 // Navbar-Components===============================================
 .Navbar-Components {
     top: 0;
@@ -166,8 +165,6 @@ $blur_green : #008B8B;
     }
 }
 
-
-
 // AboutUs-Components==================
 .AboutUs-Components {
     padding: 16px;
@@ -239,6 +236,31 @@ $blur_green : #008B8B;
         }
     }
 
+}
+
+// review-components==================
+.review-components{
+    width: 100%;
+    margin-top: 2rem;
+    // border: 1px solid red;
+
+    .review-container{
+        background-image: url(https://images.pexels.com/photos/4530770/pexels-photo-4530770.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 30rem;
+        background-position: center;
+
+        .box-container{
+            width: 100%;
+            height: inherit;
+            background-color: #c2e5d35a;
+
+            .container-items{
+                
+            }
+        }
+    }
 }
 
 // Contact-Components=================
@@ -383,7 +405,6 @@ $blur_green : #008B8B;
         }
     }
 }
-
 
 // footer-components===========================================
 .footer-components {
