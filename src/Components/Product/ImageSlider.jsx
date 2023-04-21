@@ -4,7 +4,7 @@ import { ProductsItems } from '../../Database/Database';
 function ImageSlider() {
     return (
         <div className="Product-imageslider">
-            <Carousel variant="dark" className="product-slide">
+            <Carousel variant="white" className="product-slide">
                 {
                     ProductsItems.productsA.map(product => (
                         <Carousel.Item key={product.id} className="slider-item">
@@ -15,6 +15,7 @@ function ImageSlider() {
                                     <h5>{product.product_tag}</h5>
                                     <p>{product.product_about}</p>
                                 </div>
+
                             </div>
 
                         </Carousel.Item>
