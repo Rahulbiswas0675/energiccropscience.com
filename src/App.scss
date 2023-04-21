@@ -9,18 +9,21 @@ $blur_green : #008B8B;
     background-color: $light_green;
     text-align: center;
 
-    // h1 {
-    //     width: 100%;
-    //     text-align: center;
-    //     margin-top: 5rem;
-    //     color: green;
-    // }
+    .PageUnderCon {
+        padding: 1rem;
+        h1 {
+            width: 100%;
+            text-align: center;
+            color: green;
+        }
 
-    // h3 {
-    //     width: 100%;
-    //     text-align: center;
-    //     color: tomato;
-    // }
+        h3 {
+            width: 100%;
+            text-align: center;
+            color: tomato;
+        }
+    }
+
 }
 
 
@@ -140,11 +143,13 @@ $blur_green : #008B8B;
 
                                 h4 {
                                     font-weight: bold;
-                                    color:$blur_green;
+                                    color: $blur_green;
                                 }
-                                h5{
-                                    color:$light_black;
+
+                                h5 {
+                                    color: $light_black;
                                 }
+
                                 p {
                                     margin: 0;
                                 }
@@ -397,20 +402,23 @@ $blur_green : #008B8B;
 
 // Media-Screen=====================================
 @media (max-width: 992px) {
-    
+
     .Product-Components {
         .product-container {
             background-position: center;
+
             .products {
                 .product-cat {
                     width: 90%;
                 }
+
                 .Product-imageslider {
                     .product-slide {
                         width: 100%;
+
                         .slider-item {
                             .item-cont {
-                                .details{
+                                .details {
                                     width: auto;
                                 }
                             }
@@ -427,8 +435,6 @@ $blur_green : #008B8B;
 
 
     .AboutUs-Components {
-        margin-top: 18rem;
-
         .about-container {
 
             .about-items {
