@@ -11,6 +11,7 @@ $blur_green : #008B8B;
 
     .PageUnderCon {
         padding: 1rem;
+
         h1 {
             width: 100%;
             text-align: center;
@@ -167,100 +168,142 @@ $blur_green : #008B8B;
 
 // AboutUs-Components==================
 .AboutUs-Components {
-    padding: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    .about-container {
+    .about-head {
         width: 80%;
-
-        .about-head {
-            padding: 16px;
-            color: $light_black;
-            border-bottom: 1px solid $border_bottom;
-        }
-
-        .about-items {
-            margin-top: 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            .left {
-                width: 35%;
-
-                img {
-                    width: 100%;
-                }
-            }
-
-            .right {
-                width: 65%;
-                padding: 1rem;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                gap: 0.5rem;
-
-                h4 {
-                    color: $light_black;
-                }
-
-                h3 {
-                    font-weight: bold;
-                    color: $blur_green;
-                }
-
-                p {
-                    margin: 0;
-                    text-align: center;
-                    color: $light_black;
-                }
-
-                button {
-                    border: none;
-                    width: 10rem;
-                    height: 2rem;
-                    margin-top: 1rem;
-                    background: none;
-                    border: 1px solid $border_bottom;
-                }
-
-                button:hover {
-                    background-color: $hover_btn;
-                }
-            }
-        }
+        padding: 16px;
+        color: $light_black;
+        border-bottom: 1px solid $border_bottom;
     }
 
-}
-
-// review-components==================
-.review-components{
-    width: 100%;
-    margin-top: 2rem;
-    // border: 1px solid red;
-
-    .review-container{
-        background-image: url(https://images.pexels.com/photos/4530770/pexels-photo-4530770.jpeg);
+    .about-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url(https://www.fao.org/fileadmin/user_upload/GSP/imgs/GSP_CoCoFe.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 30rem;
         background-position: center;
 
-        .box-container{
-            width: 100%;
-            height: inherit;
-            background-color: #c2e5d35a;
+        .back-box {
+            background-color: #c2e5d378;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
-            .container-items{
-                
+            .about-items {
+                margin-top: 2rem;
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .left {
+                    width: 35%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .right {
+                    width: 65%;
+                    padding: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0.5rem;
+
+                    h4 {
+                        color: $light_black;
+                    }
+
+                    h3 {
+                        font-weight: bold;
+                        color: $blur_green;
+                    }
+
+                    p {
+                        margin: 0;
+                        text-align: center;
+                        color: $light_black;
+                    }
+
+                    button {
+                        border: none;
+                        width: 10rem;
+                        height: 2rem;
+                        margin-top: 1rem;
+                        background: none;
+                        border-radius: 2px;
+                        border: 1px solid $light_black;
+                    }
+
+                    button:hover {
+                        background-color: $hover_btn;
+                    }
+                }
+            }
+
+            .box-container {
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .container-items {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+
+                    .item {
+                        display: flex;
+                        gap: 8px;
+                        width: 18%;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 4px;
+
+
+                        img {
+                            width: 5rem;
+                            height: 5rem;
+                            padding: 16px;
+                            border-radius: 50%;
+                            background-color: #eee;
+                            box-shadow: 0px 1px 6px $hover_btn;
+                        }
+
+                        h3 {
+                            margin: 0;
+                            font-weight: bold;
+                            color: $blur_green;
+                        }
+
+                        p {
+                            margin: 0;
+                        }
+                    }
+                }
             }
         }
+
+
+
     }
+
 }
 
 // Contact-Components=================
@@ -457,19 +500,44 @@ $blur_green : #008B8B;
 
     .AboutUs-Components {
         .about-container {
+            .back-box {
 
-            .about-items {
-                flex-direction: column;
-
-                .left {
-                    width: 90%;
-                }
-
-                .right {
-                    margin-top: 2rem;
+                .about-items {
                     width: 100%;
+                    flex-direction: column;
+                    .left {
+                        width: 90%;
+                        img{
+                            width: 70%;
+                        }
+                    }
+                    .right {
+                        margin-top: 2rem;
+                        width: 100%;
+                    }
                 }
+
+                .box-container{
+                    width: 100%;
+                    .container-items4{
+                        .item{
+                            width: 22%;
+                            img{
+                                width: 4rem;
+                                height: 4rem;
+                            }
+                            .details{
+                                h3{
+                                    font-size: 1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+
+
             }
+
         }
     }
 

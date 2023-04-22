@@ -1,6 +1,10 @@
 import Logo from '../Logos/LOGO FINAL.jpg';
 import About_Img from '../Image/Pesticides & Fertilizer.png';
-import { FaBeer } from 'react-icons/fa';
+import productimg from '../Image/Icon/product.png';
+import happycustomer from '../Image/Icon/customer-review.png';
+import teamimg from '../Image/Icon/partners.png';
+import dealar from '../Image/Icon/broker.png';
+
 
 import product1 from '../Image/Products/1st.png';
 import product2 from '../Image/Products/3rd.png';
@@ -320,11 +324,30 @@ export const Aboutus = {
     pera2 : "We are committed to maintain industry standards and best practices for a pollution-free production activity and make sure that our products are environmentally safe and secure"
 }
 
-export const Reviews = [
+export const ReviewsItem = [
     {
         id : 1,
-        head : "",
-        icon : ""
+        head : "Quality Products",
+        count : "60+",
+        icon : productimg,
+    },
+    {
+        id : 2,
+        head : "Satisfied Customers",
+        count : "1600+",
+        icon : happycustomer,
+    },
+    {
+        id : 3,
+        head : "Dedicated Team",
+        count : "200+",
+        icon : teamimg,
+    },
+    {
+        id : 4,
+        head : "Dealer Outlets",
+        count : "100+",
+        icon : dealar,
     }
 ]
 export const Footer_peragraph = "© 2023 Energic Crop Science Copyright Reserved"

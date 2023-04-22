@@ -6,7 +6,6 @@ import AppBar from './Components/Navbar/AppBar';
 import Home from './Pages/Home';
 import Products from './Pages/Products';
 import AboutUs from './Pages/AboutUs';
-import Review from './Pages/Review';
 import Contact from './Pages/Contact';
 import Footer from './Pages/Footer';
 
@@ -21,7 +20,6 @@ function App() {
       <PageUnderCon/>
       <Products/>
       <AboutUs/>
-      <Review/>
       <Contact/>
       <Footer/>
     </div>

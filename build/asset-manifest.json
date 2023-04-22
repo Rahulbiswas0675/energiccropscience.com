@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c9245985.css",
-    "main.js": "/static/js/main.8b509318.js",
+    "main.css": "/static/css/main.383c7215.css",
+    "main.js": "/static/js/main.cb1e3bdf.js",
     "static/js/787.e5f53c23.chunk.js": "/static/js/787.e5f53c23.chunk.js",
     "static/media/Pesticides & Fertilizer.png": "/static/media/Pesticides & Fertilizer.5b72f78b274ecbb3c652.png",
     "static/media/20.png": "/static/media/20.db42178be5f810d23af1.png",
@@ -30,13 +30,17 @@
     "static/media/6th.png": "/static/media/6th.19d52f167dad29584473.png",
     "static/media/7th.png": "/static/media/7th.9b971bb6965440cf1807.png",
     "static/media/3rd.png": "/static/media/3rd.b01d430ea5ef3228aeae.png",
+    "static/media/partners.png": "/static/media/partners.b18723605ca404caa58f.png",
+    "static/media/broker.png": "/static/media/broker.2075fb763c3c20475685.png",
+    "static/media/customer-review.png": "/static/media/customer-review.6a49f05410de1acf3787.png",
+    "static/media/product.png": "/static/media/product.ff1e42b69d3884c5dd7d.png",
     "index.html": "/index.html",
-    "main.c9245985.css.map": "/static/css/main.c9245985.css.map",
-    "main.8b509318.js.map": "/static/js/main.8b509318.js.map",
+    "main.383c7215.css.map": "/static/css/main.383c7215.css.map",
+    "main.cb1e3bdf.js.map": "/static/js/main.cb1e3bdf.js.map",
     "787.e5f53c23.chunk.js.map": "/static/js/787.e5f53c23.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9245985.css",
-    "static/js/main.8b509318.js"
+    "static/css/main.383c7215.css",
+    "static/js/main.cb1e3bdf.js"
   ]
 }
