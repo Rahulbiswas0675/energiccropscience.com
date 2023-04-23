@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { BrandData, NavbarItems } from '../../Database/Database';
-
+import {Link} from 'react-router-dom';
 function AppBar() {
     return (
         <>
@@ -25,8 +25,10 @@ function AppBar() {
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
                                     {
                                         NavbarItems.map(item => (
-                                            <Nav.Link key={item.item_id} href={item.item_link}>
-                                                {item.item_name}
+                                            <Nav.Link key={item.item_id}>
+                                                <Link to={item.item_link} className="link-item">
+                                                    {item.item_name}
+                                                </Link>
                                             </Nav.Link>
                                         ))
                                     }

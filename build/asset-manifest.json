@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.383c7215.css",
-    "main.js": "/static/js/main.cb1e3bdf.js",
+    "main.css": "/static/css/main.7e9ddaa2.css",
+    "main.js": "/static/js/main.ff632dcf.js",
     "static/js/787.e5f53c23.chunk.js": "/static/js/787.e5f53c23.chunk.js",
     "static/media/Pesticides & Fertilizer.png": "/static/media/Pesticides & Fertilizer.5b72f78b274ecbb3c652.png",
     "static/media/20.png": "/static/media/20.db42178be5f810d23af1.png",
@@ -22,10 +22,10 @@
     "static/media/11.png": "/static/media/11.567897f1c2a73974f018.png",
     "static/media/10th.png": "/static/media/10th.35978d4a6f666af38b45.png",
     "static/media/24.png": "/static/media/24.fb9988cfbac4aa6afcbe.png",
+    "static/media/LOGO.png": "/static/media/LOGO.990cb13ea54cebcdc3bf.png",
     "static/media/2nd.png": "/static/media/2nd.9b76d274f108c7d2a7f1.png",
     "static/media/9th.png": "/static/media/9th.a7edb16f6ed9eec3cf5d.png",
     "static/media/15.png": "/static/media/15.ec79a2da16007e2e4603.png",
-    "static/media/LOGO FINAL.jpg": "/static/media/LOGO FINAL.f2ff33b24c9b9bcdeedc.jpg",
     "static/media/14.png": "/static/media/14.02ccd149c4f07c9290ab.png",
     "static/media/6th.png": "/static/media/6th.19d52f167dad29584473.png",
     "static/media/7th.png": "/static/media/7th.9b971bb6965440cf1807.png",
@@ -35,12 +35,12 @@
     "static/media/customer-review.png": "/static/media/customer-review.6a49f05410de1acf3787.png",
     "static/media/product.png": "/static/media/product.ff1e42b69d3884c5dd7d.png",
     "index.html": "/index.html",
-    "main.383c7215.css.map": "/static/css/main.383c7215.css.map",
-    "main.cb1e3bdf.js.map": "/static/js/main.cb1e3bdf.js.map",
+    "main.7e9ddaa2.css.map": "/static/css/main.7e9ddaa2.css.map",
+    "main.ff632dcf.js.map": "/static/js/main.ff632dcf.js.map",
     "787.e5f53c23.chunk.js.map": "/static/js/787.e5f53c23.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.383c7215.css",
-    "static/js/main.cb1e3bdf.js"
+    "static/css/main.7e9ddaa2.css",
+    "static/js/main.ff632dcf.js"
   ]
 }

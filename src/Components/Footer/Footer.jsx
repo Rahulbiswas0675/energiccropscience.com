@@ -1,5 +1,5 @@
 import React from 'react'
-import { Footer_peragraph } from '../Database/Database'
+import { Footer_peragraph } from '../../Database/Database'
 function Footer() {
   return (
     <div className="footer-components">

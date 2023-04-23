@@ -1,6 +1,6 @@
 import React from 'react';
-import { Aboutus } from '../Database/Database';
-import Reviews from '../Components/Review/Reviews';
+import { Aboutus } from '../../Database/Database';
+import Reviews from '../Review/Reviews';
 function AboutUs() {
   return (
     <div className="AboutUs-Components">
@@ -10,7 +10,7 @@ function AboutUs() {
 
           <div className="about-items">
             <div className="left">
-              <img src={Aboutus.img} alt="Image" />
+              <img src={Aboutus.img} alt="About-Img"/>
             </div>
             <div className="right">
               <h4>{Aboutus.we_are}</h4>

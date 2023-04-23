@@ -1,6 +1,6 @@
 import React from 'react'
-import ImageSlider from '../Components/Product/ImageSlider'
-import { ProductsItems } from '../Database/Database';
+import ImageSlider from './ImageSlider'
+import { ProductsItems } from '../../Database/Database'
 function Products() {
   return (
     <div className="Product-Components">
@@ -10,7 +10,6 @@ function Products() {
       <div className="product-container">
         
         <div className="products">
-          {/* <img src={bgimg2} alt="Image" /> */}
           <div className="product-cat">
             <h4>{ProductsItems.product_head}</h4>
             <p>{ProductsItems.product_pera}</p>

@@ -1,4 +1,4 @@
-import Logo from '../Logos/LOGO FINAL.jpg';
+import Logo from '../Logos/LOGO.png';
 import About_Img from '../Image/Pesticides & Fertilizer.png';
 import productimg from '../Image/Icon/product.png';
 import happycustomer from '../Image/Icon/customer-review.png';
@@ -62,7 +62,7 @@ export const NavbarItems = [
         item_id: 4,
         item_name: "About Us",
         item_icon: "about",
-        item_link: "/about"
+        item_link: "/about-us"
     },
     {
         item_id: 5,
@@ -74,7 +74,7 @@ export const NavbarItems = [
         item_id: 6,
         item_name: "Contact Us",
         item_icon: "contact",
-        item_link: "/contact"
+        item_link: "/contact-us"
     }
 ]
 
