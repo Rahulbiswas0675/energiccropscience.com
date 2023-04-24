@@ -182,7 +182,8 @@ $blur_green : #008B8B;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color:rgba(238, 238, 238, 0.524);
+        background-color: rgba(238, 238, 238, 0.524);
+
         .box-container {
             margin-top: 2rem;
             margin-bottom: 2rem;
@@ -591,30 +592,33 @@ $blur_green : #008B8B;
                     }
                 }
 
-                .box-container {
-                    width: 100%;
+            }
 
-                    .container-items4 {
-                        .item {
-                            width: 22%;
+        }
+    }
 
-                            img {
-                                width: 4rem;
-                                height: 4rem;
-                            }
+    .Reviews-Components {
+        .review-container {
+            .box-container {
+                width: 100%;
 
-                            .details {
-                                h3 {
-                                    font-size: 1rem;
-                                }
+                .container-items4 {
+                    .item {
+                        width: 22%;
+
+                        img {
+                            width: 4rem;
+                            height: 4rem;
+                        }
+
+                        .details {
+                            h3 {
+                                font-size: 1rem;
                             }
                         }
                     }
                 }
-
-
             }
-
         }
     }
 
