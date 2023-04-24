@@ -50,11 +50,6 @@ $blur_green : #008B8B;
 
 }
 
-.link-item {
-    text-decoration: none;
-    color: $light_black;
-}
-
 // SideBar-Components===============================================
 .sidebar-band {
     padding: 0;
@@ -85,10 +80,10 @@ $blur_green : #008B8B;
     align-items: center;
 
     .product-header {
-        width: 80%;
-        padding: 16px;
+        // width: 80%;
+        // padding: 16px;
         color: $light_black;
-        border-bottom: 1px solid $border_bottom;
+        border-bottom: 2px solid $border_bottom;
     }
 
     .product-container {
@@ -243,9 +238,8 @@ $blur_green : #008B8B;
     justify-content: center;
 
     .about-head {
-        padding: 16px;
         color: $light_black;
-        border-bottom: 1px solid $border_bottom;
+        border-bottom: 2px solid $border_bottom;
     }
 
     .about-container {
@@ -320,6 +314,51 @@ $blur_green : #008B8B;
                     }
                 }
             }
+
+
+            .about-footer{
+                width: 80%;
+                margin: 3rem;
+                .footer-container{
+                    display: flex;
+                    justify-content: space-between;
+                    .box{
+                        padding: 16px;
+                        width: 30%;
+                        background-color: #c2e5d399;
+                        border-radius: 4px;
+                        h4{
+                            font-size: 1.1rem;
+                            color: $blur_green;
+                            border-bottom: 1px solid $light_black;
+                        }
+                        p{
+                            margin: 0;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+
+                // .box-footer{
+                //     margin-top: 2rem;
+                //     .box{
+                //         width: 60%;
+                //         padding: 16px;
+                //         background-color: #c2e5d3ab;
+                //         border-radius: 4px;
+                //         text-align: left;
+                //         h3{
+                //             font-size: 1.3rem;
+                //             color: $blur_green;
+                //             border-bottom: 1px solid $light_black;
+                //         }
+                //         p{
+                //             margin: 0;
+                //             font-size: 0.9rem;
+                //         }
+                //     }
+                // }
+            }
         }
 
 
@@ -337,7 +376,6 @@ $blur_green : #008B8B;
     align-items: center;
 
     .contact-head {
-        padding: 8px;
         border-bottom: 2px solid $border_bottom;
 
         h3 {
@@ -589,6 +627,16 @@ $blur_green : #008B8B;
                     .right {
                         margin-top: 2rem;
                         width: 100%;
+                    }
+                }
+                .about-footer{
+                    width: 80%;
+                    .footer-container{
+                        flex-direction: column;
+                        gap: 1rem;
+                        .box{
+                            width: 100%;
+                        }
                     }
                 }
 

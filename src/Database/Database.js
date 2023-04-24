@@ -41,37 +41,37 @@ export const BrandData = {
 
 export const NavbarItems = [
     {
-        item_id: 1,
+        item_id: "#home",
         item_name: "Home",
         item_icon: "home",
         item_link: "/"
     },
     {
-        item_id: 2,
+        item_id: "#products",
         item_name: "Products",
         item_icon: "products",
         item_link: "/products"
     },
     {
-        item_id: 3,
+        item_id: "#infrastructure",
         item_name: "Infrastructure",
         item_icon: "infrastructure",
         item_link: "/infrastructure"
     },
     {
-        item_id: 4,
+        item_id: "#about",
         item_name: "About Us",
         item_icon: "about",
         item_link: "/about-us"
     },
     {
-        item_id: 5,
+        item_id: "#certificates",
         item_name: "Certificates",
         item_icon: "certificates",
         item_link: "/certificates"
     },
     {
-        item_id: 6,
+        item_id: "#contact",
         item_name: "Contact Us",
         item_icon: "contact",
         item_link: "/contact-us"
@@ -320,8 +320,13 @@ export const Aboutus = {
     img : About_Img,
     we_are : "We Are The Leader In",
     tag : "Manufacturer of Pesticides & Fertilizer",
-    pera : "Energic Crop Science was well-established in the year 2022 with more than 20 years of experience in agro chemical industries with energetic people, the company is dealing in all kinds of chemicals and PGR products which are used in major agriculture crops",
-    pera2 : "We are committed to maintain industry standards and best practices for a pollution-free production activity and make sure that our products are environmentally safe and secure"
+    pera : "Energic Crop Science was well-established in the year 2022 with more than 20 years of experience in agro chemical industries with energetic people, the company is dealing in all kinds of chemicals and PGR products which are used in major agriculture crops.",
+    pera2 : "We are committed to maintain industry standards and best practices for a pollution-free production activity and make sure that our products are environmentally safe and secure.",
+    ourVision:"To be peerless among the stalwarts of the agrochemical and fertilizer industry.Energic Crop Science will make available the very best of agro-inputs of world class quality in the reasonable price for the enhancement of agricultural production and farmer's wellness.",
+    ourMission:"To provide the best quality of products to the farmers through constant innovation and tailor made and the development of agriculture's positions as one of the most benefited in the future.",
+    clientSatifaction:"We work passionately with all focus to meet the exact requirement of our clients/farmers to provide the highest level of customer satisfaction.",
+
+    
 }
 
 export const ReviewsItem = [

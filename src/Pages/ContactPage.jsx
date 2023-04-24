@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Contact from '../Components/Contact/Contact';
 
 function ContactPage() {
   return (
-    <div>ContactPage</div>
+    <div id="contact">
+      <Contact/>
+    </div>
   )
 }
 

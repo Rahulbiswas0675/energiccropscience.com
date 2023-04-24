@@ -20,6 +20,26 @@ function AboutUs() {
               <button>Lern More</button>
             </div>
           </div>
+
+          <div className="about-footer">
+
+            <div className="footer-container">
+              <div className="box">
+                <h4>Our Vision</h4>
+                <p>{Aboutus.ourVision}</p>
+              </div>
+              <div className="box">
+                <h4>Our Mission</h4>
+                <p>{Aboutus.ourMission}</p>
+              </div>
+
+              <div className="box">
+                <h4>Client Satifaction</h4>
+                <p>{Aboutus.clientSatifaction}</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>

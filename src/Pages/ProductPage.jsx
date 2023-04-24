@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Products from '../Components/Product/Products';
 
 function ProductPage() {
   return (
-    <div>ProductPage</div>
+    <div id="products">
+      <Products/>
+    </div>
   )
 }
 

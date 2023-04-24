@@ -2,7 +2,7 @@ import React from 'react'
 
 function InfrastructurePage() {
   return (
-    <div>InfrastructurePage</div>
+    <div id="infrastructure">InfrastructurePage</div>
   )
 }
 
