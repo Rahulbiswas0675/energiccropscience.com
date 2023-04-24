@@ -20,7 +20,6 @@ function AboutUs() {
               <button>Lern More</button>
             </div>
           </div>
-          <Reviews/>
         </div>
       </div>
     </div>

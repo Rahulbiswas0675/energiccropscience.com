@@ -350,4 +350,4 @@ export const ReviewsItem = [
         icon : dealar,
     }
 ]
-export const Footer_peragraph = "© 2023 Energic Crop Science Copyright Reserved"
+export const Footer_peragraph = `© ${new Date().getFullYear()} Energic Crop Science Copyright Reserved`

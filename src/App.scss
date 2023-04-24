@@ -167,6 +167,72 @@ $blur_green : #008B8B;
     }
 }
 
+// Reviews-Components================
+.Reviews-Components {
+    margin-top: 5rem;
+    background-image: url(https://wallpapercave.com/dwp1x/YTU2KoD.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-position: center;
+
+    .review-container {
+        width: 100%;
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color:rgba(238, 238, 238, 0.524);
+        .box-container {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .container-items {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+
+                .item {
+                    display: flex;
+                    gap: 8px;
+                    width: 18%;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 4px;
+
+
+                    img {
+                        width: 5rem;
+                        height: 5rem;
+                        padding: 16px;
+                        border-radius: 50%;
+                        background-color: #eee;
+                        box-shadow: 0px 1px 6px $hover_btn;
+                    }
+
+                    h3 {
+                        margin: 0;
+                        font-weight: bold;
+                        color: $blur_green;
+                    }
+
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
 // AboutUs-Components==================
 .AboutUs-Components {
     margin-top: 4rem;
@@ -176,7 +242,6 @@ $blur_green : #008B8B;
     justify-content: center;
 
     .about-head {
-        width: 80%;
         padding: 16px;
         color: $light_black;
         border-bottom: 1px solid $border_bottom;
@@ -254,52 +319,6 @@ $blur_green : #008B8B;
                     }
                 }
             }
-
-            .box-container {
-                margin-top: 2rem;
-                margin-bottom: 2rem;
-                width: 80%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-                .container-items {
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-around;
-
-                    .item {
-                        display: flex;
-                        gap: 8px;
-                        width: 18%;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        border-radius: 4px;
-
-
-                        img {
-                            width: 5rem;
-                            height: 5rem;
-                            padding: 16px;
-                            border-radius: 50%;
-                            background-color: #eee;
-                            box-shadow: 0px 1px 6px $hover_btn;
-                        }
-
-                        h3 {
-                            margin: 0;
-                            font-weight: bold;
-                            color: $blur_green;
-                        }
-
-                        p {
-                            margin: 0;
-                        }
-                    }
-                }
-            }
         }
 
 
@@ -317,9 +336,8 @@ $blur_green : #008B8B;
     align-items: center;
 
     .contact-head {
-        width: 80%;
         padding: 8px;
-        border-bottom: 1px solid $border_bottom;
+        border-bottom: 2px solid $border_bottom;
 
         h3 {
             margin: 0;
@@ -341,7 +359,7 @@ $blur_green : #008B8B;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: rgba(238, 238, 238, 0.479);
+            background-color: rgba(238, 238, 238, 0.512);
 
             .item-container {
                 padding: 2rem 0rem;
@@ -461,6 +479,7 @@ $blur_green : #008B8B;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                border-radius: 4px 4px 0px 0px;
                 background-color: rgba(238, 238, 238, 0.311);
 
                 img {
@@ -505,9 +524,8 @@ $blur_green : #008B8B;
 
 // footer-components===========================================
 .footer-components {
-    margin-top: 1rem;
     text-align: center;
-    padding: 16px;
+    padding: 8px;
 
     p {
         margin: 0;
@@ -550,7 +568,6 @@ $blur_green : #008B8B;
 
         }
     }
-
 
     .AboutUs-Components {
         .about-container {
@@ -606,15 +623,18 @@ $blur_green : #008B8B;
             .box-container {
                 .item-container {
                     flex-direction: column-reverse;
+
                     .left-container {
                         margin-top: 2rem;
                         width: 100%;
-                        .items{
-                            h3{
+
+                        .items {
+                            h3 {
                                 font-size: 2rem;
                             }
                         }
                     }
+
                     .right-container {
                         width: 100%;
                     }
@@ -646,4 +666,5 @@ $blur_green : #008B8B;
 
         }
     }
+
 }
