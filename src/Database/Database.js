@@ -36,10 +36,10 @@ import product25 from '../Image/Products/23.png';
 
 
 
-import img1 from '../Image/SliderImg/insecticide.png';
-import img2 from '../Image/SliderImg/Herbicide.png';
-import img3 from '../Image/SliderImg/fungicide.png';
-import img4 from '../Image/SliderImg/pgr.png';
+import img1 from '../Image/SliderImg/img1S.jpg';
+import img2 from '../Image/SliderImg/img2S.jpg';
+import img3 from '../Image/SliderImg/img3S.jpg';
+import img4 from '../Image/SliderImg/img1S.jpg';
 
 export const BrandData = {
     brand_logo: Logo,
