@@ -14,7 +14,7 @@ function CarouselsSlider() {
                 {
                     CarouselsItems.map(items => (
                         <Carousel.Item key={items.id} >
-                            <img className="d-block w-100" src={items.image} alt={items.label} />
+                            <img className="d-block w-100" src={items.image} alt={items.label}/>
                             <Carousel.Caption>
                                 <h3>{items.label}</h3>
                                 <p>{items.paragraph}</p>
