@@ -1,11 +1,11 @@
 import React from 'react';
 import Products from '../Components/Product/Products';
-import ProductIndex from '../Components/Product/ProductIndex';
+import ProductsGrid from '../Components/Product/ProductsGrid';
 function ProductPage() {
   return (
     <div id="products">
       <Products/>
-      <ProductIndex/>
+      <ProductsGrid/>
     </div>
   )
 }

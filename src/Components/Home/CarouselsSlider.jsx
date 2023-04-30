@@ -17,7 +17,7 @@ function CarouselsSlider() {
                             <img className="d-block w-100" src={items.image} alt={items.label}/>
                             <Carousel.Caption>
                                 <h3>{items.label}</h3>
-                                <p>{items.paragraph}</p>
+                                {/* <p>{items.paragraph}</p> */}
                             </Carousel.Caption>
                         </Carousel.Item>
                     ))

@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import AppBar from './Components/Navbar/AppBar';
 import HomePage from './Pages/HomePage';
 import ProductPage from './Pages/ProductPage';
-import InfrastructurePage from './Pages/InfrastructurePage';
 import AboutUsPage from './Pages/AboutUsPage';
 import ReviewsPage from './Pages/ReviewsPage.jsx';
 import CertificatesPage from './Pages/CertificatesPage';
@@ -22,9 +21,8 @@ function App() {
     <div className="App">
       <AppBar />
       <HomePage/>
-      <ProductPage/>
-      <InfrastructurePage/>
       <AboutUsPage/>
+      <ProductPage/>
       <ReviewsPage/>
       <CertificatesPage/>
       <ContactPage/>
