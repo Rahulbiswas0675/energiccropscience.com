@@ -292,6 +292,7 @@ export const ProductsItems = {
             product_about: "",
             product_img: product20,
         },
+
         {
             id: 21,
             product_name: "PANCH FORON",
@@ -355,6 +356,7 @@ export const ProductsItems = {
             product_about: "",
             product_img: product29,
         },
+
         {
             id: 30,
             product_name: "CARBON +",
@@ -447,100 +449,28 @@ export const ProductsItems = {
             product_about: "",
             product_img: product42,
         },
-
-
-
-
     ],
 
 }
 
-export const productImgGrid = [
-    {
-        column: 1,
-        imgitem: [
-            {img: product1},
-            {img: product2},
-            {img: product3},
-            {img: product4},
-            {img: product5},
-            {img: product6}
-
-        ]
+export const ProductCatCount = {
+    productsA: {
+        head: "INSECTICIDE",
+        count: "20+ Products"
     },
-    {
-        column: 2,
-        imgitem: [
-            {img: product7},
-            {img: product8},
-            {img: product9},
-            {img: product10},
-            {img: product11},
-            {img: product12}
-
-        ]
+    productsB: {
+        head: "FUNGICIDE",
+        count: "10+ Products"
     },
-    {
-        column: 3,
-        imgitem: [
-            {img: product13},
-            {img: product14},
-            {img: product15},
-            {img: product16},
-            {img: product17},
-            {img: product18}
-
-        ]
+    productsC: {
+        head: "HERBICIDE",
+        count: "10+ Products"
     },
-    {
-        column: 4,
-        imgitem: [
-            {img: product19},
-            {img: product20},
-            {img: product21},
-            {img: product22},
-            {img: product23},
-            {img: product24}
-
-        ]
-    },
-    {
-        column: 5,
-        imgitem: [
-            {img: product25},
-            {img: product26},
-            {img: product27},
-            {img: product28},
-            {img: product29},
-            {img: product30}
-
-        ]
-    },
-    {
-        column: 6,
-        imgitem: [
-            {img: product31},
-            {img: product32},
-            {img: product33},
-            {img: product34},
-            {img: product35},
-            {img: product36}
-
-        ]
-    },
-    {
-        column: 7,
-        imgitem: [
-            {img: product37},
-            {img: product38},
-            {img: product39},
-            {img: product40},
-            {img: product41},
-            {img: product42}
-
-        ]
+    productsD: {
+        head: "PGR",
+        count: "20+ Products"
     }
-]
+}
 
 export const Aboutus = {
     img: About_Img,
