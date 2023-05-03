@@ -10,7 +10,7 @@ import ReviewsPage from './Pages/ReviewsPage.jsx';
 import CertificatesPage from './Pages/CertificatesPage';
 import ContactPage from './Pages/ContactPage';
 import Footer from './Components/Footer/Footer';
-
+import WpImg from './Image/Icon/whatsapp.png';
 
 
 
@@ -27,6 +27,8 @@ function App() {
       <CertificatesPage/>
       <ContactPage/>
       <Footer/>
+      <a href=""><img src={WpImg} alt="Whatsapp" className="whatsapp"/></a>
+      
     </div>
   );
 }

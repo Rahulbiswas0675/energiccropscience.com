@@ -655,7 +655,16 @@ $blur_green : #008B8B;
         display: none;
     }
 }
-
+// whatsapp=============
+.whatsapp{
+    position: absolute;
+    position: fixed;
+    top: 90vh;
+    left: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
 // Media-Screen=====================================
 @media (max-width: 992px) {
 
@@ -817,6 +826,12 @@ $blur_green : #008B8B;
 
 
         }
+    }
+    .whatsapp{
+        top: 92vh;
+        left: 0.8rem;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 
 }
