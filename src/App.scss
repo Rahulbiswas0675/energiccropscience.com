@@ -827,13 +827,6 @@ $blur_green : #008B8B;
 
         }
     }
-    .whatsapp{
-        top: 92vh;
-        left: 0.8rem;
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-
 }
 
 @media (max-width: 768px) {
@@ -851,5 +844,11 @@ $blur_green : #008B8B;
                 height: 300px;
             }
         }
+    }
+    .whatsapp{
+        top: 88vh;
+        left: 0.8rem;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 }
