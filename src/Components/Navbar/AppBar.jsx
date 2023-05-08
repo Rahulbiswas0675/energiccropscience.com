@@ -4,8 +4,11 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { BrandData, NavbarItems } from '../../Database/Database';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from 'react-router-dom';
 function AppBar() {
     return (
+        // 'lg'
         <>
             {['lg'].map((expand) => (
                 <Navbar key={expand} bg="light" expand={expand} className="mb-3 Navbar-Components">
@@ -24,17 +27,35 @@ function AppBar() {
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
                                     {
                                         NavbarItems.map(item => (
-                                            <Nav.Link key={item.item_id} href={item.item_id}>
-                                                {item.item_name}
-                                            </Nav.Link>
+                                            item.item_name === "Products" ? (
+                                                <NavDropdown title={item.item_name} id={`offcanvasNavbarDropdown-expand-${expand}`}>
+                                                    {
+                                                        item.products.map(items => (
+                                                            <NavDropdown.Item key={items.name}>
+                                                                <Link to={items.link} className="links">
+                                                                    {items.name}
+                                                                </Link>
+                                                            </NavDropdown.Item>
+                                                        ))
+                                                    }
+                                                </NavDropdown>
+                                            ) : (
+                                                <Nav.Link key={item.item_id}>
+                                                    <Link to={item.item_link} className="links">
+                                                        {item.item_name}
+                                                    </Link>
+                                                </Nav.Link>
+                                            )
                                         ))
                                     }
                                 </Nav>
+
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>
                     </Container>
-                </Navbar>
-            ))}
+                </Navbar >
+            ))
+            }
         </>
     );
 }

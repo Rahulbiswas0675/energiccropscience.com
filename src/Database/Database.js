@@ -68,34 +68,52 @@ export const BrandData = {
 
 export const NavbarItems = [
     {
-        item_id: "#home",
+        item_id: 1,
         item_name: "Home",
         item_icon: "home",
         item_link: "/"
     },
     {
-        item_id: "#about",
-        item_name: "About Us",
+        item_id: 2,
+        item_name: "About",
         item_icon: "about",
-        item_link: "/about-us"
+        item_link: "/about"
     },
     {
-        item_id: "#products",
+        item_id: 3,
         item_name: "Products",
         item_icon: "products",
-        item_link: "/products"
+        item_link: "/products",
+        products: [
+            {
+                name: "Insecticide",
+                link: "/products/insecticide",
+            },
+            {
+                name: "Fungicide",
+                link: "products/fungicide",
+            },
+            {
+                name: "Herbicide",
+                link: "products/herbicide",
+            },
+            {
+                name: "Pgr",
+                link: "products/pgr",
+            }
+        ]
     },
     {
-        item_id: "#certificates",
+        item_id: 4,
         item_name: "Certificates",
         item_icon: "certificates",
         item_link: "/certificates"
     },
     {
-        item_id: "#contact",
-        item_name: "Contact Us",
+        item_id: 5,
+        item_name: "Contacts",
         item_icon: "contact",
-        item_link: "/contact-us"
+        item_link: "/contacts"
     }
 ]
 

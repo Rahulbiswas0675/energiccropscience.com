@@ -1,16 +1,17 @@
 import './App.scss';
 import 'animate.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import PageUnderCon from './ByDefault/PageUnderCon';
+import { BrowserRouter, Route, Routes  } from 'react-router-dom';
 import AppBar from './Components/Navbar/AppBar';
 import HomePage from './Pages/HomePage';
-import ProductPage from './Pages/ProductPage';
 import AboutUsPage from './Pages/AboutUsPage';
-import ReviewsPage from './Pages/ReviewsPage.jsx';
 import CertificatesPage from './Pages/CertificatesPage';
 import ContactPage from './Pages/ContactPage';
-import Footer from './Components/Footer/Footer';
 import WpImg from './Image/Icon/whatsapp.png';
+import InsecticidePage from './Pages/Products/InsecticidePage';
+import FungicidePage from './Pages/Products/FungicidePage';
+import HerbicidePage from './Pages/Products/HerbicidePage';
+import PgrPage from './Pages/Products/PgrPage';
 
 
 
@@ -19,16 +20,20 @@ function App() {
 
   return (
     <div className="App">
+      <BrowserRouter>
       <AppBar />
-      <HomePage/>
-      <AboutUsPage/>
-      <ProductPage/>
-      <ReviewsPage/>
-      <CertificatesPage/>
-      <ContactPage/>
-      <Footer/>
-      <a href=""><img src={WpImg} alt="Whatsapp" className="whatsapp"/></a>
-      
+      <Routes>
+        <Route path="/" element={ <HomePage /> }/>
+        <Route path="/about" element={ <AboutUsPage /> }/>
+        <Route path="/certificates" element={ <CertificatesPage /> }/>
+        <Route path="/contacts" element={ <ContactPage /> }/>
+        <Route path="/products/insecticide" element={ <InsecticidePage /> }/>
+        <Route path="/products/fungicide" element={ <FungicidePage /> }/>
+        <Route path="/products/herbicide" element={ <HerbicidePage /> }/>
+        <Route path="/products/pgr" element={ <PgrPage /> }/>
+      </Routes>
+      </BrowserRouter>
+      <a href="https://wa.me/916292006000"><img src={WpImg} alt="Whatsapp" className="whatsapp"/></a>
     </div>
   );
 }

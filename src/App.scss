@@ -50,6 +50,11 @@ $blur_green : #008B8B;
 
 }
 
+.links {
+    text-decoration: none;
+    color: black;
+}
+
 // SideBar-Components===============================================
 .sidebar-band {
     padding: 0;
@@ -69,6 +74,111 @@ $blur_green : #008B8B;
 // Home-Components===================
 .Home-Components {
     margin-top: 3.6rem;
+
+    .Home {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .about {
+            margin: 3rem;
+            width: 70%;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+
+            .left {
+                img {
+                    width: 20rem;
+                }
+            }
+
+            .right {
+                padding: 1rem;
+                display: flex;
+                text-align: left;
+                flex-direction: column;
+
+                h3 {
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    width: 20%;
+                    border-bottom: 3px solid #008B8B;
+                }
+
+                .details {
+                    h4 {
+                        margin: 0;
+                        font-size: 1.2rem;
+                        color: #36454F;
+                        font-weight: bold;
+                    }
+
+                    h5 {
+                        margin: 0;
+                        font-weight: bold;
+                        color: #008B8B;
+                    }
+
+                    p {
+                        font-size: 0.8rem;
+                        margin: 0;
+                        margin-top: 0.5rem;
+                    }
+
+                    button {
+                        margin-top: 1rem;
+                        border: none;
+                        height: 2rem;
+                        width: 10rem;
+                        color: white;
+                        border-radius: 5px;
+                        background-color: #008b8bb7;
+                        transition: 1s;
+                    }
+
+                    button:hover {
+                        background-color: #008B8B;
+                        transition: 1s;
+                    }
+                }
+            }
+
+
+        }
+
+        .products {
+            margin-top: 3rem;
+
+            background-image: url(https://www.agrirs.co.uk/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMkdmRUE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--28ab48ebbc6eaaf62b418607147615b3a2a88008/shutterstock_1266606223.jpg);
+            height: 20rem;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            .products-div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: inherit;
+                background-color: #eeeeee7c;
+                .box {
+                    width: 70%;
+
+                    h4 {
+                        font-weight: bold;
+                        font-size: 1.2rem;
+                        color: #008B8B;
+                    }
+
+                    p {}
+
+                }
+            }
+
+        }
+    }
+
+
 }
 
 //Product-Components=================
@@ -655,8 +765,9 @@ $blur_green : #008B8B;
         display: none;
     }
 }
+
 // whatsapp=============
-.whatsapp{
+.whatsapp {
     position: absolute;
     position: fixed;
     top: 90vh;
@@ -665,6 +776,7 @@ $blur_green : #008B8B;
     height: 3rem;
     cursor: pointer;
 }
+
 // Media-Screen=====================================
 @media (max-width: 992px) {
 
