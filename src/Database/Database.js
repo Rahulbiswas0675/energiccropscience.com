@@ -166,8 +166,8 @@ export const CarouselsItems = [
 ]
 
 export const ProductsItems = {
-    product_head: "Product Category",
-    product_pera: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus unde, corporis eligendi odio, dignissimos itaque adipisci ipsa, pariatur deleniti dolores necessitatibus veniam facere sit deserunt quasi esse quia voluptate corrupti.",
+    product_head: "Products",
+    product_pera: "Energic Crop Science is a trusted manufacturer of high-quality pesticides and fertilizers. Energic Crop Science is a reliable partner for farmers worldwide.",
 
     productsA: [
         {
