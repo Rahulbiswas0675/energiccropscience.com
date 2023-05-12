@@ -102,7 +102,7 @@ function Home() {
                             <h3>Need to know more on details?</h3>
                         </div>
                         <div className="details">
-                            <img src={Images} alt="image" className="icons"/>
+                            {/* <img src={Images} alt="image" className="icons"/> */}
                         </div>
                     </div>
                     <div className="right-container">

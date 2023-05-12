@@ -1,3 +1,10 @@
+
+$primary_color : rgb(0, 149, 65);
+$secondary_color : #008B8B;
+$text_color : #36454F;
+$errors_color : #FA2A55;
+$boder_color : rgba(205, 205, 205, 1);
+
 $light_green :#DBF9DB;
 $errors_red : #FF2400;
 $border_bottom : #adadad;
@@ -309,9 +316,11 @@ $blur_green : #008B8B;
                     .details {
                         display: flex;
                         justify-content: center;
-                        .icons{
-                            width: 9rem !important;
-                        }
+                        // width: 500px;
+                        height: 300px;
+                        background-image: url('./Image/image/img6.png');
+                        background-repeat: no-repeat;
+                        background-position: center;
                     }
                 }
 
