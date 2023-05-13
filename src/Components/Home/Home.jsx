@@ -10,7 +10,6 @@ import * as yup from "yup";
 import { CompanyInfo, BrandData, ReviewsItem } from '../../Database/Database';
 import { TbSend } from "react-icons/tb";
 import imgabout from '../../Image/image/img1.png';
-import Images from '../../Image/image/img6.png';
 
 const schema = yup.object({
     name: yup.string().required("Please Enter Valid Name"),
@@ -19,6 +18,7 @@ const schema = yup.object({
     message: yup.string().required("Please Enter Your Message"),
 }).required();
 function Home() {
+    
     const navigate = useNavigate();
     const [index, setIndex] = useState(0);
     const handleSelect = (selectedIndex, e) => {
@@ -102,7 +102,6 @@ function Home() {
                             <h3>Need to know more on details?</h3>
                         </div>
                         <div className="details">
-                            {/* <img src={Images} alt="image" className="icons"/> */}
                         </div>
                     </div>
                     <div className="right-container">
@@ -168,7 +167,6 @@ function Home() {
                 </div>
 
             </div>
-
 
             <div className="footer">
                 <Footer />

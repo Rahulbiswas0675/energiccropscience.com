@@ -33,7 +33,7 @@ function App() {
         <Route path="/products/pgr" element={ <PgrPage /> }/>
       </Routes>
       </BrowserRouter>
-      <a href="https://wa.me/916292006000"><img src={WpImg} alt="Whatsapp" className="whatsapp"/></a>
+      {/* <a href="https://wa.me/916292006000"><img src={WpImg} alt="Whatsapp" className="whatsapp"/></a> */}
     </div>
   );
 }

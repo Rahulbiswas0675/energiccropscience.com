@@ -28,7 +28,7 @@ function AppBar() {
                                     {
                                         NavbarItems.map(item => (
                                             item.item_name === "Products" ? (
-                                                <NavDropdown title={item.item_name} id={`offcanvasNavbarDropdown-expand-${expand}`}>
+                                                <NavDropdown title={item.item_name} id={`offcanvasNavbarDropdown-expand-${expand}`} className="select">
                                                     {
                                                         item.products.map(items => (
                                                             <NavDropdown.Item key={items.name}>
