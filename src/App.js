@@ -1,39 +1,56 @@
-import './App.scss';
-import 'animate.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Route, Routes  } from 'react-router-dom';
-import AppBar from './Components/Navbar/AppBar';
-import HomePage from './Pages/HomePage';
-import AboutUsPage from './Pages/AboutUsPage';
-import CertificatesPage from './Pages/CertificatesPage';
-import ContactPage from './Pages/ContactPage';
-import WpImg from './Image/Icon/whatsapp.png';
-import InsecticidePage from './Pages/Products/InsecticidePage';
-import FungicidePage from './Pages/Products/FungicidePage';
-import HerbicidePage from './Pages/Products/HerbicidePage';
-import PgrPage from './Pages/Products/PgrPage';
+import React, { useState, useEffect, createContext } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.scss";
+import Navbar from "./Components/Navbar/Navbar";
+import HomePage from "./Pages/HomePage";
+import ProductPage from "./Pages/ProductPage";
+import AboutPage from "./Pages/AboutPage";
+import ContactPage from "./Pages/ContactPage";
+import CertificatePage from "./Pages/CertificatePage";
+import ProductDetailsPage from "./Pages/ProductDetailsPage";
 
-
-
+export const Global = createContext();
 
 function App() {
 
+  const[pageName, setPageName] = useState("home");
+  const[productName, setProductName] = useState("All-Products");
+  const[className, setClassName] = useState('slider-menu-bar');
+
+  const getPageName_handler=(value) => {
+    setPageName(value);
+  }
+  const getProductName_handler=(value) => {
+    setProductName(value);
+  }
+  const class_handler = (value) => {
+    setClassName(value);
+  }
   return (
     <div className="App">
-      <BrowserRouter>
-      <AppBar />
-      <Routes>
-        <Route path="/" element={ <HomePage /> }/>
-        <Route path="/about" element={ <AboutUsPage /> }/>
-        <Route path="/certificates" element={ <CertificatesPage /> }/>
-        <Route path="/contacts" element={ <ContactPage /> }/>
-        <Route path="/products/insecticide" element={ <InsecticidePage /> }/>
-        <Route path="/products/fungicide" element={ <FungicidePage /> }/>
-        <Route path="/products/herbicide" element={ <HerbicidePage /> }/>
-        <Route path="/products/pgr" element={ <PgrPage /> }/>
-      </Routes>
-      </BrowserRouter>
-      {/* <a href="https://wa.me/916292006000"><img src={WpImg} alt="Whatsapp" className="whatsapp"/></a> */}
+      <Global.Provider
+        value={{
+          postpageName: pageName,
+          postproductName : productName,
+          postClsName : className,
+
+          getPageName : getPageName_handler,
+          getProductName : getProductName_handler,
+          getClsName : class_handler,
+        }}
+      >
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/products" element={<ProductPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/certificates" element={<CertificatePage />} />
+            <Route path="/product/details" element={<ProductDetailsPage />} />
+          </Routes>
+        </BrowserRouter>
+      </Global.Provider>
     </div>
   );
 }

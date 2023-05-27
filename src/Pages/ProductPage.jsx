@@ -1,12 +1,8 @@
-import React from 'react';
-import Products from '../Components/Product/Products';
-import ProductsGrid from '../Components/Product/ProductsGrid';
+import React from 'react'
+
 function ProductPage() {
   return (
-    <div id="products">
-      <Products/>
-      <ProductsGrid/>
-    </div>
+    <div>ProductPage</div>
   )
 }
 
