@@ -180,6 +180,7 @@ $secondary_font: "Unbounded", cursive;
   top: 26rem;
   left: -13rem;
   transform: rotate(270deg);
+  z-index: 999;
   .menus-items {
     height: 3.125rem;
     display: flex;
@@ -194,7 +195,7 @@ $secondary_font: "Unbounded", cursive;
         font-size: 1.125rem;
         line-height: 1.375rem;
         text-align: center;
-        color: $primary_color;
+        color: $white_color;
         transition: 0.5s;
       }
     }
@@ -212,7 +213,7 @@ $secondary_font: "Unbounded", cursive;
         justify-content: center;
         .pro-icon {
           font-size: 1.875rem;
-          color: $primary_color;
+          color: $white_color;
         }
       }
 
