@@ -7,10 +7,10 @@ import { HiArrowLongUp } from "react-icons/hi2";
 function Home() {
   return (
     <div className="home-container">
-      <div className="background">
-        <img src={imgs} alt="background-image" className="background-image" />
-      </div>
+      <img src={imgs} alt="background-image" className="background-image" />
+
       <div className="body-section">
+
         <div className="heading-box">
           <h1 className="header">Enhance Crop Health with</h1>
           <h3 className="tag">INSECTICIDE</h3>

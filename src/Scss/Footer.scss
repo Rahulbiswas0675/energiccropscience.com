@@ -1,0 +1,125 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+$primary_color: #0d5045;
+$secondary_color: #a5f722;
+$border_color: #22a38e;
+$white_color: #ffffff;
+$secondary_font: "Unbounded", cursive;
+$text_font: "DM Sans", sans-serif;
+
+
+
+.footer-components {
+    width: 100%;
+    .footer-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+
+      .background-img {
+        width: 100%;
+      }
+
+      .footer-items {
+        width: 80%;
+        top: 9rem;
+        position: absolute;
+        display: flex;
+        color: $white_color;
+
+        .box-1 {
+          width: 27%;
+          .logos {
+            height: 88px;
+          }
+          .address {
+            margin: 0;
+            padding: 8px;
+            font-family: $text_font;
+            font-weight: 400;
+            font-size: 18px;
+            text-transform: capitalize;
+            color: $white_color;
+          }
+        }
+        .box-2 {
+          width: 73%;
+          display: flex;
+          justify-content: space-between;
+          .box-item {
+            .head {
+              margin: 0;
+              font-family: $secondary_font;
+              font-weight: 400;
+              font-size: 26px;
+              line-height: 130%;
+              color: $white_color;
+            }
+            .body {
+              margin-top: 0.5rem;
+              display: flex;
+              flex-direction: column;
+              .links {
+                padding: 8px 0px;
+                text-decoration: none;
+                font-family: $text_font;
+                font-weight: 400;
+                font-size: 18px;
+                color: $white_color;
+              }
+            }
+          }
+        }
+      }
+
+      .footer-tag-line {
+        width: 80%;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+
+        .tag {
+          font-family: $text_font;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 150%;
+          letter-spacing: 0.01em;
+          color: $white_color;
+
+          .made-by {
+            text-decoration: none;
+            font-family: $text_font;
+            font-weight: 400;
+            font-size: 20px;
+            color: $white_color;
+          }
+        }
+      }
+
+      .back-to-top {
+        position: absolute;
+        bottom: 20px;
+        display: flex;
+        gap: 1rem;
+
+        .arrow-icon {
+          height: 30px;
+        }
+        .top-btn {
+          text-decoration: none;
+          padding: 8px 0px;
+          font-family: $secondary_font;
+          font-weight: 400;
+          font-size: 26px;
+          line-height: 130%;
+          letter-spacing: 0.02rem;
+          color: #ffffff;
+        }
+      }
+    }
+  }

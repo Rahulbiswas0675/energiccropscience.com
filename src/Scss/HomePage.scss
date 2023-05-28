@@ -1,18 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
 
 $primary_color: #0d5045;
 $secondary_color: #a5f722;
 $border_color: #22a38e;
 $white_color: #ffffff;
 $secondary_font: "Unbounded", cursive;
+$text_font: "DM Sans", sans-serif;
 
 .home-components {
   width: 100%;
   .home-container {
-    .background {
-      .background-image {
-        width: 100%;
-      }
+    width: inherit;
+    .background-image {
+      width: inherit;
     }
 
     .body-section {
@@ -21,7 +22,8 @@ $secondary_font: "Unbounded", cursive;
       width: 100%;
       height: 800px;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
 
       .heading-box {
         margin-top: 140px;
@@ -118,9 +120,10 @@ $secondary_font: "Unbounded", cursive;
         display: flex;
         align-items: center;
         justify-content: center;
-
+        border-radius: 50%;
         .bg-div {
           img {
+            border-radius: 50%;
             animation: rotate-animation 20s infinite linear;
           }
         }
@@ -141,26 +144,6 @@ $secondary_font: "Unbounded", cursive;
           font-size: 40px;
         }
       }
-    }
-  }
-
-
-  .footer-components{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    position: relative;
-
-    .footer-container{
-        width: 80%;
-        top: 4rem;
-        position: absolute;
-        // border: 1px solid red;
-        color: $white_color;
-    }
-    .background-img{
-        position: absolute;
-        width: 100%;
     }
   }
 }

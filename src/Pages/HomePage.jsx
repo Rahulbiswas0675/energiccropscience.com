@@ -1,15 +1,14 @@
 import React, {useContext} from 'react';
 import { Global } from '../App';
 import Home from '../Components/Home/Home';
-
-import Footer from '../Components/Navbar/Footer/Footer';
+import Footer from '../Components/Footer/Footer';
 import '../Scss/HomePage.scss';
 
 
 function HomePage() {
 
   return (
-    <div className='home-components'>
+    <div className='home-components' id='home'>
       <Home/>
       <Footer/>
     </div>
