@@ -89,7 +89,7 @@ $text_font: "DM Sans", sans-serif;
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 1rem;
+          gap: 5rem;
 
           .icons {
             font-size: 45px;
@@ -116,12 +116,13 @@ $text_font: "DM Sans", sans-serif;
       .scroolimg {
         position: absolute;
         bottom: 1rem;
-        right: 2rem;
+        right: 3rem;
         display: flex;
         align-items: center;
         justify-content: center;
         border-radius: 50%;
         .bg-div {
+          border-radius: 50%;
           img {
             border-radius: 50%;
             animation: rotate-animation 20s infinite linear;

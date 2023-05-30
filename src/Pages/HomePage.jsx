@@ -1,5 +1,5 @@
-import React, {useContext} from 'react';
-import { Global } from '../App';
+import React from 'react';
+// import { Global } from '../App';
 import Home from '../Components/Home/Home';
 import Footer from '../Components/Footer/Footer';
 import '../Scss/HomePage.scss';

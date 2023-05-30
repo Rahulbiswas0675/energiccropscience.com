@@ -1,7 +1,8 @@
-import React, { useState, useEffect, createContext } from "react";
+import React, { useState, createContext } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.scss";
-import Navbar from "./Components/Navbar/Navbar";
+// import Navbar from "./Components/Navbar/Navbar";
+import AppBar from "./Components/Navbar/AppBar";
 import HomePage from "./Pages/HomePage";
 import ProductPage from "./Pages/ProductPage";
 import AboutPage from "./Pages/AboutPage";
@@ -40,7 +41,7 @@ function App() {
         }}
       >
         <BrowserRouter>
-          <Navbar />
+          <AppBar />
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/products" element={<ProductPage />} />
@@ -49,6 +50,8 @@ function App() {
             <Route path="/certificates" element={<CertificatePage />} />
             <Route path="/product/details" element={<ProductDetailsPage />} />
           </Routes>
+
+          {/* Page Not Found Page Add */}
         </BrowserRouter>
       </Global.Provider>
     </div>

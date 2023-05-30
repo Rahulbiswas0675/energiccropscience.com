@@ -6,350 +6,204 @@ $border_color: #22a38e;
 $white_color: #ffffff;
 $secondary_font: "Unbounded", cursive;
 
-//navbar-components======================================================================
+$text-color: #a5f722;
+$text-black: #202020;
+$button-color: #007aff;
+$error-color: red;
 
-.navbar-components {
+// Navbar-Components============================
+.user-navbar {
+  position: fixed !important;
   top: 0;
-  height: 6.25rem;
   width: 100%;
-  position: fixed;
+  height: 99px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: center !important;
   background-color: $primary_color;
-  z-index: 1000;
-}
-//homenav-container======================================================================
-.home-nav-container {
-  width: 95%;
-  height: inherit;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid $border_color;
+  z-index: 10000;
 
-  .menu-btn {
-    .icons {
-      width: 3.125rem;
-      height: 3.125rem;
-      color: $white_color;
-      cursor: pointer;
-    }
-    .logo-img{
-      height: 4.375rem;
-      display: none;
-    }
-  }
-  .logo {
-    img {
-      height: 4.375rem;
-    }
-  }
-  .contact-btn {
-    .button {
-      background: none;
-      color: $white_color;
-      width: 12.5rem;
-      height: 3.75rem;
-      border: 2px solid $white_color;
-      border-radius: 1.875rem;
-      font-family: $secondary_font;
-      font-weight: 400;
-      font-size: 1.125rem;
-      cursor: pointer;
-    }
-  }
-}
-//othernav-container=====================================================================
-.other-nav-container {
-  width: 95%;
-  height: inherit;
-  border-bottom: 1px solid $border_color;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  .menu-brand {
+  .nav-container-for-web {
+    width: 95%;
     display: flex;
     align-items: center;
-    gap: 6rem;
+    justify-content: space-around;
 
-    .icons {
-      width: 3.125rem;
-      height: 3.125rem;
-      color: $white_color;
-      cursor: pointer;
-    }
-    .logo-img {
-      height: 4.375rem;
-    }
-  }
-  .menus-items {
-    height: 3.125rem;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    .item {
-      padding: 5px 0.625rem;
-      .links {
-        text-decoration: none;
-        font-family: $secondary_font;
-        font-weight: 400;
-        font-size: 1.125rem;
-        line-height: 1.375rem;
-        text-align: center;
-        color: $secondary_color;
-        transition: 0.5s;
+    .brand {
+      .brand-logo {
+        height: 73px;
       }
     }
-    .item:hover {
-      .links {
-        transition: 0.5s;
-        color: $white_color;
-      }
-    }
-    .product-div {
-      position: relative;
-      .products {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .pro-icon {
-          font-size: 1.875rem;
-          color: $white_color;
-        }
-      }
 
-      .products-menu {
-        display: none;
-      }
-    }
-    .product-div:hover .products-menu {
-      display: block;
-      width: 9rem;
-      position: absolute;
-      left: 0;
-      bottom: -9.5rem;
-      background-color: $primary_color;
-      border-radius: 3px;
-      display: flex;
-      flex-direction: column;
-      .links {
-        padding: 8px 0.625rem;
-        text-decoration: none;
-        font-family: $secondary_font;
-        font-size: 1rem;
-        text-align: center;
-        color: $secondary_color;
-      }
-      .links:hover {
-        background-color: $border_color;
-        color: $white_color;
-      }
-    }
-  }
-  .contact-btn {
-    .button {
-      background: none;
-      color: $white_color;
-      width: 12.5rem;
-      height: 3.75rem;
-      border: 2px solid $white_color;
-      border-radius: 1.875rem;
-      font-family: $secondary_font;
-      font-weight: 400;
-      font-size: 1.125rem;
-      cursor: pointer;
-      transition: 0.5s;
-    }
-    .button:hover {
-      border-color: $border_color;
-      transform: scale(1.05);
-      transition: 0.5s;
-    }
-  }
-}
-
-.display-hide{
-  display: none;
-}
-
-.slider-menu-bar {
-  // display: block;
-  transition: 1s;
-  position: absolute;
-  top: 26rem;
-  left: -13rem;
-  transform: rotate(270deg);
-  z-index: 999;
-  .menus-items {
-    height: 3.125rem;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    .item {
-      padding: 5px 0.625rem;
-      .links {
-        text-decoration: none;
-        font-family: $secondary_font;
-        font-weight: 400;
-        font-size: 1.125rem;
-        line-height: 1.375rem;
-        text-align: center;
-        color: $white_color;
-        transition: 0.5s;
-      }
-    }
-    .item:hover {
-      .links {
-        transition: 0.5s;
-        color: $secondary_color;
-      }
-    }
-    .product-div {
-      position: relative;
-      .products {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .pro-icon {
-          font-size: 1.875rem;
-          color: $white_color;
-        }
-      }
-
-      .products-menu {
-        display: none;
-      }
-    }
-    .product-div:hover .products-menu {
-      display: block;
-      width: 9rem;
-      position: absolute;
-      left: 0;
-      bottom: -9.5rem;
-      background-color: $primary_color;
-      border-radius: 3px;
-      display: flex;
-      flex-direction: column;
-      .links {
-        padding: 8px 0.625rem;
-        text-decoration: none;
-        font-family: $secondary_font;
-        font-size: 1rem;
-        text-align: center;
-        color: $secondary_color;
-      }
-      .links:hover {
-        background-color: $border_color;
-        color: $white_color;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .other-nav-container {
-    .menu-brand {
-      gap: 1rem;
-    }
-    .menus-items {
-      gap: 8px;
-    }
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .other-nav-container {
-    .menu-brand {
-      gap: 0;
-    }
-    .menus-items {
-      gap: 0.5rem;
-      .item {
-        .links {
-          font-size: 1rem;
-        }
-      }
-    }
-    .contact-btn {
-      .button {
-        width: 10rem;
-        font-size: 1rem;
-      }
-    }
-  }
-}
-@media only screen and (max-width: 900px){
-  .home-nav-container{
-    .menu-btn {
+    .menus {
       display: flex;
       align-items: center;
-      .logo-img{
-        display: block;
-      }
-    }
-    .logo {
-      img {
-        display: none;
-      }
-    }
-  }
-  .other-nav-container {
-    .menus-items {
-      display: none;
-    }
-  }
-  .display-hide{
-    display: block;
-    margin-left: -60%;
-    transition: 1s;
-  }
-  .slider-menu-bar {
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 50%;
-    transform: rotate(0deg);
-    background-color: $primary_color;
-
-    .menus-items {
-      margin-top: 110px;
-      padding: 1rem;
-      height: auto;
-      display: flex;
-      flex-direction: column;
       gap: 2rem;
-      align-items: center;
-      .item {
-        width: 90%;
-        height: 2rem;
-        border: 1px solid $white_color;
-        padding: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 4px;
-        .links {
-          color: $white_color;
+      justify-content: space-between;
+
+      .links {
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: $text_color;
+        font-family: $secondary_font;
+        transition: 0.5s;
+
+        .icons {
+          font-size: 1.5rem;
         }
       }
-      .product-div {
-        width: 90%;
-        .products {
-          .pro-icon {
-            color: $white_color;
+
+      .links:hover {
+        color: $white_color;
+        transform: scale(1.1);
+        transition: 0.5s;
+      }
+
+      .products {
+        .options {
+          display: none;
+        }
+      }
+      .products:hover {
+        position: relative;
+        .options {
+          display: block;
+          top: 0;
+          left: -5px;
+          padding: 0.5rem;
+          position: absolute;
+          background-color: $primary_color;
+          z-index: 1000;
+          border-radius: 4px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .links {
+            font-size: 16px;
+            cursor: pointer;
           }
         }
       }
-      .product-div:hover .products-menu {
-        width: 100%;
-        left: -1px;
-        bottom: -10.8rem;
+    }
+
+    .btns {
+      .contact-btn {
+        font-family: $secondary_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        width: 201px;
+        height: 60px;
+        color: $white_color;
         background-color: $primary_color;
-        border-radius: 4px;
-        border: 1px solid $white_color;
-        .links {
-          padding: 11px 0px;
+        border: 2px solid $white_color;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      .contact-btn:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+      }
+    }
+  }
+  .blank {
+    width: 90%;
+    top: 99px;
+    position: absolute;
+    border-bottom: 1px solid $secondary_color;
+  }
+  .for-mobile {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .navbar {
+    .nav-container-for-web {
+      .menus {
+        gap: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .user-navbar {
+    border-bottom: 1px solid $secondary_color;
+    .for-web {
+      display: none !important;
+    }
+    .for-mobile {
+      display: block !important;
+    }
+    .blank {
+      display: none;
+    }
+
+    .nav-container-for-mobile {
+      display: flex !important;
+      justify-content: space-between !important;
+      width: 100%;
+      background-color: $primary_color;
+
+      .brand {
+        .brand-logo {
+          height: 70px;
+        }
+      }
+      .toggole{
+        border-color: $text-black;
+      }
+      .content2 {
+        margin: 2rem;
+        .menus-item {
+          gap: 2rem;
+          height: 55vh;
+          .links {
+            padding: 0.7rem;
+            text-decoration: none;
+            width: 100%;
+            font-size: 1.125rem;
+            font-family: $secondary_font;
+            text-align: center;
+            border: 1px solid $border_color;
+            color: $text_color;
+            border-radius: 4px;
+          }
+
+          .links:hover {
+            color: $white_color;
+          }
+
+          .products {
+
+            p{
+              margin: 0;
+            }
+            .options {
+              display: none;
+            }
+          }
+          .products:hover {
+            position: relative;
+            .options {
+              width: 100%;
+              display: block;
+              top: 0;
+              position: absolute;
+              background-color: $primary_color;
+              z-index: 1000;
+              border-radius: 4px;
+              display: flex;
+              flex-direction: column;
+              gap: 32px;
+            }
+          }
         }
       }
     }
