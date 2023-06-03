@@ -7,7 +7,7 @@ import { HiArrowLongUp } from "react-icons/hi2";
 function Home() {
   return (
     <div className="home-container">
-      <img src={imgs} alt="background-image" className="background-image" />
+      <img src={imgs} alt="background" className="background-image"/>
 
       <div className="body-section">
 
@@ -30,7 +30,7 @@ function Home() {
         <div className="scroolimg">
           <HiArrowLongDown className="icons" />
           <div className="bg-div">
-            <img src={scroolimg} alt="rotating" className="scroll-img" />
+            <img src={scroolimg} alt="rotating" className="scroll-img"/>
           </div>
         </div>
       </div>

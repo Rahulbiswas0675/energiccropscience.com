@@ -74,10 +74,10 @@ function Footer() {
             <div className="box-item">
               <h3 className="head">Email</h3>
               <div className="body">
-                <a href="" className="links">
+                <a href="mailto:energiccropscience@gmail.com" className="links">
                   Energiccropscience@gmail.com
                 </a>
-                <a href="" className="links">
+                <a href="mailto:support@energiccropscience.com" className="links">
                   Support@energiccropscience.com
                 </a>
               </div>
@@ -89,11 +89,12 @@ function Footer() {
             @ {new Date().getFullYear()} Energic Crop Science
           </p>
           <p className="tag">
-            Created by{" "}
+            Created by
             <a
               href="http://www.techaquarius.com"
               target="_blank"
               className="made-by"
+              rel="noreferrer"
             >
               techaquarius.com
             </a>

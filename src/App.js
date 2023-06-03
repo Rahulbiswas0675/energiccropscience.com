@@ -1,7 +1,6 @@
 import React, { useState, createContext } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.scss";
-// import Navbar from "./Components/Navbar/Navbar";
 import AppBar from "./Components/Navbar/AppBar";
 import HomePage from "./Pages/HomePage";
 import ProductPage from "./Pages/ProductPage";
@@ -16,7 +15,7 @@ function App() {
 
   const[pageName, setPageName] = useState("home");
   const[productName, setProductName] = useState("All-Products");
-  const[className, setClassName] = useState('slider-menu-bar');
+  const[className, setclassName] = useState('slider-menu-bar');
 
   const getPageName_handler=(value) => {
     setPageName(value);
@@ -24,8 +23,8 @@ function App() {
   const getProductName_handler=(value) => {
     setProductName(value);
   }
-  const class_handler = (value) => {
-    setClassName(value);
+  const className_handler = (value) => {
+    setclassName(value);
   }
   return (
     <div className="App">
@@ -37,7 +36,7 @@ function App() {
 
           getPageName : getPageName_handler,
           getProductName : getProductName_handler,
-          getClsName : class_handler,
+          getClsName : className_handler,
         }}
       >
         <BrowserRouter>

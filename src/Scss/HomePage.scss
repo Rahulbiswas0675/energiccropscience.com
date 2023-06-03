@@ -269,7 +269,6 @@ $text_font: "DM Sans", sans-serif;
   }
 
   .product-components {
-    // border: 1px solid red;
     position: relative;
     display: flex;
     justify-content: center;
@@ -279,8 +278,10 @@ $text_font: "DM Sans", sans-serif;
     }
     .products-container {
       position: absolute;
+      top: 7rem;
       width: 80%;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
 
@@ -305,11 +306,9 @@ $text_font: "DM Sans", sans-serif;
       }
 
       .products-items{
-        border: 1px solid red;
-
+        margin-top: 2rem;
       }
     }
-
     .producttext{
       position: absolute;
       left: 0;

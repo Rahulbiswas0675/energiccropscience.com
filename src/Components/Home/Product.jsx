@@ -1,6 +1,10 @@
 import React from "react";
-import Background from "../../Image/SectionImage/products.png";
+import Background from "../../Image/SectionImage/productbackground.png";
 import producttext from '../../Image/SectionImage/Products-text.png';
+// import ControlledCarousel from "./ControlledCarousel";
+import '../../Scss/Carousel.scss';
+
+
 function Product() {
   return (
     <div className="product-components">
@@ -16,7 +20,7 @@ function Product() {
         </div>
 
         <div className="products-items">
-
+          {/* <ControlledCarousel/> */}
         </div>
 
       </div>
