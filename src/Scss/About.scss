@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+$primary_color: #0d5045;
+$secondary_color: #a5f722;
+$border_color: #22a38e;
+$white_color: #ffffff;
+$secondary_font: "Unbounded", cursive;
+$text_font: "DM Sans", sans-serif;
+
+.aboutus-components {
+  width: 100%;
+
+  .about-container {
+    margin-top: 99px;
+
+    .top-div {
+      height: 445px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $primary_color;
+
+      .header-container {
+        width: 80%;
+        display: flex;
+        align-items: center;
+
+        .left {
+          width: 50%;
+          .items {
+            display: flex;
+            flex-direction: column;
+            gap: 26px;
+            h3 {
+              font-family: $secondary_font;
+              font-weight: 700;
+              font-size: 64px;
+              color: $white_color;
+            }
+            .links {
+              display: flex;
+              align-items: center;
+              gap: 8px;
+              .icons {
+                font-size: 24px;
+                color: $white_color;
+              }
+              p {
+                margin: 0;
+                font-family: $text_font;
+                font-size: 18px;
+                color: $white_color;
+              }
+            }
+          }
+        }
+        .right {
+          width: 50%;
+        }
+      }
+    }
+
+    .mid-div {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      .background {
+        width: 100%;
+      }
+      .mid-containet {
+        position: absolute;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        .left {
+          width: 50%;
+          .heading {
+            font-family: $secondary_font;
+            font-weight: 700;
+            font-size: 52px;
+            line-height: 62px;
+            color: #009541;
+          }
+          .tags {
+            font-family: $text_font;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 62px;
+            color: #009541;
+          }
+          .para {
+            width: 80%;
+            font-family: $text_font;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 150%;
+            color: #664444;
+          }
+          .button {
+            margin-top: 3rem;
+            border: none;
+            width: 240px;
+            height: 75px;
+            font-family: $secondary_font;
+            font-weight: 700;
+            font-size: 24px;
+            letter-spacing: -0.05em;
+            color: $primary_color;
+            background: linear-gradient(92deg, #a5f822 25.91%, #00ff96 78.3%);
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+
+    .last-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .container-box {
+        margin-top: 4rem;
+        margin-bottom: 8rem;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .item {
+          height: 277px;
+          width: 31%;
+          padding: 1.5rem;
+          background: $white_color;
+          box-shadow: 0px 0px 35px rgba(6, 40, 21, 0.1);
+          border-radius: 15px;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+
+          .header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            img {
+              width: 56px;
+              height: 56px;
+            }
+
+            h3 {
+              font-family: $secondary_font;
+              font-weight: 700;
+              font-size: 24px;
+              color: $primary_color;
+            }
+          }
+          .para {
+            margin: 0;
+            font-family: $text_font;
+            font-weight: 500;
+            font-size: 18px;
+            color: #664444;
+          }
+        }
+      }
+    }
+  }
+}

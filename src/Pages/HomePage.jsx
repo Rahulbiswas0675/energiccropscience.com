@@ -18,7 +18,7 @@ function HomePage() {
       <Product/>
       <Review/>
       <Contact/>
-      <Footer/>
+      <Footer top={"#home"}/>
     </div>
   )
 }

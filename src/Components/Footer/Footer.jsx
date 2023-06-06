@@ -6,7 +6,7 @@ import bacKR from "../../Image/Logos/backright.png";
 import { Link } from "react-router-dom";
 import '../../Scss/Footer.scss';
 
-function Footer() {
+function Footer(props) {
   return (
     <div className="footer-components">
       <div className="footer-container">
@@ -23,16 +23,16 @@ function Footer() {
             <div className="box-item">
               <h3 className="head">Navigation</h3>
               <div className="body">
-                <a href="#home" className="links">
+                <Link to="/" className="links">
                   Home
-                </a>
-                <Link to="about" className="links">
+                </Link>
+                <Link to="/about" className="links">
                   About Us
                 </Link>
                 <Link to="/products" className="links">
                   Products
                 </Link>
-                <Link to="/contacts" className="links">
+                <Link to="/contact" className="links">
                   Contact Us
                 </Link>
               </div>
@@ -59,15 +59,15 @@ function Footer() {
             <div className="box-item">
               <h3 className="head">Call Us</h3>
               <div className="body">
-                <a href="#home" className="links">
+                <a href="tel:6292006000" className="links">
                   Office : +91 6292006000
                 </a>
-                <Link to="about" className="links">
+                <a href="tel:6292007000" className="links">
                   Support : +91 6292007000
-                </Link>
-                <Link to="/products" className="links">
+                </a>
+                <a href="tel:6292009000" className="links">
                   Helpline : +91 6292009000
-                </Link>
+                </a>
               </div>
             </div>
 
@@ -98,7 +98,7 @@ function Footer() {
         </div>
         <div className="back-to-top">
             <img src={backL} alt="back-left" className="arrow-icon"/>
-            <a href="#home" className="top-btn">Back To Top</a>
+            <a href={props.top} className="top-btn">Back To Top</a>
             <img src={bacKR} alt="back-left" className="arrow-icon"/>
         </div>
       </div>
