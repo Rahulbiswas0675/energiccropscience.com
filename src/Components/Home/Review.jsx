@@ -26,13 +26,13 @@ function Review() {
           </div>
 
           <div className="item">
-            <img src={r1} alt="r1" />
+            <img src={r3} alt="r1" />
             <h3>200+</h3>
             <p>Dedicated Team</p>
           </div>
 
           <div className="item">
-            <img src={r1} alt="r1" />
+            <img src={r4} alt="r1" />
             <h3>100+</h3>
             <p>Dealer Outlets</p>
           </div>

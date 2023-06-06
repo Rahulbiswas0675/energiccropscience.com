@@ -89,15 +89,11 @@ function Footer() {
             @ {new Date().getFullYear()} Energic Crop Science
           </p>
           <p className="tag">
-            Created by
-            <a
+            Created by <a
               href="http://www.techaquarius.com"
               target="_blank"
               className="made-by"
-              rel="noreferrer"
-            >
-              techaquarius.com
-            </a>
+              rel="noreferrer"> techaquarius.com</a>
           </p>
         </div>
         <div className="back-to-top">

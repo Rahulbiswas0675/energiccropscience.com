@@ -360,7 +360,9 @@ $text_font: "DM Sans", sans-serif;
 
   .contact-components {
     display: flex;
+    align-items: center;
     justify-content: center;
+    position: relative;
     .contact-container {
       width: 80%;
       padding: 10rem 0rem;
@@ -590,6 +592,10 @@ $text_font: "DM Sans", sans-serif;
         left: 30%;
         position: absolute;
       }
+    }
+    .Side-text{
+      position: absolute;
+      right: 0;
     }
   }
 }

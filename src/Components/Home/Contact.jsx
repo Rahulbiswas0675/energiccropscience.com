@@ -3,6 +3,7 @@ import { FiPhoneCall, FiMail } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 import farma from "../../Image/SectionImage/farmer-contact.png";
+import sideImg from '../../Image/SectionImage/Connectus-side-text.png';
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -59,7 +60,7 @@ function Contact() {
             </div>
             <div className="details">
               <h4>Email</h4>
-              <p>support@energiccropscience.in</p>
+              <p>support@energiccropscience.com</p>
             </div>
           </div>
 
@@ -137,6 +138,7 @@ function Contact() {
         </div>
         <img src={farma} alt="contactus" className="contact-farma" />
       </div>
+      <img src={sideImg} alt="Contact Us" className="Side-text"/>
     </div>
   );
 }

@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3bc7b357.css",
+    "main.js": "/static/js/main.f47f8758.js",
+    "static/js/787.e5f53c23.chunk.js": "/static/js/787.e5f53c23.chunk.js",
+    "static/media/reviewback.png": "/static/media/reviewback.116630d55898fc40bb1a.png",
+    "static/media/productbackground.png": "/static/media/productbackground.736e0c606d9b0dfb211a.png",
+    "static/media/heroimg.png": "/static/media/heroimg.bf9670a3ae2573226ac0.png",
+    "static/media/farmer-contact.png": "/static/media/farmer-contact.d4dd39ae61b8cc71a0ff.png",
+    "static/media/tree.png": "/static/media/tree.fe12952777f1bc507e65.png",
+    "static/media/aboutus.png": "/static/media/aboutus.7b99c60fe5ca605ce46e.png",
+    "static/media/footerimg.png": "/static/media/footerimg.47bbd11734019eafaba9.png",
+    "index.html": "/index.html",
+    "main.3bc7b357.css.map": "/static/css/main.3bc7b357.css.map",
+    "main.f47f8758.js.map": "/static/js/main.f47f8758.js.map",
+    "787.e5f53c23.chunk.js.map": "/static/js/787.e5f53c23.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3bc7b357.css",
+    "static/js/main.f47f8758.js"
+  ]
+}
