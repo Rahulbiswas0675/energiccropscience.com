@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import background from "../../Image/SectionImage/footerimg.png";
 import logo from "../../Image/Logos/LOGO.png";
 import backL from "../../Image/Logos/backleft.png";
 import bacKR from "../../Image/Logos/backright.png";
-import { Link } from "react-router-dom";
 import '../../Scss/Footer.scss';
-
+import { Global } from "../../App";
+import { Link } from "react-router-dom";
 function Footer(props) {
+  const { getProductPage } = useContext(Global);
   return (
     <div className="footer-components">
       <div className="footer-container">
@@ -23,34 +24,42 @@ function Footer(props) {
             <div className="box-item">
               <h3 className="head">Navigation</h3>
               <div className="body">
-                <Link to="/" className="links">
+                <a href="/" className="links">
                   Home
-                </Link>
-                <Link to="/about" className="links">
+                </a>
+                <a href="/about" className="links">
                   About Us
-                </Link>
-                <Link to="/products" className="links">
+                </a>
+                <a href="/products" className="links">
                   Products
-                </Link>
-                <Link to="/contact" className="links">
+                </a>
+                <a href="/contact" className="links">
                   Contact Us
-                </Link>
+                </a>
               </div>
             </div>
 
             <div className="box-item">
               <h3 className="head">Our Products</h3>
               <div className="body">
-                <a href="/products" className="links">
+                <Link to="/products" className="links" onClick={()=>{
+                  getProductPage("Insecticide");
+                }}>
                   Insecticide
-                </a>
-                <Link to="/products" className="links">
+                </Link>
+                <Link to="/products" className="links" onClick={()=>{
+                  getProductPage("Fungicide");
+                }}>
                   Fungicide
                 </Link>
-                <Link to="/products" className="links">
+                <Link to="/products" className="links" onClick={()=>{
+                  getProductPage("Herbicide");
+                }}>
                   Herbicide
                 </Link>
-                <Link to="/products" className="links">
+                <Link to="/products" className="links" onClick={()=>{
+                  getProductPage("PGR");
+                }}>
                   Pgr
                 </Link>
               </div>

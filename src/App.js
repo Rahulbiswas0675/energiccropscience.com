@@ -16,6 +16,7 @@ function App() {
   const[pageName, setPageName] = useState("home");
   const[productName, setProductName] = useState("All-Products");
   const[className, setclassName] = useState('slider-menu-bar');
+  const[productpage, setProductpage] = useState("All-Products")
 
   const getPageName_handler=(value) => {
     setPageName(value);
@@ -26,6 +27,9 @@ function App() {
   const className_handler = (value) => {
     setclassName(value);
   }
+  const productpage_haldler =(value) =>{
+    setProductpage(value);
+  }
   return (
     <div className="App">
       <Global.Provider
@@ -33,10 +37,12 @@ function App() {
           postpageName: pageName,
           postproductName : productName,
           postClsName : className,
+          postProductPage : productpage,
 
           getPageName : getPageName_handler,
           getProductName : getProductName_handler,
           getClsName : className_handler,
+          getProductPage : productpage_haldler,
         }}
       >
         <BrowserRouter>

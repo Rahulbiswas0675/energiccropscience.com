@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -8,8 +8,10 @@ import image from "../../Image/Logos/LOGO.png";
 import Button from "react-bootstrap/Button";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
+import { Global } from "../../App";
 
 function AppBar() {
+  const { getProductPage } = useContext(Global);
   return (
     <Navbar expand="lg" className="user-navbar">
       <div className="nav-container-for-web for-web">
@@ -25,19 +27,45 @@ function AppBar() {
               Products <RiArrowDownSLine className="icons" />
             </Link>
             <div className="options">
-              <Link to="/products" className="links">
+              <Link to="/products" className="links" onClick={() => {
+                 getProductPage("All-Products");
+              }}>
                 All Products
               </Link>
-              <Link to="/products" className="links">
+              <Link
+                to="/products"
+                className="links"
+                onClick={() => {
+                  getProductPage("Insecticide");
+                }}
+              >
                 Insecticide
               </Link>
-              <Link to="/products" className="links">
+              <Link
+                to="/products"
+                className="links"
+                onClick={() => {
+                  getProductPage("Fungicide");
+                }}
+              >
                 Fungicide
               </Link>
-              <Link to="/products" className="links">
+              <Link
+                to="/products"
+                className="links"
+                onClick={() => {
+                  getProductPage("Herbicide");
+                }}
+              >
                 Herbicide
               </Link>
-              <Link to="/products" className="links">
+              <Link
+                to="/products"
+                className="links"
+                onClick={() => {
+                  getProductPage("PGR");
+                }}
+              >
                 PGR
               </Link>
             </div>
@@ -59,7 +87,7 @@ function AppBar() {
         <Navbar.Brand href="/" className="brand">
           <img src={image} alt="Logo" className="brand-logo" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" className="toggole"/>
+        <Navbar.Toggle aria-controls="navbarScroll" className="toggole" />
         <Navbar.Collapse id="navbarScroll" className="content2">
           <Nav className="me-auto my-2 my-lg-0 2 menus-item" navbarScroll>
             <Link to="/" className="links">
