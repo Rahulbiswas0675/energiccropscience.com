@@ -7,10 +7,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import image from "../../Image/Logos/LOGO.png";
 import Button from "react-bootstrap/Button";
 import { RiArrowDownSLine } from "react-icons/ri";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Global } from "../../App";
 
 function AppBar() {
+  const navigate = useNavigate();
   const { getProductPage } = useContext(Global);
   return (
     <Navbar expand="lg" className="user-navbar">
@@ -27,9 +28,13 @@ function AppBar() {
               Products <RiArrowDownSLine className="icons" />
             </Link>
             <div className="options">
-              <Link to="/products" className="links" onClick={() => {
-                 getProductPage("All-Products");
-              }}>
+              <Link
+                to="/products"
+                className="links"
+                onClick={() => {
+                  getProductPage("All-Products");
+                }}
+              >
                 All Products
               </Link>
               <Link
@@ -79,7 +84,14 @@ function AppBar() {
           </Link>
         </div>
         <div className="btns">
-          <Button className="contact-btn">Contact Us</Button>
+          <Button
+            className="contact-btn"
+            onClick={() => {
+              navigate("/contact");
+            }}
+          >
+            Contact Us
+          </Button>
         </div>
       </div>
       <div className="blank"></div>

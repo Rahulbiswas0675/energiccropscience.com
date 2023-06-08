@@ -38,7 +38,7 @@ function Product() {
           <div className="header-container">
             <div className="left">
               <div className="items">
-                <h3>About Us</h3>
+                <h3>Products</h3>
                 <div className="links">
                   <AiOutlineHome className="icons" />
                   <p>Home / Products</p>

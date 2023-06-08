@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+$primary_color: #0d5045;
+$secondary_color: #a5f722;
+$border_color: #22a38e;
+$white_color: #ffffff;
+$secondary_font: "Unbounded", cursive;
+$text_font: "DM Sans", sans-serif;
+
+.contact-components {
+  width: 100%;
+
+  .contact-container {
+    margin-top: 99px;
+
+    .top-div {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background-color: $primary_color;
+      position: relative;
+      .background-top {
+        width: 100%;
+      }
+
+      .header-container {
+        position: absolute;
+        width: 80%;
+        display: flex;
+        margin-top: 5rem;
+        .left {
+          width: 50%;
+          .items {
+            display: flex;
+            flex-direction: column;
+            gap: 26px;
+            h3 {
+              font-family: $secondary_font;
+              font-weight: 700;
+              font-size: 64px;
+              color: $white_color;
+            }
+            .links {
+              display: flex;
+              align-items: center;
+              gap: 8px;
+              .icons {
+                font-size: 24px;
+                color: $white_color;
+              }
+              p {
+                margin: 0;
+                font-family: $text_font;
+                font-size: 18px;
+                color: $white_color;
+              }
+            }
+          }
+        }
+        .right {
+          width: 50%;
+        }
+      }
+    }
+
+    .contact-mid-div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 4rem;
+      margin-bottom: 8rem;
+      .content {
+        width: 80%;
+        display: flex;
+        .left {
+          border: 1px solid red;
+          width: 50%;
+            position: relative;
+          .contactus{
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+
+
+          .heading {
+            font-family: $secondary_font;
+            font-weight: 700;
+            font-size: 48px;
+            color: #009541;
+          }
+
+          .contact-details {
+            .item {
+              display: flex;
+              img {
+                height: 60px;
+                width: 60px;
+              }
+              .details {
+                h3 {
+                  font-family: $secondary_font;
+                  font-weight: 600;
+                  font-size: 26px;
+                  color: #009541;
+                }
+                p {
+                  font-family: $text_font;
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 20px;
+                  text-transform: capitalize;
+                  color: #664444;
+                }
+              }
+            }
+          }
+        }
+
+        .right {
+          width: 50%;
+          .form-container {
+            padding: 2rem;
+            background: $white_color;
+            box-shadow: 0px 0px 35px rgba(6, 40, 21, 0.1);
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h3 {
+              margin: 0;
+              font-family: $secondary_font;
+              font-weight: 900;
+              font-size: 36px;
+              color: #005f16;
+            }
+            p {
+              margin: 0;
+              width: 80%;
+              text-align: center;
+              font-family: $text_font;
+              font-weight: 500;
+              font-size: 18px;
+              color: #664444;
+            }
+
+            .form {
+              margin-top: 1rem;
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              gap: 1rem;
+              .input-grup {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .input-box {
+                  width: 47%;
+                  input {
+                    width: 100%;
+                    border: none;
+                    height: 58px;
+                    background: #f5f5f7;
+                    border-radius: 4px;
+                    font-family: $text_font;
+                    font-size: 18px;
+                    color: #7e7c87;
+                  }
+                  p {
+                    text-align: left;
+                    margin: 0;
+                    color: red;
+                    font-size: 14px;
+                    font-weight: 600;
+                    font-family: $text_font;
+                  }
+                }
+              }
+              .input-box-outer {
+                input {
+                  width: 100%;
+                  border: none;
+                  height: 58px;
+                  background: #f5f5f7;
+                  border-radius: 4px;
+                  font-family: $text_font;
+                  font-size: 18px;
+                  color: #7e7c87;
+                }
+                p {
+                  text-align: left;
+                  margin: 0;
+                  color: red;
+                  font-size: 14px;
+                  font-weight: 600;
+                  font-family: $text_font;
+                }
+              }
+
+              .textarea-box {
+                textarea {
+                  width: 100%;
+                  min-height: 200px;
+                  max-height: 200px;
+                  border: none;
+                  background: #f5f5f7;
+                  border-radius: 4px;
+                  font-family: $text_font;
+                  font-size: 18px;
+                  color: #7e7c87;
+                }
+                p {
+                  text-align: left;
+                  margin: 0;
+                  color: red;
+                  font-size: 14px;
+                  font-weight: 600;
+                  font-family: $text_font;
+                }
+              }
+              button {
+                border: none;
+                height: 75px;
+                width: 100%;
+                background: linear-gradient(
+                  92deg,
+                  #a5f822 25.91%,
+                  #00ff96 78.3%
+                );
+                border-radius: 10px;
+                font-family: $secondary_font;
+                font-weight: 700;
+                font-size: 24px;
+                text-transform: uppercase;
+                color: #0d5045;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
