@@ -79,8 +79,8 @@ function AppBar() {
           <Link to="/about" className="links">
             About
           </Link>
-          <Link to="/certificates" className="links">
-            Certificates
+          <Link to="/contact" className="links">
+            Contact
           </Link>
         </div>
         <div className="btns">
@@ -130,9 +130,9 @@ function AppBar() {
             <Link to="/about" className="links">
               About
             </Link>
-            <Link to="/certificates" className="links">
+            {/* <Link to="/certificates" className="links">
               Certificates
-            </Link>
+            </Link> */}
 
             <Link to="/contact" className="links">
               Contact

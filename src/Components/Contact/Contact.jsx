@@ -5,11 +5,33 @@ import call from "../../Image/Logos/call.png";
 import contactinfo from "../../Image/SectionImage/contactus.png";
 import topbackground from "../../Image/SectionImage/contact-top.png";
 import Footer from "../Footer/Footer";
-import email from '../../Image/Logos/email.png';
-import address from '../../Image/Logos/address.png';
-import starts from '../../Image/Logos/Star nimation.png';
+import email from "../../Image/Logos/email.png";
+import address from "../../Image/Logos/address.png";
+import starts from "../../Image/Logos/Star nimation.png";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
+
+const schema = yup
+  .object({
+    name: yup.string().required("Name is a required field"),
+    email: yup.string().required("Email is a required field"),
+    number: yup.string().required("Number is a required field"),
+    message: yup.string().required("Message is a required field"),
+  })
+  .required();
 
 function Contact() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
+  });
+
+  const onSubmit = (data) => console.log(data);
+
   return (
     <div className="contact-components" id="contact">
       <div className="contact-container">
@@ -38,7 +60,8 @@ function Contact() {
             <div className="left">
               <h3 className="heading">Need to know more</h3>
               <div className="heading">
-                <img src={starts} alt="start" /> on details?</div>
+                <img src={starts} alt="start" /> on details?
+              </div>
 
               <div className="contact-details">
                 <div className="item">
@@ -89,30 +112,54 @@ function Contact() {
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                 </p>
-                <form action="" className="form">
+                <form
+                  action=""
+                  className="form"
+                  onSubmit={handleSubmit(onSubmit)}
+                >
                   <div className="input-grup">
                     <div className="input-box">
-                      <input type="text" />
-                      <p></p>
+                      <input
+                        type="text"
+                        placeholder="Your Name"
+                        name="name"
+                        {...register("name")}
+                      />
+                      <p>{errors.name?.message}</p>
                     </div>
 
                     <div className="input-box">
-                      <input type="text" />
-                      <p></p>
+                      <input
+                        type="email"
+                        placeholder="Your Email"
+                        name="email"
+                        {...register("email")}
+                      />
+                      <p>{errors.email?.message}</p>
                     </div>
                   </div>
 
                   <div className="input-box-outer">
-                    <input type="text" name="" id="" />
-                    <p></p>
+                    <input
+                      type="number"
+                      placeholder="Your Number"
+                      className="number"
+                      name="number"
+                      {...register("number")}
+                    />
+                    <p>{errors.number?.message}</p>
                   </div>
 
                   <div className="textarea-box">
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <p></p>
+                    <textarea
+                      name="message"
+                      placeholder="How can we help ?"
+                      {...register("message")}
+                    ></textarea>
+                    <p>{errors.message?.message}</p>
                   </div>
 
-                  <button>SEND MESSAGE</button>
+                  <button type="submit">SEND MESSAGE</button>
                 </form>
               </div>
             </div>

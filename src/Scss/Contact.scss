@@ -181,6 +181,7 @@ $text_font: "DM Sans", sans-serif;
                   width: 47%;
                   input {
                     width: 100%;
+                    padding: 0px 16px;
                     border: none;
                     height: 58px;
                     background: #f5f5f7;
@@ -197,12 +198,14 @@ $text_font: "DM Sans", sans-serif;
                     font-weight: 600;
                     font-family: $text_font;
                   }
+
                 }
               }
               .input-box-outer {
                 height: 5rem;
                 input {
                   width: 100%;
+                  padding: 0px 16px;
                   border: none;
                   height: 58px;
                   background: #f5f5f7;
@@ -225,6 +228,7 @@ $text_font: "DM Sans", sans-serif;
                 height: 15rem;
                 textarea {
                   width: 100%;
+                  padding: 16px;
                   min-height: 200px;
                   max-height: 200px;
                   border: none;
@@ -258,6 +262,16 @@ $text_font: "DM Sans", sans-serif;
                 font-size: 24px;
                 text-transform: uppercase;
                 color: #0d5045;
+              }
+
+              input:focus{
+                outline: none;
+              }
+              .number::-webkit-inner-spin-button{
+                display: none;
+              }
+              textarea:focus{
+                outline: none;
               }
             }
           }

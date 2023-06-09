@@ -1,6 +1,5 @@
 import React, { useState, createContext } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./App.scss";
 import AppBar from "./Components/Navbar/AppBar";
 import HomePage from "./Pages/HomePage";
 import ProductPage from "./Pages/ProductPage";
@@ -8,6 +7,7 @@ import AboutPage from "./Pages/AboutPage";
 import ContactPage from "./Pages/ContactPage";
 import CertificatePage from "./Pages/CertificatePage";
 import ProductDetailsPage from "./Pages/ProductDetailsPage";
+import "./App.scss";
 
 export const Global = createContext();
 
@@ -30,6 +30,7 @@ function App() {
   const productpage_haldler =(value) =>{
     setProductpage(value);
   }
+
   return (
     <div className="App">
       <Global.Provider
