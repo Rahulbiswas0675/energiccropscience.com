@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.47ffb9af.css",
-    "main.js": "/static/js/main.e6c6d169.js",
+    "main.css": "/static/css/main.1b5a3103.css",
+    "main.js": "/static/js/main.a050b794.js",
     "static/js/787.e5f53c23.chunk.js": "/static/js/787.e5f53c23.chunk.js",
     "static/media/Energy.png": "/static/media/Energy.054e15d03ed1f80cd990.png",
     "static/media/Manzeel.png": "/static/media/Manzeel.aa8a62f84202777f704e.png",
@@ -58,12 +58,12 @@
     "static/media/Connectus-side-text.png": "/static/media/Connectus-side-text.a928ff4b8c972b83953d.png",
     "static/media/footerimg.png": "/static/media/footerimg.47bbd11734019eafaba9.png",
     "index.html": "/index.html",
-    "main.47ffb9af.css.map": "/static/css/main.47ffb9af.css.map",
-    "main.e6c6d169.js.map": "/static/js/main.e6c6d169.js.map",
+    "main.1b5a3103.css.map": "/static/css/main.1b5a3103.css.map",
+    "main.a050b794.js.map": "/static/js/main.a050b794.js.map",
     "787.e5f53c23.chunk.js.map": "/static/js/787.e5f53c23.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.47ffb9af.css",
-    "static/js/main.e6c6d169.js"
+    "static/css/main.1b5a3103.css",
+    "static/js/main.a050b794.js"
   ]
 }

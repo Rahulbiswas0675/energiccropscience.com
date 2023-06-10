@@ -2,7 +2,10 @@ import React from "react";
 import backgroud from "../../Image/SectionImage/aboutus.png";
 import treeimg from '../../Image/SectionImage/tree.png';
 import aboutus from '../../Image/SectionImage/About-Us-text.png';
+import { useNavigate } from "react-router-dom";
+
 function About() {
+  const navigate = useNavigate();
   return (
     <div className="about-components">
       <img src={backgroud} alt="Background" className="background" />
@@ -23,7 +26,9 @@ function About() {
               for a pollution-free production activity and make sure that our
               products are environmentally safe and secure.
             </p>
-            <button>READ MORE</button>
+            <button onClick={() => {
+              navigate('/about')
+            }}>READ MORE</button>
           </div>
         </div>
         <div className="right">

@@ -7,8 +7,10 @@ import Footer from "../Footer/Footer";
 import vision from "../../Image/Logos/Eyes.png";
 import mission from "../../Image/Logos/target.png";
 import client from "../../Image/Logos/group.png";
+import { useNavigate } from "react-router-dom";
 
 function About() {
+  const navigate = useNavigate();
   return (
     <div className="aboutus-components" id="about">
       <div className="about-container">
@@ -47,7 +49,9 @@ function About() {
                 practices for a pollution-free production activity and make sure
                 that our products are environmentally safe and secure.
               </p>
-              <button className="button">READ MORE</button>
+              <button className="button" onClick={() => {
+                navigate('/contact')
+              }}>Contact Us</button>
             </div>
             <div className="right"></div>
           </div>
