@@ -12,38 +12,43 @@ import "./App.scss";
 export const Global = createContext();
 
 function App() {
+  const [pageName, setPageName] = useState("home");
+  const [productName, setProductName] = useState("All-Products");
+  const [className, setclassName] = useState("slider-menu-bar");
+  const [productpage, setProductpage] = useState("All-Products");
+  const [productItem, setProductItem] = useState();
 
-  const[pageName, setPageName] = useState("home");
-  const[productName, setProductName] = useState("All-Products");
-  const[className, setclassName] = useState('slider-menu-bar');
-  const[productpage, setProductpage] = useState("All-Products")
-
-  const getPageName_handler=(value) => {
+  const getPageName_handler = (value) => {
     setPageName(value);
-  }
-  const getProductName_handler=(value) => {
+  };
+  const getProductName_handler = (value) => {
     setProductName(value);
-  }
+  };
   const className_handler = (value) => {
     setclassName(value);
-  }
-  const productpage_haldler =(value) =>{
+  };
+  const productpage_haldler = (value) => {
     setProductpage(value);
-  }
+  };
+  const productId_handler = (value) => {
+    setProductItem(value);
+  };
 
   return (
     <div className="App">
       <Global.Provider
         value={{
           postpageName: pageName,
-          postproductName : productName,
-          postClsName : className,
-          postProductPage : productpage,
+          postproductName: productName,
+          postClsName: className,
+          postProductPage: productpage,
+          postproductItem: productItem,
 
-          getPageName : getPageName_handler,
-          getProductName : getProductName_handler,
-          getClsName : className_handler,
-          getProductPage : productpage_haldler,
+          getPageName: getPageName_handler,
+          getProductName: getProductName_handler,
+          getClsName: className_handler,
+          getProductPage: productpage_haldler,
+          getProductItem: productId_handler,
         }}
       >
         <BrowserRouter>

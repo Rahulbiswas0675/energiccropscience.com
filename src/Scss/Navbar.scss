@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&display=swap");
 
-$primary_color: #0d5045;
+$primary_color: #003c32;
 $secondary_color: #a5f722;
 $border_color: #22a38e;
 $white_color: #ffffff;
@@ -47,7 +47,7 @@ $error-color: red;
         font-size: 18px;
         line-height: 22px;
         text-align: center;
-        color: $text_color;
+        color: $white_color;
         font-family: $secondary_font;
         transition: 0.5s;
 
@@ -57,7 +57,7 @@ $error-color: red;
       }
 
       .links:hover {
-        color: $white_color;
+        color: $secondary_color;
         transform: scale(1.1);
         transition: 0.5s;
       }
@@ -156,7 +156,7 @@ $error-color: red;
           height: 70px;
         }
       }
-      .toggole{
+      .toggole {
         border-color: $text-black;
       }
       .content2 {
@@ -181,8 +181,7 @@ $error-color: red;
           }
 
           .products {
-
-            p{
+            p {
               margin: 0;
             }
             .options {

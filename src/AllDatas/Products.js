@@ -42,8 +42,10 @@ import product37 from "../Image/Products/Zinger.png";
 import product38 from "../Image/Products/Roop.png";
 import product39 from "../Image/Products/Tandur.png";
 import product40 from "../Image/Products/Ricardo.png";
-// import product41 from '../Image/Products/Gorilla-71.png';
-// import product42 from '../Image/Products/Corner.png';
+import product41 from '../Image/Products/Gorilla-71.png';
+import product42 from '../Image/Products/Corner.png';
+
+
 
 export const allproducts = [
   {
@@ -51,6 +53,7 @@ export const allproducts = [
     product_name: "STUMP OUT",
     product_tag: "Emamectin Benzoate 1.9% EC",
     product_about: "",
+    type: "Insecticide",
     product_img: product1,
   },
   {
@@ -58,6 +61,7 @@ export const allproducts = [
     product_name: "JOMRAJ",
     product_tag: "Emamectin Benzoate 1.9% EC",
     product_about: "",
+    type: "Insecticide",
     product_img: product2,
   },
   {
@@ -65,6 +69,7 @@ export const allproducts = [
     product_name: "BLACK BOLD",
     product_tag: "Azadirachtin 0.03% (300 PPM) Min.",
     product_about: "",
+    type: "Insecticide",
     product_img: product3,
   },
   {
@@ -72,6 +77,7 @@ export const allproducts = [
     product_name: "MOHAKAL",
     product_tag: "Emamectin Benzoate 5% SG",
     product_about: "",
+    type: "Insecticide",
     product_img: product4,
   },
   {
@@ -79,6 +85,7 @@ export const allproducts = [
     product_name: "PALOWAN",
     product_tag: "Cypermethrin 10% EC",
     product_about: "",
+    type: "Insecticide",
     product_img: product5,
   },
   {
@@ -86,6 +93,7 @@ export const allproducts = [
     product_name: "AGNIASTRA",
     product_tag: "Cypermethrin 25% EC",
     product_about: "",
+    type: "Insecticide",
     product_img: product6,
   },
   {
@@ -93,6 +101,7 @@ export const allproducts = [
     product_name: "GHAYAL",
     product_tag: "Chlorpyriphos 20% EC",
     product_about: "",
+    type: "Insecticide",
     product_img: product7,
   },
   {
@@ -100,6 +109,7 @@ export const allproducts = [
     product_name: "HYENA",
     product_tag: "Monocrotophos 36% SL",
     product_about: "",
+    type: "Insecticide",
     product_img: product8,
   },
   {
@@ -107,6 +117,7 @@ export const allproducts = [
     product_name: "HELMET -550",
     product_tag: "Chlorpyriphos 50%  + Cypermethrin 5% EC",
     product_about: "",
+    type: "Insecticide",
     product_img: product9,
   },
   {
@@ -114,6 +125,7 @@ export const allproducts = [
     product_name: "IRIS SUPER",
     product_tag: "Profenofos 40% + Cypermethrin 4% EC",
     product_about: "",
+    type: "Insecticide",
     product_img: product10,
   },
   {
@@ -121,6 +133,7 @@ export const allproducts = [
     product_name: "JOONUN",
     product_tag: "Pyriproxyfen 10% + Bifenthrin 10% EC",
     product_about: "",
+    type: "Insecticide",
     product_img: product11,
   },
   {
@@ -128,6 +141,7 @@ export const allproducts = [
     product_name: "MBAPPE-10",
     product_tag: "Imidacloprid 17.8% SL",
     product_about: "",
+    type: "Insecticide",
     product_img: product12,
   },
   {
@@ -135,6 +149,7 @@ export const allproducts = [
     product_name: "FORING",
     product_tag: "Thiamethoxyfen 25% WG",
     product_about: "",
+    type: "Insecticide",
     product_img: product13,
   },
   {
@@ -142,6 +157,7 @@ export const allproducts = [
     product_name: "TRAP",
     product_tag: "Accephate 75% SP",
     product_about: "",
+    type: "Insecticide",
     product_img: product14,
   },
   {
@@ -149,6 +165,7 @@ export const allproducts = [
     product_name: "EKTA",
     product_tag: "Acetamiprid 20% SP",
     product_about: "",
+    type: "Insecticide",
     product_img: product15,
   },
   {
@@ -156,6 +173,7 @@ export const allproducts = [
     product_name: "BRAHMASTRA",
     product_tag: "Cartap Hydrochloride 4% GR",
     product_about: "",
+    type: "Insecticide",
     product_img: product16,
   },
   {
@@ -163,6 +181,7 @@ export const allproducts = [
     product_name: "T-20",
     product_tag: "Cartap Hydrochloride 50% SP",
     product_about: "",
+    type: "Insecticide",
     product_img: product17,
   },
   {
@@ -170,6 +189,7 @@ export const allproducts = [
     product_name: "BHIMRUL",
     product_tag: "Fipronil 80% WG",
     product_about: "",
+    type: "Insecticide",
     product_img: product18,
   },
   {
@@ -177,6 +197,7 @@ export const allproducts = [
     product_name: "RELIEF",
     product_tag: "Carbofuran 3% CG",
     product_about: "",
+    type: "Insecticide",
     product_img: product19,
   },
   {
@@ -184,6 +205,7 @@ export const allproducts = [
     product_name: "MANZEEL",
     product_tag: "Organic Pest Controller",
     product_about: "",
+    type: "Insecticide",
     product_img: product20,
   },
   {
@@ -191,6 +213,7 @@ export const allproducts = [
     product_name: "PANCH FORON",
     product_tag: "Plant Growth Regulators",
     product_about: "",
+    type: "Fungicide",
     product_img: product21,
   },
   {
@@ -198,83 +221,84 @@ export const allproducts = [
     product_name: "JONAKI",
     product_tag: "Plant Bio Stimulant",
     product_about: "",
+    type: "Fungicide",
     product_img: product22,
   },
   {
     id: 23,
     product_name: "ENERGY",
     product_tag: "Quinalphos 20%",
-    product_about: "",
+    type: "Fungicide",
     product_img: product23,
   },
   {
     id: 24,
     product_name: "BRUCE LEE",
     product_tag: "Ethaphone 39% SL",
-    product_about: "",
+    type: "Fungicide",
     product_img: product24,
   },
   {
     id: 25,
     product_name: "BHROMOR",
     product_tag: "High Performance Plant Entrieser",
-    product_about: "",
+    type: "Fungicide",
     product_img: product25,
   },
   {
     id: 26,
     product_name: "AABHA",
     product_tag: "Silicone Spreader",
-    product_about: "",
+    type: "Fungicide",
     product_img: product26,
   },
   {
     id: 27,
     product_name: "STRAWBERRY",
     product_tag: "Organic Micor Nutrient",
-    product_about: "",
+    type: "Fungicide",
     product_img: product27,
   },
   {
     id: 28,
     product_name: "OCTOPUS",
     product_tag: "Humic Acid 95%",
-    product_about: "",
+    type: "Fungicide",
     product_img: product28,
   },
   {
     id: 29,
     product_name: "ENERGY GOLD",
     product_tag: "Organic Micro Nutrient",
-    product_about: "",
+    type: "Fungicide",
     product_img: product29,
   },
   {
     id: 30,
     product_name: "CARBON +",
     product_tag: "Hexaconazole 5% SC",
-    product_about: "",
+    type: "Fungicide",
     product_img: product30,
   },
   {
     id: 31,
     product_name: "ENERGIC TOP",
     product_tag: "Azoxystrobin 18.2% + Difenoconazole 11.4%",
-    product_about: "",
+    type: "Fungicide",
     product_img: product31,
   },
   {
     id: 32,
     product_name: "ARM GUARD",
     product_tag: "Carbendazim 12% + Mancozeb 63% WP",
-    product_about: "",
+    type: "Fungicide",
     product_img: product32,
   },
   {
     id: 33,
     product_name: "JHALAK",
     product_tag: "Azoxystrobin 11.5% + Mancozeb 30% WP",
-    product_about: "",
+    type: "Fungicide",
     product_img: product33,
   },
   {
@@ -282,6 +306,7 @@ export const allproducts = [
     product_name: "GREEN +",
     product_tag: "Sulphur 80% WDG",
     product_about: "",
+    type: "PGR",
     product_img: product34,
   },
   {
@@ -289,6 +314,7 @@ export const allproducts = [
     product_name: "BARRICADE",
     product_tag: "Carbedazim 50% WP",
     product_about: "",
+    type: "PGR",
     product_img: product35,
   },
   {
@@ -296,6 +322,7 @@ export const allproducts = [
     product_name: "DUG DUGI",
     product_tag: "Mancozeb 50% WP",
     product_about: "",
+    type: "PGR",
     product_img: product36,
   },
   {
@@ -303,6 +330,7 @@ export const allproducts = [
     product_name: "ZINGER",
     product_tag: "Pendamethalin 30% EC",
     product_about: "",
+    type: "PGR",
     product_img: product37,
   },
   {
@@ -310,6 +338,7 @@ export const allproducts = [
     product_name: "ROOP",
     product_tag: "Glyphosate 41% SL",
     product_about: "",
+    type: "PGR",
     product_img: product38,
   },
   {
@@ -317,6 +346,7 @@ export const allproducts = [
     product_name: "TANDUR",
     product_tag: "Paraquat Dichloride 24% SL",
     product_about: "",
+    type: "PGR",
     product_img: product39,
   },
   {
@@ -324,6 +354,7 @@ export const allproducts = [
     product_name: "RICARDO",
     product_tag: "Pretilachlor 50% EC Ammounium Salt of",
     product_about: "",
+    type: "PGR",
     product_img: product40,
   },
 ];
@@ -334,6 +365,7 @@ export const Insecticideproducts = [
     product_name: "STUMP OUT",
     product_tag: "Emamectin Benzoate 1.9% EC",
     product_about: "",
+    type: "Insecticide",
     product_img: product1,
   },
   {
@@ -341,6 +373,7 @@ export const Insecticideproducts = [
     product_name: "JOMRAJ",
     product_tag: "Emamectin Benzoate 1.9% EC",
     product_about: "",
+    type: "Insecticide",
     product_img: product2,
   },
   {
@@ -348,6 +381,7 @@ export const Insecticideproducts = [
     product_name: "BLACK BOLD",
     product_tag: "Azadirachtin 0.03% (300 PPM) Min.",
     product_about: "",
+    type: "Insecticide",
     product_img: product3,
   },
   {
@@ -355,6 +389,7 @@ export const Insecticideproducts = [
     product_name: "MOHAKAL",
     product_tag: "Emamectin Benzoate 5% SG",
     product_about: "",
+    type: "Insecticide",
     product_img: product4,
   },
   {
@@ -362,6 +397,7 @@ export const Insecticideproducts = [
     product_name: "PALOWAN",
     product_tag: "Cypermethrin 10% EC",
     product_about: "",
+    type: "Insecticide",
     product_img: product5,
   },
   {
@@ -369,6 +405,7 @@ export const Insecticideproducts = [
     product_name: "AGNIASTRA",
     product_tag: "Cypermethrin 25% EC",
     product_about: "",
+    type: "Insecticide",
     product_img: product6,
   },
   {
@@ -376,6 +413,7 @@ export const Insecticideproducts = [
     product_name: "GHAYAL",
     product_tag: "Chlorpyriphos 20% EC",
     product_about: "",
+    type: "Insecticide",
     product_img: product7,
   },
   {
@@ -383,6 +421,7 @@ export const Insecticideproducts = [
     product_name: "HYENA",
     product_tag: "Monocrotophos 36% SL",
     product_about: "",
+    type: "Insecticide",
     product_img: product8,
   },
   {
@@ -390,6 +429,7 @@ export const Insecticideproducts = [
     product_name: "HELMET -550",
     product_tag: "Chlorpyriphos 50%  + Cypermethrin 5% EC",
     product_about: "",
+    type: "Insecticide",
     product_img: product9,
   },
   {
@@ -397,6 +437,7 @@ export const Insecticideproducts = [
     product_name: "IRIS SUPER",
     product_tag: "Profenofos 40% + Cypermethrin 4% EC",
     product_about: "",
+    type: "Insecticide",
     product_img: product10,
   },
   {
@@ -404,6 +445,7 @@ export const Insecticideproducts = [
     product_name: "JOONUN",
     product_tag: "Pyriproxyfen 10% + Bifenthrin 10% EC",
     product_about: "",
+    type: "Insecticide",
     product_img: product11,
   },
   {
@@ -411,6 +453,7 @@ export const Insecticideproducts = [
     product_name: "MBAPPE-10",
     product_tag: "Imidacloprid 17.8% SL",
     product_about: "",
+    type: "Insecticide",
     product_img: product12,
   },
   {
@@ -418,6 +461,7 @@ export const Insecticideproducts = [
     product_name: "FORING",
     product_tag: "Thiamethoxyfen 25% WG",
     product_about: "",
+    type: "Insecticide",
     product_img: product13,
   },
   {
@@ -425,6 +469,7 @@ export const Insecticideproducts = [
     product_name: "TRAP",
     product_tag: "Accephate 75% SP",
     product_about: "",
+    type: "Insecticide",
     product_img: product14,
   },
   {
@@ -432,6 +477,7 @@ export const Insecticideproducts = [
     product_name: "EKTA",
     product_tag: "Acetamiprid 20% SP",
     product_about: "",
+    type: "Insecticide",
     product_img: product15,
   },
   {
@@ -439,6 +485,7 @@ export const Insecticideproducts = [
     product_name: "BRAHMASTRA",
     product_tag: "Cartap Hydrochloride 4% GR",
     product_about: "",
+    type: "Insecticide",
     product_img: product16,
   },
   {
@@ -446,6 +493,7 @@ export const Insecticideproducts = [
     product_name: "T-20",
     product_tag: "Cartap Hydrochloride 50% SP",
     product_about: "",
+    type: "Insecticide",
     product_img: product17,
   },
   {
@@ -453,6 +501,7 @@ export const Insecticideproducts = [
     product_name: "BHIMRUL",
     product_tag: "Fipronil 80% WG",
     product_about: "",
+    type: "Insecticide",
     product_img: product18,
   },
   {
@@ -460,6 +509,7 @@ export const Insecticideproducts = [
     product_name: "RELIEF",
     product_tag: "Carbofuran 3% CG",
     product_about: "",
+    type: "Insecticide",
     product_img: product19,
   },
   {
@@ -467,6 +517,7 @@ export const Insecticideproducts = [
     product_name: "MANZEEL",
     product_tag: "Organic Pest Controller",
     product_about: "",
+    type: "Insecticide",
     product_img: product20,
   },
 ];
@@ -477,6 +528,7 @@ export const Fungicideproducts = [
     product_name: "BHROMOR",
     product_tag: "High Performance Plant Entrieser",
     product_about: "",
+    type: "Fungicide",
     product_img: product25,
   },
   {
@@ -484,6 +536,7 @@ export const Fungicideproducts = [
     product_name: "AABHA",
     product_tag: "Silicone Spreader",
     product_about: "",
+    type: "Fungicide",
     product_img: product26,
   },
   {
@@ -491,6 +544,7 @@ export const Fungicideproducts = [
     product_name: "STRAWBERRY",
     product_tag: "Organic Micor Nutrient",
     product_about: "",
+    type: "Fungicide",
     product_img: product27,
   },
   {
@@ -498,6 +552,7 @@ export const Fungicideproducts = [
     product_name: "OCTOPUS",
     product_tag: "Humic Acid 95%",
     product_about: "",
+    type: "Fungicide",
     product_img: product28,
   },
   {
@@ -505,6 +560,7 @@ export const Fungicideproducts = [
     product_name: "ENERGY GOLD",
     product_tag: "Organic Micro Nutrient",
     product_about: "",
+    type: "Fungicide",
     product_img: product29,
   },
   {
@@ -512,6 +568,7 @@ export const Fungicideproducts = [
     product_name: "CARBON +",
     product_tag: "Hexaconazole 5% SC",
     product_about: "",
+    type: "Fungicide",
     product_img: product30,
   },
   {
@@ -519,6 +576,7 @@ export const Fungicideproducts = [
     product_name: "ENERGIC TOP",
     product_tag: "Azoxystrobin 18.2% + Difenoconazole 11.4%",
     product_about: "",
+    type: "Fungicide",
     product_img: product31,
   },
   {
@@ -526,6 +584,7 @@ export const Fungicideproducts = [
     product_name: "ARM GUARD",
     product_tag: "Carbendazim 12% + Mancozeb 63% WP",
     product_about: "",
+    type: "Fungicide",
     product_img: product32,
   },
   {
@@ -533,6 +592,7 @@ export const Fungicideproducts = [
     product_name: "JHALAK",
     product_tag: "Azoxystrobin 11.5% + Mancozeb 30% WP",
     product_about: "",
+    type: "Fungicide",
     product_img: product33,
   },
   {
@@ -540,6 +600,7 @@ export const Fungicideproducts = [
     product_name: "GREEN +",
     product_tag: "Sulphur 80% WDG",
     product_about: "",
+    type: "Fungicide",
     product_img: product34,
   },
   {
@@ -547,6 +608,7 @@ export const Fungicideproducts = [
     product_name: "BARRICADE",
     product_tag: "Carbedazim 50% WP",
     product_about: "",
+    type: "Fungicide",
     product_img: product35,
   },
   {
@@ -554,6 +616,7 @@ export const Fungicideproducts = [
     product_name: "DUG DUGI",
     product_tag: "Mancozeb 50% WP",
     product_about: "",
+    type: "Fungicide",
     product_img: product36,
   },
   {
@@ -561,6 +624,7 @@ export const Fungicideproducts = [
     product_name: "ZINGER",
     product_tag: "Pendamethalin 30% EC",
     product_about: "",
+    type: "Fungicide",
     product_img: product37,
   },
   {
@@ -568,6 +632,7 @@ export const Fungicideproducts = [
     product_name: "ROOP",
     product_tag: "Glyphosate 41% SL",
     product_about: "",
+    type: "Fungicide",
     product_img: product38,
   },
   {
@@ -575,6 +640,7 @@ export const Fungicideproducts = [
     product_name: "TANDUR",
     product_tag: "Paraquat Dichloride 24% SL",
     product_about: "",
+    type: "Fungicide",
     product_img: product39,
   },
   {
@@ -582,6 +648,7 @@ export const Fungicideproducts = [
     product_name: "RICARDO",
     product_tag: "Pretilachlor 50% EC Ammounium Salt of",
     product_about: "",
+    type: "Fungicide",
     product_img: product40,
   },
 ];
@@ -592,6 +659,7 @@ export const Herbicideproducts = [
     product_name: "STUMP OUT",
     product_tag: "Emamectin Benzoate 1.9% EC",
     product_about: "",
+    type: "Herbicide",
     product_img: product1,
   },
   {
@@ -599,6 +667,7 @@ export const Herbicideproducts = [
     product_name: "AGNIASTRA",
     product_tag: "Cypermethrin 25% EC",
     product_about: "",
+    type: "Herbicide",
     product_img: product6,
   },
   {
@@ -606,6 +675,7 @@ export const Herbicideproducts = [
     product_name: "GHAYAL",
     product_tag: "Chlorpyriphos 20% EC",
     product_about: "",
+    type: "Herbicide",
     product_img: product7,
   },
   {
@@ -613,6 +683,7 @@ export const Herbicideproducts = [
     product_name: "HYENA",
     product_tag: "Monocrotophos 36% SL",
     product_about: "",
+    type: "Herbicide",
     product_img: product8,
   },
   {
@@ -620,6 +691,7 @@ export const Herbicideproducts = [
     product_name: "HELMET -550",
     product_tag: "Chlorpyriphos 50%  + Cypermethrin 5% EC",
     product_about: "",
+    type: "Herbicide",
     product_img: product9,
   },
   {
@@ -627,6 +699,7 @@ export const Herbicideproducts = [
     product_name: "IRIS SUPER",
     product_tag: "Profenofos 40% + Cypermethrin 4% EC",
     product_about: "",
+    type: "Herbicide",
     product_img: product10,
   },
   {
@@ -634,6 +707,7 @@ export const Herbicideproducts = [
     product_name: "EKTA",
     product_tag: "Acetamiprid 20% SP",
     product_about: "",
+    type: "Herbicide",
     product_img: product15,
   },
   {
@@ -641,6 +715,7 @@ export const Herbicideproducts = [
     product_name: "BRAHMASTRA",
     product_tag: "Cartap Hydrochloride 4% GR",
     product_about: "",
+    type: "Herbicide",
     product_img: product16,
   },
   {
@@ -648,6 +723,7 @@ export const Herbicideproducts = [
     product_name: "MANZEEL",
     product_tag: "Organic Pest Controller",
     product_about: "",
+    type: "Herbicide",
     product_img: product20,
   },
   {
@@ -655,6 +731,7 @@ export const Herbicideproducts = [
     product_name: "PANCH FORON",
     product_tag: "Plant Growth Regulators",
     product_about: "",
+    type: "Herbicide",
     product_img: product21,
   },
   {
@@ -662,6 +739,7 @@ export const Herbicideproducts = [
     product_name: "JONAKI",
     product_tag: "Plant Bio Stimulant",
     product_about: "",
+    type: "Herbicide",
     product_img: product22,
   },
   {
@@ -669,6 +747,7 @@ export const Herbicideproducts = [
     product_name: "ENERGY",
     product_tag: "Quinalphos 20%",
     product_about: "",
+    type: "Herbicide",
     product_img: product23,
   },
   {
@@ -676,6 +755,7 @@ export const Herbicideproducts = [
     product_name: "BRUCE LEE",
     product_tag: "Ethaphone 39% SL",
     product_about: "",
+    type: "Herbicide",
     product_img: product24,
   },
   {
@@ -683,6 +763,7 @@ export const Herbicideproducts = [
     product_name: "OCTOPUS",
     product_tag: "Humic Acid 95%",
     product_about: "",
+    type: "Herbicide",
     product_img: product28,
   },
   {
@@ -690,6 +771,7 @@ export const Herbicideproducts = [
     product_name: "ENERGY GOLD",
     product_tag: "Organic Micro Nutrient",
     product_about: "",
+    type: "Herbicide",
     product_img: product29,
   },
   {
@@ -697,6 +779,7 @@ export const Herbicideproducts = [
     product_name: "CARBON +",
     product_tag: "Hexaconazole 5% SC",
     product_about: "",
+    type: "Herbicide",
     product_img: product30,
   },
   {
@@ -704,6 +787,7 @@ export const Herbicideproducts = [
     product_name: "GREEN +",
     product_tag: "Sulphur 80% WDG",
     product_about: "",
+    type: "Herbicide",
     product_img: product34,
   },
   {
@@ -711,6 +795,7 @@ export const Herbicideproducts = [
     product_name: "BARRICADE",
     product_tag: "Carbedazim 50% WP",
     product_about: "",
+    type: "Herbicide",
     product_img: product35,
   },
   {
@@ -718,6 +803,7 @@ export const Herbicideproducts = [
     product_name: "DUG DUGI",
     product_tag: "Mancozeb 50% WP",
     product_about: "",
+    type: "Herbicide",
     product_img: product36,
   },
   {
@@ -725,6 +811,7 @@ export const Herbicideproducts = [
     product_name: "ZINGER",
     product_tag: "Pendamethalin 30% EC",
     product_about: "",
+    type: "Herbicide",
     product_img: product37,
   },
 ];
@@ -735,6 +822,82 @@ export const PGRproducts = [
     product_name: "AGNIASTRA",
     product_tag: "Cypermethrin 25% EC",
     product_about: "",
+    type: "PGR",
+    product_img: product6,
+  },
+  {
+    id: 10,
+    product_name: "IRIS SUPER",
+    product_tag: "Profenofos 40% + Cypermethrin 4% EC",
+    product_about: "",
+    type: "PGR",
+    product_img: product10,
+  },
+  {
+    id: 15,
+    product_name: "EKTA",
+    product_tag: "Acetamiprid 20% SP",
+    product_about: "",
+    type: "PGR",
+    product_img: product15,
+  },
+  {
+    id: 21,
+    product_name: "PANCH FORON",
+    product_tag: "Plant Growth Regulators",
+    product_about: "",
+    type: "PGR",
+    product_img: product21,
+  },
+  {
+    id: 22,
+    product_name: "JONAKI",
+    product_tag: "Plant Bio Stimulant",
+    product_about: "",
+    type: "PGR",
+    product_img: product22,
+  },
+  {
+    id: 28,
+    product_name: "OCTOPUS",
+    product_tag: "Humic Acid 95%",
+    product_about: "",
+    type: "PGR",
+    product_img: product28,
+  },
+  {
+    id: 29,
+    product_name: "ENERGY GOLD",
+    product_tag: "Organic Micro Nutrient",
+    product_about: "",
+    type: "PGR",
+    product_img: product29,
+  },
+  {
+    id: 30,
+    product_name: "CARBON +",
+    product_tag: "Hexaconazole 5% SC",
+    product_about: "",
+    type: "PGR",
+    product_img: product30,
+  },
+  {
+    id: 37,
+    product_name: "ZINGER",
+    product_tag: "Pendamethalin 30% EC",
+    product_about: "",
+    type: "PGR",
+    product_img: product37,
+  },
+];
+
+
+export const Insecticidesimilarpoduct = [
+  {
+    id: 6,
+    product_name: "AGNIASTRA",
+    product_tag: "Cypermethrin 25% EC",
+    product_about: "",
     product_img: product6,
   },
   {
@@ -758,44 +921,72 @@ export const PGRproducts = [
     product_about: "",
     product_img: product21,
   },
+];
+
+
+export const Fungicidesimilarpoduct = [
   {
-    id: 22,
-    product_name: "JONAKI",
-    product_tag: "Plant Bio Stimulant",
+    id: 6,
+    product_name: "AGNIASTRA",
+    product_tag: "Cypermethrin 25% EC",
     product_about: "",
-    product_img: product22,
+    product_img: product6,
   },
   {
-    id: 28,
-    product_name: "OCTOPUS",
-    product_tag: "Humic Acid 95%",
+    id: 10,
+    product_name: "IRIS SUPER",
+    product_tag: "Profenofos 40% + Cypermethrin 4% EC",
     product_about: "",
-    product_img: product28,
+    product_img: product10,
   },
   {
-    id: 29,
-    product_name: "ENERGY GOLD",
-    product_tag: "Organic Micro Nutrient",
+    id: 15,
+    product_name: "EKTA",
+    product_tag: "Acetamiprid 20% SP",
     product_about: "",
-    product_img: product29,
+    product_img: product15,
   },
   {
-    id: 30,
-    product_name: "CARBON +",
-    product_tag: "Hexaconazole 5% SC",
+    id: 21,
+    product_name: "PANCH FORON",
+    product_tag: "Plant Growth Regulators",
     product_about: "",
-    product_img: product30,
-  },
-  {
-    id: 37,
-    product_name: "ZINGER",
-    product_tag: "Pendamethalin 30% EC",
-    product_about: "",
-    product_img: product37,
+    product_img: product21,
   },
 ];
 
-export const similarProduct = [
+export const Herbicidesimilarpoduct = [
+  {
+    id: 6,
+    product_name: "AGNIASTRA",
+    product_tag: "Cypermethrin 25% EC",
+    product_about: "",
+    product_img: product6,
+  },
+  {
+    id: 10,
+    product_name: "IRIS SUPER",
+    product_tag: "Profenofos 40% + Cypermethrin 4% EC",
+    product_about: "",
+    product_img: product10,
+  },
+  {
+    id: 15,
+    product_name: "EKTA",
+    product_tag: "Acetamiprid 20% SP",
+    product_about: "",
+    product_img: product15,
+  },
+  {
+    id: 21,
+    product_name: "PANCH FORON",
+    product_tag: "Plant Growth Regulators",
+    product_about: "",
+    product_img: product21,
+  },
+];
+
+export const PGRsimilarpoduct = [
   {
     id: 6,
     product_name: "AGNIASTRA",

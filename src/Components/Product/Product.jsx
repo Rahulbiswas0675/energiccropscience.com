@@ -1,4 +1,4 @@
-import React, { useContext, useState, useLocation, useEffect } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import "../../Scss/Product.scss";
 import Footer from "../Footer/Footer";
 import productimg from "../../Image/SectionImage/productimg.png";
@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 import { Global } from "../../App";
 
 function Product() {
-  const { getProductPage, postProductPage } = useContext(Global);
+  const { getProductPage, postProductPage, getProductItem } = useContext(Global);
   const [productItem, setProductItem] = useState(allproducts);
 
   useEffect(() => {
@@ -113,7 +113,9 @@ function Product() {
                   <h6>{item.product_name}</h6>
                 </div>
                 <p>{item.product_tag}</p>
-                <Link to="/product/details" className="button">
+                <Link to="/product/details" className="button" onClick={() => {
+                  getProductItem(item);
+                }}> 
                   VIEW DETAILS
                 </Link>
               </div>

@@ -1,25 +1,50 @@
-import React, { useState } from "react";
-import imgs from "../../Image/Products/Dugdugi.png";
+import React, { useState, useContext, useEffect } from "react";
 import Footer from "../Footer/Footer";
-import { similarProduct } from "../../AllDatas/Products";
+import {
+  Insecticidesimilarpoduct,
+  Fungicidesimilarpoduct,
+  PGRsimilarpoduct,
+  Herbicidesimilarpoduct,
+} from "../../AllDatas/Products";
 import { Link, useNavigate } from "react-router-dom";
+import { Global } from "../../App";
 
 function ProductDetails() {
   const [classN, setClassN] = useState("Dimensions");
+  const { postproductItem, getProductItem, getProductPage } =
+    useContext(Global);
+  const [similar, setSimilar] = useState();
+
+  useEffect(() => {
+    if (postproductItem.type === "Insecticide") {
+      setSimilar(Insecticidesimilarpoduct);
+    } else if (postproductItem.type === "Fungicide") {
+      setSimilar(Fungicidesimilarpoduct);
+    } else if (postproductItem.type === "Herbicide") {
+      setSimilar(Herbicidesimilarpoduct);
+    } else if (postproductItem.type === "PGR") {
+      setSimilar(PGRsimilarpoduct);
+    }
+  }, [postproductItem]);
+
   const navigate = useNavigate();
   return (
     <div className="product-details-components" id="details">
       <div className="product-details-container">
         <div className="hero-section">
           <div className="left">
-            <img src={imgs} alt="products" className="product-img" />
+            <img
+              src={postproductItem.product_img}
+              alt="products"
+              className="product-img"
+            />
           </div>
           <div className="right">
             <div className="header">
               <h3>
-                CORNER <span>(250 gm)</span>
+                {postproductItem.product_name} <span>(250 gm)</span>
               </h3>
-              <h6>Atrazine 50% W.P.</h6>
+              <h6>{postproductItem.product_tag}</h6>
             </div>
 
             <div className="details">
@@ -151,27 +176,34 @@ function ProductDetails() {
           <h3>Similar products</h3>
 
           <div className="list-items">
-            {similarProduct.map((item) => (
-              <div className="item" key={item.id}>
-                <div className="img-box">
-                  <img src={item.product_img} alt={item.product_name} />
-                </div>
-                <div className="details">
-                  <h5>{item.product_name}</h5>
-                  <h6>{item.product_name}</h6>
-                </div>
-                <p>{item.product_tag}</p>
-                <Link to="/product/details" className="button">
-                  VIEW DETAILS
-                </Link>
-              </div>
-            ))}
+            {similar
+              ? similar.map((item) => (
+                  <div className="item" key={item.id}>
+                    <div className="img-box">
+                      <img src={item.product_img} alt={item.product_name} />
+                    </div>
+                    <div className="details">
+                      <h5>{item.product_name}</h5>
+                      <h6>{item.product_name}</h6>
+                    </div>
+                    <p>{item.product_tag}</p>
+                    <a href="#details" className="button"
+                      onClick={() => {
+                        getProductItem(item);
+                      }}
+                    >
+                      VIEW DETAILS
+                    </a>
+                  </div>
+                ))
+              : null}
           </div>
 
           <button
             className="load-more"
             onClick={() => {
               navigate("/products");
+              getProductPage(postproductItem.type);
             }}
           >
             Load more

@@ -54,6 +54,28 @@ $text_font: "DM Sans", sans-serif;
           background-clip: text;
           -webkit-text-fill-color: transparent;
         }
+        .tag::before {
+          content: "INSECTICIDE";
+          animation: animate infinite 10s;
+        }
+
+        @keyframes animate {
+          0% {
+            content: "INSECTICIDE";
+          }
+
+          25% {
+            content: "Fungicide";
+          }
+          50% {
+            content: "Herbicide";
+          }
+
+          75% {
+            content: "PGR";
+          }
+        }
+
         .knomore-btn {
           border: none;
           margin-top: 2rem;
@@ -542,7 +564,7 @@ $text_font: "DM Sans", sans-serif;
                 font-size: 16px;
                 font-family: $text_font;
               }
-              .number::-webkit-inner-spin-button{
+              .number::-webkit-inner-spin-button {
                 display: none;
               }
             }
@@ -593,7 +615,7 @@ $text_font: "DM Sans", sans-serif;
         position: absolute;
       }
     }
-    .Side-text{
+    .Side-text {
       position: absolute;
       right: 0;
     }

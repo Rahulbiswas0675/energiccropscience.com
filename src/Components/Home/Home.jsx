@@ -3,8 +3,9 @@ import imgs from "../../Image/SectionImage/heroimg.png";
 import scroolimg from "../../Image/Logos/scrool.png";
 import { HiArrowLongDown } from "react-icons/hi2";
 import { HiArrowLongUp } from "react-icons/hi2";
-
+import { useNavigate } from "react-router-dom";
 function Home() {
+  const navigate = useNavigate();
   return (
     <div className="home-container">
       <img src={imgs} alt="background" className="background-image"/>
@@ -13,8 +14,10 @@ function Home() {
 
         <div className="heading-box">
           <h1 className="header">Enhance Crop Health with</h1>
-          <h3 className="tag">INSECTICIDE</h3>
-          <button className="knomore-btn">Know More</button>
+          <h3 className="tag"></h3>
+          <button className="knomore-btn" onClick={() => {
+            navigate('/products')
+          }}>Know More</button>
         </div>
 
         <div className="page-counter-box">
