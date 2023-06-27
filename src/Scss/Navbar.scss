@@ -123,7 +123,8 @@ $error-color: red;
 }
 
 @media screen and (max-width: 1440px) {
-  .navbar {
+  .user-navbar {
+    width: 100%;
     .nav-container-for-web {
       .menus {
         gap: 1rem;

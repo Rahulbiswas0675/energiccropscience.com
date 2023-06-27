@@ -8,7 +8,7 @@ import ContactPage from "./Pages/ContactPage";
 import CertificatePage from "./Pages/CertificatePage";
 import ProductDetailsPage from "./Pages/ProductDetailsPage";
 import "./App.scss";
-
+import ContactPopup from "./Container/ContactPopup";
 export const Global = createContext();
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
   const [className, setclassName] = useState("slider-menu-bar");
   const [productpage, setProductpage] = useState("All-Products");
   const [productItem, setProductItem] = useState();
+  const [popup, setPopus] = useState(false);
 
   const getPageName_handler = (value) => {
     setPageName(value);
@@ -34,6 +35,9 @@ function App() {
     setProductItem(value);
   };
 
+  const popup_handler = (value) => {
+    setPopus(value);
+  }
   return (
     <div className="App">
       <Global.Provider
@@ -43,12 +47,14 @@ function App() {
           postClsName: className,
           postProductPage: productpage,
           postproductItem: productItem,
+          postPopup : popup,
 
           getPageName: getPageName_handler,
           getProductName: getProductName_handler,
           getClsName: className_handler,
           getProductPage: productpage_haldler,
           getProductItem: productId_handler,
+          getPopup : popup_handler,
         }}
       >
         <BrowserRouter>
@@ -61,7 +67,10 @@ function App() {
             <Route path="/certificates" element={<CertificatePage />} />
             <Route path="/product/details" element={<ProductDetailsPage />} />
           </Routes>
-
+          {
+            popup ? <ContactPopup/> : null
+          }
+          
           {/* Page Not Found Page Add */}
         </BrowserRouter>
       </Global.Provider>

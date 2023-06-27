@@ -6,14 +6,21 @@ import {
   PGRsimilarpoduct,
   Herbicidesimilarpoduct,
 } from "../../AllDatas/Products";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Global } from "../../App";
 
 function ProductDetails() {
+  const navigate = useNavigate();
   const [classN, setClassN] = useState("Dimensions");
   const { postproductItem, getProductItem, getProductPage } =
     useContext(Global);
   const [similar, setSimilar] = useState();
+
+  useEffect(() => {
+    if(!postproductItem){
+      navigate('/product')
+    }
+  })
 
   useEffect(() => {
     if (postproductItem.type === "Insecticide") {
@@ -27,7 +34,7 @@ function ProductDetails() {
     }
   }, [postproductItem]);
 
-  const navigate = useNavigate();
+  
   return (
     <div className="product-details-components" id="details">
       <div className="product-details-container">
@@ -187,7 +194,9 @@ function ProductDetails() {
                       <h6>{item.product_name}</h6>
                     </div>
                     <p>{item.product_tag}</p>
-                    <a href="#details" className="button"
+                    <a
+                      href="#details"
+                      className="button"
                       onClick={() => {
                         getProductItem(item);
                       }}

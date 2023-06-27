@@ -1,12 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.1b5a3103.css",
-    "main.js": "/static/js/main.a050b794.js",
+    "main.css": "/static/css/main.9b4dc1b1.css",
+    "main.js": "/static/js/main.2085e589.js",
     "static/js/787.e5f53c23.chunk.js": "/static/js/787.e5f53c23.chunk.js",
+    "static/media/Blanket.png": "/static/media/Blanket.37b3b24ed63accfc9d6b.png",
     "static/media/Energy.png": "/static/media/Energy.054e15d03ed1f80cd990.png",
+    "static/media/Zafran.png": "/static/media/Zafran.96e6ae4d5bb863ae9bad.png",
+    "static/media/Guard Wall.png": "/static/media/Guard Wall.21f1b224e1b45cc98fed.png",
     "static/media/Manzeel.png": "/static/media/Manzeel.aa8a62f84202777f704e.png",
     "static/media/Brahmashtra.png": "/static/media/Brahmashtra.7731668d379208cb1b98.png",
+    "static/media/Damini.png": "/static/media/Damini.01a601cf5f2e2f9ebcd4.png",
+    "static/media/Borfi.png": "/static/media/Borfi.096cee282dc5cfbdfbae.png",
     "static/media/Ekta.png": "/static/media/Ekta.8725fc0f3fccf410ad0f.png",
+    "static/media/Chandni.png": "/static/media/Chandni.154d33835ce0fd947f68.png",
     "static/media/Relief.png": "/static/media/Relief.c8ec773b9b35541815bb.png",
     "static/media/Octopus.png": "/static/media/Octopus.c4493cd539cee03b9ef9.png",
     "static/media/Strawberry.png": "/static/media/Strawberry.f214b6e88364ae2ee592.png",
@@ -16,10 +22,13 @@
     "static/media/Barricade.png": "/static/media/Barricade.564412bbb3425bbc6038.png",
     "static/media/Arm Guard.png": "/static/media/Arm Guard.d16112a9a70dd01616e6.png",
     "static/media/Foring.png": "/static/media/Foring.5ab94412afc8d0f2ec03.png",
+    "static/media/Bhootnath.png": "/static/media/Bhootnath.3406780a7863ed8dc518.png",
     "static/media/T-20.png": "/static/media/T-20.8eabdfb89527eb91a18d.png",
     "static/media/Energy Gold.png": "/static/media/Energy Gold.7141c67c1e433abb0f34.png",
     "static/media/Green_Plus.png": "/static/media/Green_Plus.f5e3d59af205b5833357.png",
     "static/media/Mohakal.png": "/static/media/Mohakal.47a0db2a54b96c6b3f81.png",
+    "static/media/Gorilla-71.png": "/static/media/Gorilla-71.5bc678280511971832a2.png",
+    "static/media/Corner.png": "/static/media/Corner.5efa0b77079325dd8174.png",
     "static/media/Dugdugi.png": "/static/media/Dugdugi.eae664ed43f2d7ba3e35.png",
     "static/media/Carbon_Plus.png": "/static/media/Carbon_Plus.99eaafb0cf563a006c7c.png",
     "static/media/Iris_Super.png": "/static/media/Iris_Super.f1eb1e518b2766d6fc30.png",
@@ -54,16 +63,17 @@
     "static/media/tree.png": "/static/media/tree.fe12952777f1bc507e65.png",
     "static/media/aboutus.png": "/static/media/aboutus.7b99c60fe5ca605ce46e.png",
     "static/media/contactus.png": "/static/media/contactus.46576fe9a933d977993a.png",
+    "static/media/LOGO.png": "/static/media/LOGO.7e57b449f37c6bacd272.png",
     "static/media/r2.png": "/static/media/r2.9774450e204e8d463527.png",
     "static/media/Connectus-side-text.png": "/static/media/Connectus-side-text.a928ff4b8c972b83953d.png",
     "static/media/footerimg.png": "/static/media/footerimg.47bbd11734019eafaba9.png",
     "index.html": "/index.html",
-    "main.1b5a3103.css.map": "/static/css/main.1b5a3103.css.map",
-    "main.a050b794.js.map": "/static/js/main.a050b794.js.map",
+    "main.9b4dc1b1.css.map": "/static/css/main.9b4dc1b1.css.map",
+    "main.2085e589.js.map": "/static/js/main.2085e589.js.map",
     "787.e5f53c23.chunk.js.map": "/static/js/787.e5f53c23.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b5a3103.css",
-    "static/js/main.a050b794.js"
+    "static/css/main.9b4dc1b1.css",
+    "static/js/main.2085e589.js"
   ]
 }

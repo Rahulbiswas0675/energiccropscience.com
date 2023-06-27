@@ -12,9 +12,9 @@ $text_font: "DM Sans", sans-serif;
   width: 100%;
 
   .home-container {
-    width: inherit;
+    width: 100%;
     .background-image {
-      width: inherit;
+      width: 100%;
     }
 
     .body-section {
@@ -618,6 +618,1605 @@ $text_font: "DM Sans", sans-serif;
     .Side-text {
       position: absolute;
       right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .home-components {
+    .home-container {
+      .body-section {
+        .heading-box {
+          margin-top: 120px;
+          .header {
+            font-size: 54px;
+          }
+          .tag {
+            font-size: 40px;
+          }
+          .knomore-btn {
+            margin-top: 1rem;
+            width: 240px;
+            height: 65px;
+          }
+        }
+
+        .page-counter-box {
+          .counter-container {
+            gap: 4rem;
+            .icons {
+              font-size: 40px;
+            }
+            .page {
+              font-size: 32px;
+              .count {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+
+        .scroolimg {
+          right: 5rem;
+          bottom: 15rem;
+          .bg-div {
+            img {
+              width: 8rem;
+            }
+          }
+          .icons {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+
+    .about-components {
+      .about-container {
+        margin-top: 4rem;
+        .left {
+          h3 {
+            font-size: 26px;
+          }
+          h2 {
+            font-size: 40px;
+          }
+          .tags {
+            font-size: 26px;
+          }
+          .p-tag {
+            font-size: 16px;
+          }
+          .p {
+            margin-top: 1rem;
+          }
+          button {
+            margin-top: 1rem;
+            width: 230px;
+            height: 65px;
+            font-size: 20px;
+          }
+        }
+        .right {
+          .item {
+            p {
+              font-size: 16px;
+            }
+            h3 {
+              font-size: 18px;
+            }
+          }
+          .item1 {
+            margin-top: -1rem;
+            width: 45%;
+            margin-bottom: 6rem;
+            margin-left: 10.5rem;
+          }
+          .item2 {
+            width: 35%;
+            margin-bottom: 3rem;
+            margin-left: 3rem;
+          }
+          .item3 {
+            width: 60%;
+            margin-left: 10rem;
+          }
+        }
+      }
+      .treeimg {
+        top: 10rem;
+        width: 15rem;
+      }
+      .aboutus-text {
+        top: -2rem;
+        width: 5rem;
+      }
+    }
+
+    .product-components {
+      .products-container {
+        top: 5rem;
+        .heading {
+          .head {
+            font-size: 40px;
+          }
+          .paragraph {
+            font-size: 16px;
+          }
+        }
+
+        .products-items {
+          margin-top: 0rem;
+        }
+      }
+      .producttext {
+        width: 5rem;
+      }
+    }
+
+    .review-components {
+      .review-container {
+        .container-div {
+          width: 80%;
+          .item {
+            h3 {
+              font-size: 40px;
+            }
+            p {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .contact-components {
+      .contact-container {
+        padding: 8rem 0rem;
+        .left {
+          width: 45%;
+          gap: 1.5rem;
+
+          .head {
+            font-size: 26px;
+          }
+          .tag {
+            font-size: 40px;
+          }
+
+          .item {
+            gap: 1rem;
+            .logo {
+              width: 60px;
+              height: 60px;
+              .icon {
+                font-size: 30px;
+              }
+            }
+            .details {
+              h4 {
+                font-size: 24px;
+              }
+              p {
+                font-size: 20px;
+              }
+            }
+          }
+
+          .para {
+            width: 70%;
+            font-size: 18px;
+          }
+
+          .social-network {
+            gap: 2rem;
+            .follow {
+              font-size: 22px;
+            }
+
+            .medias {
+              gap: 2rem;
+              a {
+                .fb {
+                  width: 40px;
+                  height: 40px;
+                }
+                .in {
+                  color: #664444;
+                  width: 40px;
+                  height: 40px;
+                }
+                .tw {
+                  color: #03a9f4;
+                  width: 40px;
+                  height: 40px;
+                }
+              }
+            }
+          }
+        }
+
+        .right {
+          width: 55%;
+          height: auto;
+          .form-container {
+            width: 85%;
+            padding: 2rem;
+
+            .head {
+              font-size: 34px;
+            }
+
+            .form-box {
+              margin-top: 2rem;
+              .input-group {
+                width: 100%;
+                .input-box {
+                  height: 75px;
+                  width: 47%;
+                  .input {
+                    padding: 14px 16px;
+                    font-size: 18px;
+                    width: 100%;
+                    height: 58px;
+                  }
+                }
+              }
+              .input-box {
+                height: 75px;
+                width: 100%;
+                .input {
+                  padding: 14px 16px;
+                  height: 58px;
+                }
+              }
+              .textarea-box {
+                .textarea {
+                  padding: 14px 18px;
+                  max-height: 200px;
+                  min-height: 200px;
+                }
+              }
+              .send-btn {
+                height: 60px;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+
+        .contact-farma {
+          left: 30%;
+          top: 31%;
+          width: 18rem;
+        }
+      }
+      .Side-text {
+        width: 5rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1280px) {
+  .home-components {
+    .home-container {
+      .body-section {
+        .heading-box {
+          margin-top: 100px;
+          .header {
+            font-size: 40px;
+          }
+          .tag {
+            font-size: 35px;
+          }
+          .knomore-btn {
+            width: 240px;
+            height: 60px;
+          }
+        }
+
+        .page-counter-box {
+          height: auto;
+          top: 15rem;
+          .counter-container {
+            gap: 3rem;
+            .icons {
+              font-size: 30px;
+            }
+            .page {
+              font-size: 26px;
+              .count {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+
+        .scroolimg {
+          right: 4rem;
+          bottom: 20rem;
+          .bg-div {
+            img {
+              width: 6rem;
+            }
+          }
+          .icons {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+
+    .about-components {
+      .about-container {
+        margin-top: 2.5rem;
+        .left {
+          gap: 0.5rem;
+          h3 {
+            font-size: 26px;
+          }
+          h2 {
+            font-size: 26px;
+          }
+          .tags {
+            font-size: 18px;
+          }
+          .p-tag {
+            font-size: 16px;
+          }
+          .p {
+            margin-top: 14px;
+          }
+          button {
+            margin-top: 0.5rem;
+            width: 230px;
+            height: 60px;
+            font-size: 20px;
+          }
+        }
+        .right {
+          .item {
+            p {
+              font-size: 16px;
+            }
+            h3 {
+              font-size: 18px;
+            }
+          }
+          .item1 {
+            margin-top: 0;
+            width: 65%;
+            margin-bottom: 6rem;
+            margin-left: 9rem;
+          }
+          .item2 {
+            width: 35%;
+            margin-bottom: 1.5rem;
+            margin-left: 2.5rem;
+          }
+          .item3 {
+            width: 65%;
+            margin-left: 9rem;
+          }
+        }
+      }
+      .treeimg {
+        top: 9rem;
+        width: 13rem;
+      }
+      .aboutus-text {
+        top: -2rem;
+        width: 4rem;
+      }
+    }
+
+    .product-components {
+      .products-container {
+        top: 5rem;
+        .heading {
+          .head {
+            font-size: 26px;
+          }
+          .paragraph {
+            font-size: 18px;
+          }
+        }
+
+        .products-items {
+          margin-top: 0rem;
+        }
+      }
+      .producttext {
+        width: 4rem;
+      }
+    }
+
+    .review-components {
+      margin-top: 4rem;
+      .review-container {
+        .container-div {
+          width: 80%;
+          .item {
+            img {
+              width: 5rem;
+            }
+            h3 {
+              font-size: 26px;
+            }
+            p {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+
+    .contact-components {
+      .contact-container {
+        padding: 8rem 0rem;
+        .left {
+          width: 45%;
+          gap: 1.5rem;
+
+          .head {
+            font-size: 26px;
+          }
+          .tag {
+            font-size: 30px;
+          }
+
+          .item {
+            gap: 1rem;
+            .logo {
+              width: 50px;
+              height: 50px;
+              .icon {
+                font-size: 26px;
+              }
+            }
+            .details {
+              h4 {
+                font-size: 20px;
+              }
+              p {
+                font-size: 16px;
+              }
+            }
+          }
+
+          .para {
+            width: 70%;
+            font-size: 16px;
+          }
+
+          .social-network {
+            gap: 2rem;
+            .follow {
+              font-size: 20 px;
+            }
+
+            .medias {
+              gap: 2rem;
+              a {
+                .fb {
+                  width: 40px;
+                  height: 40px;
+                }
+                .in {
+                  color: #664444;
+                  width: 40px;
+                  height: 40px;
+                }
+                .tw {
+                  color: #03a9f4;
+                  width: 40px;
+                  height: 40px;
+                }
+              }
+            }
+          }
+        }
+
+        .right {
+          width: 55%;
+          height: auto;
+          .form-container {
+            width: 90%;
+            padding: 2rem;
+            .head {
+              font-size: 26px;
+            }
+
+            .form-box {
+              margin-top: 1rem;
+              .input-group {
+                width: 100%;
+                .input-box {
+                  height: 75px;
+                  width: 47%;
+                  .input {
+                    padding: 14px 16px;
+                    font-size: 16px;
+                    width: 100%;
+                    height: 58px;
+                  }
+                }
+              }
+              .input-box {
+                height: 75px;
+                width: 100%;
+                .input {
+                  padding: 14px 16px;
+                  height: 58px;
+                  font-size: 16px;
+                }
+              }
+              .textarea-box {
+                .textarea {
+                  padding: 14px 18px;
+                  max-height: 160px;
+                  min-height: 160px;
+                }
+              }
+              .send-btn {
+                height: 60px;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+
+        .contact-farma {
+          left: 26%;
+          top: 31%;
+          width: 16rem;
+        }
+      }
+      .Side-text {
+        bottom: 7rem;
+        width: 4rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .home-components {
+    .home-container {
+      .body-section {
+        .heading-box {
+          margin-top: 110px;
+          .header {
+            font-size: 26px;
+          }
+          .tag {
+            font-size: 26px;
+          }
+          .knomore-btn {
+            width: 200px;
+            height: 50px;
+            font-size: 18px;
+          }
+        }
+
+        .page-counter-box {
+          height: auto;
+          top: 10rem;
+          .counter-container {
+            gap: 3rem;
+            .icons {
+              font-size: 30px;
+            }
+            .page {
+              font-size: 26px;
+              .count {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+
+        .scroolimg {
+          right: 4rem;
+          bottom: 24rem;
+          .bg-div {
+            img {
+              width: 6rem;
+            }
+          }
+          .icons {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    .about-components {
+      margin-bottom: 2rem;
+      .about-container {
+        width: 85%;
+        .left {
+          gap: 0.5rem;
+          h3 {
+            font-size: 18px;
+          }
+          h2 {
+            font-size: 18px;
+          }
+          .tags {
+            font-size: 16px;
+          }
+          .p-tag {
+            font-size: 14px;
+          }
+          .p {
+            margin-top: 14px;
+          }
+          button {
+            margin-top: 0.5rem;
+            width: 200px;
+            height: 50px;
+            font-size: 18px;
+          }
+        }
+        .right {
+          .item {
+            p {
+              font-size: 14px;
+            }
+            h3 {
+              font-size: 16px;
+            }
+          }
+          .item1 {
+            margin-top: 0;
+            width: 65%;
+            margin-bottom: 4rem;
+            margin-left: 8rem;
+          }
+          .item2 {
+            width: 35%;
+            margin-bottom: 1rem;
+            margin-left: 2.5rem;
+          }
+          .item3 {
+            width: 65%;
+            margin-left: 8rem;
+          }
+        }
+      }
+      .treeimg {
+        top: 8rem;
+        width: 10rem;
+      }
+      .aboutus-text {
+        top: 2rem;
+        width: 3rem;
+      }
+    }
+
+    .product-components {
+      .products-container {
+        width: 85%;
+        top: 5rem;
+        .heading {
+          .head {
+            font-size: 18px;
+          }
+          .paragraph {
+            font-size: 14px;
+          }
+        }
+
+        .products-items {
+          margin-top: 0rem;
+        }
+      }
+      .producttext {
+        width: 3rem;
+      }
+    }
+
+    .review-components {
+      margin-top: 4rem;
+      .review-container {
+        .container-div {
+          width: 85%;
+          .item {
+            img {
+              width: 4rem;
+            }
+            h3 {
+              font-size: 18px;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    .contact-components {
+      .contact-container {
+        padding: 3rem 0rem;
+        width: 85%;
+        justify-content: space-between;
+        .left {
+          width: 45%;
+          gap: 1.5rem;
+
+          .head {
+            font-size: 18px;
+          }
+          .tag {
+            font-size: 20px;
+          }
+
+          .item {
+            gap: 1rem;
+            .logo {
+              width: 40px;
+              height: 40px;
+              .icon {
+                font-size: 18px;
+              }
+            }
+            .details {
+              h4 {
+                font-size: 18px;
+              }
+              p {
+                font-size: 14px;
+              }
+            }
+          }
+
+          .para {
+            width: 80%;
+            font-size: 14px;
+          }
+
+          .social-network {
+            gap: 2rem;
+            .follow {
+              font-size: 18px;
+            }
+
+            .medias {
+              gap: 2rem;
+              a {
+                .fb {
+                  width: 30px;
+                  height: 30px;
+                }
+                .in {
+                  color: #664444;
+                  width: 30px;
+                  height: 30px;
+                }
+                .tw {
+                  color: #03a9f4;
+                  width: 30px;
+                  height: 30px;
+                }
+              }
+            }
+          }
+        }
+
+        .right {
+          width: 53%;
+          height: auto;
+          .form-container {
+            width: 100%;
+            padding: 2rem;
+            .head {
+              font-size: 18px;
+            }
+
+            .form-box {
+              margin-top: 1rem;
+              .input-group {
+                width: 100%;
+                .input-box {
+                  height: 70px;
+                  width: 47%;
+                  .input {
+                    padding: 14px 16px;
+                    font-size: 14px;
+                    width: 100%;
+                    height: 50px;
+                  }
+                }
+              }
+              .input-box {
+                height: 70px;
+                width: 100%;
+                .input {
+                  padding: 14px 16px;
+                  height: 50px;
+                  font-size: 14px;
+                }
+              }
+              .textarea-box {
+                .textarea {
+                  padding: 14px 18px;
+                  max-height: 150px;
+                  min-height: 150px;
+                  font-size: 14px;
+                }
+              }
+              .send-btn {
+                margin-top: 0;
+                height: 50px;
+                font-size: 16px;
+              }
+            }
+          }
+        }
+
+        .contact-farma {
+          left: 25%;
+          top: 27%;
+          width: 13rem;
+        }
+      }
+      .Side-text {
+        bottom: 4.5rem;
+        width: 3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .home-components {
+    .home-container {
+      .body-section {
+        .heading-box {
+          .header {
+            font-size: 18px;
+          }
+          .tag {
+            font-size: 18px;
+          }
+          .knomore-btn {
+            width: 160px;
+            height: 40px;
+            font-size: 14px;
+          }
+        }
+
+        .page-counter-box {
+          height: auto;
+          top: 11rem;
+          .counter-container {
+            gap: 2rem;
+            .icons {
+              font-size: 20px;
+            }
+            .page {
+              font-size: 18px;
+              .count {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+
+        .scroolimg {
+          right: 4rem;
+          bottom: 28rem;
+          .bg-div {
+            img {
+              width: 6rem;
+            }
+          }
+          .icons {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    .about-components {
+      margin-bottom: 2rem;
+      .about-container {
+        margin-top: 1rem;
+        .left {
+          gap: 0.5rem;
+          h3 {
+            font-size: 16px;
+          }
+          h2 {
+            font-size: 16px;
+          }
+          .tags {
+            font-size: 14px;
+          }
+          .p-tag {
+            font-size: 12px;
+          }
+          .p {
+            margin-top: 12px;
+          }
+          button {
+            margin-top: 0.5rem;
+            width: 150px;
+            height: 40px;
+            font-size: 14px;
+          }
+        }
+        .right {
+          .item {
+            p {
+              font-size: 12px;
+            }
+            h3 {
+              font-size: 14px;
+            }
+          }
+          .item1 {
+            margin-top: 0;
+            width: 65%;
+            margin-bottom: 3.5rem;
+            margin-left: 7rem;
+          }
+          .item2 {
+            width: 35%;
+            margin-bottom: 2rem;
+            margin-left: 2rem;
+          }
+          .item3 {
+            width: 65%;
+            margin-left: 7rem;
+          }
+        }
+      }
+      .treeimg {
+        top: 5rem;
+        width: 8rem;
+      }
+      .aboutus-text {
+        top: 2rem;
+        width: 2.5rem;
+      }
+    }
+
+    .product-components {
+      .products-container {
+        width: 90%;
+        top: 5rem;
+        .heading {
+          .head {
+            font-size: 16px;
+          }
+          .paragraph {
+            font-size: 12px;
+          }
+        }
+
+        .products-items {
+          margin-top: 0rem;
+        }
+      }
+      .producttext {
+        width: 2.5rem;
+      }
+    }
+
+    .review-components {
+      margin-top: 4rem;
+      .review-container {
+        .container-div {
+          width: 90%;
+          .item {
+            img {
+              width: 3rem;
+            }
+            h3 {
+              font-size: 16px;
+            }
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+
+    .contact-components {
+      .contact-container {
+        padding: 3rem 0rem;
+        width: 90%;
+        .left {
+          width: 45%;
+          gap: 1.5rem;
+
+          .head {
+            font-size: 16px;
+          }
+          .tag {
+            font-size: 16px;
+          }
+
+          .item {
+            gap: 1rem;
+            .logo {
+              width: 35px;
+              height: 35px;
+              .icon {
+                font-size: 16px;
+              }
+            }
+            .details {
+              h4 {
+                font-size: 14px;
+              }
+              p {
+                font-size: 12px;
+              }
+            }
+          }
+
+          .para {
+            width: 70%;
+            font-size: 12px;
+          }
+
+          .social-network {
+            gap: 2rem;
+            .follow {
+              font-size: 16px;
+            }
+
+            .medias {
+              gap: 2rem;
+              a {
+                .fb {
+                  width: 25px;
+                  height: 25px;
+                }
+                .in {
+                  color: #664444;
+                  width: 25px;
+                  height: 25px;
+                }
+                .tw {
+                  color: #03a9f4;
+                  width: 25px;
+                  height: 25px;
+                }
+              }
+            }
+          }
+        }
+
+        .right {
+          width: 53%;
+          height: auto;
+          .form-container {
+            width: 100%;
+            padding: 1.5rem;
+            .head {
+              font-size: 16px;
+            }
+
+            .form-box {
+              margin-top: 1rem;
+              .input-group {
+                width: 100%;
+                .input-box {
+                  height: 50px;
+                  width: 47%;
+                  .input {
+                    padding: 14px 16px;
+                    font-size: 14px;
+                    width: 100%;
+                    height: 50px;
+                  }
+                }
+              }
+              .input-box {
+                height: 50px;
+                width: 100%;
+                .input {
+                  padding: 14px 16px;
+                  height: 50px;
+                  font-size: 14px;
+                }
+              }
+              .textarea-box {
+                .textarea {
+                  padding: 14px 18px;
+                  max-height: 130px;
+                  min-height: 130px;
+                  font-size: 14px;
+                }
+              }
+              .send-btn {
+                margin-top: 0;
+                height: 50px;
+                font-size: 16px;
+              }
+            }
+          }
+        }
+
+        .contact-farma {
+          left: 25%;
+          top: 26%;
+          width: 12rem;
+        }
+      }
+      .Side-text {
+        bottom: 5rem;
+        width: 2.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-components {
+    .home-container {
+      .body-section {
+        .heading-box {
+          .header {
+            font-size: 14px;
+          }
+          .tag {
+            font-size: 14px;
+          }
+          .knomore-btn {
+            width: 120px;
+            height: 30px;
+            font-size: 12px;
+          }
+        }
+
+        .page-counter-box {
+          height: auto;
+          top: 9rem;
+          .counter-container {
+            gap: 1rem;
+            .icons {
+              font-size: 16px;
+            }
+            .page {
+              font-size: 16px;
+              .count {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+
+        .scroolimg {
+          right: 4rem;
+          bottom: 32rem;
+        }
+      }
+    }
+
+    .about-components {
+      margin-bottom: 2rem;
+      .about-container {
+        margin-top: 0;
+        .left {
+          gap: 0rem;
+          h3 {
+            font-size: 12px;
+          }
+          h2 {
+            font-size: 12px;
+          }
+          .tags {
+            font-size: 10px;
+          }
+          .p-tag {
+            margin: 0;
+            font-size: 10px;
+          }
+          .p {
+            margin-top: 10px;
+          }
+          button {
+            font-size: 12px;
+          }
+        }
+        .right {
+          .item {
+            p {
+              margin: 0;
+              font-size: 10px;
+            }
+            h3 {
+              margin: 0;
+              font-size: 12px;
+            }
+          }
+          .item1 {
+            margin-top: 1rem;
+            width: 65%;
+            margin-bottom: 3rem;
+            margin-left: 6rem;
+          }
+          .item2 {
+            width: 35%;
+            margin-bottom: 2rem;
+            margin-left: 2rem;
+          }
+          .item3 {
+            width: 65%;
+            margin-left: 6rem;
+          }
+        }
+      }
+      .treeimg {
+        top: 4.5rem;
+        width: 7rem;
+      }
+      .aboutus-text {
+        top: 1.5rem;
+        width: 2rem;
+      }
+    }
+
+    .product-components {
+      .products-container {
+        top: 2rem;
+        .heading {
+          .head {
+            font-size: 12px;
+          }
+          .paragraph {
+            font-size: 10px;
+          }
+        }
+
+        .products-items {
+          margin-top: 0rem;
+        }
+      }
+      .producttext {
+        width: 2rem;
+      }
+    }
+
+    .review-components {
+      margin-top: 0;
+      .review-container {
+        .container-div {
+          width: 90%;
+          .item {
+            img {
+              width: 2.5rem;
+            }
+            h3 {
+              font-size: 12px;
+            }
+            p {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .contact-components {
+      .contact-container {
+        padding: 3rem 0rem;
+        .left {
+          .head {
+            font-size: 12px;
+          }
+          .tag {
+            font-size: 12px;
+          }
+
+          .item {
+            gap: 1rem;
+            .logo {
+              width: 30px;
+              height: 30px;
+              .icon {
+                font-size: 16px;
+              }
+            }
+            .details {
+              h4 {
+                font-size: 12px;
+              }
+              p {
+                font-size: 10px;
+              }
+            }
+          }
+
+          .para {
+            font-size: 10px;
+          }
+
+          .social-network {
+            gap: 2rem;
+            .follow {
+              font-size: 12px;
+            }
+          }
+        }
+
+        .right {
+          width: 53%;
+          height: auto;
+          .form-container {
+            width: 100%;
+            padding: 1.5rem;
+            .head {
+              font-size: 14px;
+            }
+          }
+        }
+
+        .contact-farma {
+          left: 23%;
+          top: 27%;
+          width: 11rem;
+        }
+      }
+      .Side-text {
+        bottom: 7rem;
+        width: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-components {
+    .home-container {
+      margin-top: 70px;
+      .body-section {
+        .heading-box {
+          .header {
+            font-size: 12px;
+          }
+          .tag {
+            font-size: 12px;
+          }
+          .knomore-btn {
+            width: 100px;
+            font-size: 10px;
+          }
+        }
+
+        .page-counter-box {
+          height: auto;
+          top: 9rem;
+          .counter-container {
+            gap: 1rem;
+            .icons {
+              font-size: 14px;
+            }
+            .page {
+              font-size: 14px;
+              .count {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+
+        .scroolimg {
+          right: 3rem;
+          bottom: 31rem;
+        }
+      }
+    }
+
+    .about-components {
+      margin-bottom: 2rem;
+      .about-container {
+        margin-top: 0;
+        .left {
+          gap: 0rem;
+          h3 {
+            margin: 0;
+            font-size: 10px;
+          }
+          h2 {
+            margin-top: 0.4rem;
+            font-size: 10px;
+          }
+          .tags {
+            margin: 0;
+            font-size: 8px;
+          }
+          .p-tag {
+            margin: 0;
+            font-size: 8px;
+          }
+          .p {
+            margin: 0;
+            margin-top: 10px;
+          }
+          button {
+            width: 100px;
+            height: 35px;
+            font-size: 10px;
+          }
+        }
+        .right {
+          .item {
+            p {
+              margin: 0;
+              font-size: 8px;
+            }
+            h3 {
+              margin: 0;
+              font-size: 10px;
+            }
+          }
+          .item1 {
+            margin-top: 1rem;
+            width: 65%;
+            margin-bottom: 2.5rem;
+            margin-left: 4.5rem;
+          }
+          .item2 {
+            width: 35%;
+            margin-bottom: 1rem;
+            margin-left: 1.5rem;
+          }
+          .item3 {
+            width: 65%;
+            margin-left: 4.5rem;
+          }
+        }
+      }
+      .treeimg {
+        top: 4rem;
+        width: 6rem;
+      }
+      .aboutus-text {
+        top: 1.5rem;
+        width: 1.5rem;
+      }
+    }
+
+    .product-components {
+      .products-container {
+        top: 2rem;
+        .heading {
+          .head {
+            font-size: 10px;
+          }
+          .paragraph {
+            font-size: 8px;
+          }
+        }
+
+        .products-items {
+          margin-top: 0rem;
+        }
+      }
+      .producttext {
+        width: 1.5rem;
+      }
+    }
+
+    .review-components {
+      margin-top: 0;
+      .review-container {
+        .container-div {
+          width: 90%;
+          .item {
+            img {
+              width: 2rem;
+            }
+            h3 {
+              font-size: 10px;
+            }
+            p {
+              font-size: 8px;
+            }
+          }
+        }
+      }
+    }
+
+    .contact-components {
+      .contact-container {
+        padding: 0rem;
+        flex-direction: column;
+        .left {
+          width: 90%;
+          gap: 1rem;
+          .head {
+            margin: 0;
+            font-size: 16px;
+          }
+          .tag {
+            margin: 0;
+            font-size: 16px;
+          }
+
+          .item {
+            gap: 1rem;
+            .logo {
+              width: 40px;
+              height: 40px;
+              .icon {
+                font-size: 20px;
+              }
+            }
+            .details {
+              h4 {
+                font-size: 16px;
+              }
+              p {
+                font-size: 14px;
+              }
+            }
+          }
+
+          .para {
+            font-size: 14px;
+          }
+
+          .social-network {
+            gap: 2rem;
+            .follow {
+              font-size: 16px;
+            }
+            .medias {
+              gap: 2rem;
+              a {
+                .fb {
+                  width: 40px;
+                  height: 40px;
+                }
+                .in {
+                  color: #664444;
+                  width: 40px;
+                  height: 40px;
+                }
+                .tw {
+                  color: #03a9f4;
+                  width: 40px;
+                  height: 40px;
+                }
+              }
+            }
+          }
+        }
+
+        .right {
+          width: 90%;
+          height: auto;
+          margin-bottom: 2rem;
+          margin-top: 2rem;
+          .form-container {
+            width: 100%;
+            padding: 1.5rem;
+            .head {
+              font-size: 16px;
+            }
+          }
+        }
+
+        .contact-farma {
+          margin-left: 30%;
+          margin-top: -36%;
+          width: 10rem;
+        }
+      }
+      .Side-text {
+        top: 7rem;
+        width: 2rem;
+      }
+
     }
   }
 }

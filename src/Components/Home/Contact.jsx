@@ -73,13 +73,13 @@ function Contact() {
             <h4 className="follow">Follow us</h4>
 
             <div className="medias">
-              <a href="">
+              <a href="https://www.facebook.com/profile.php?id=100093678292420" target="_blank">
                 <BsFacebook className="fb" />
               </a>
-              <a href="">
+              <a href="https://www.instagram.com/energiccropscience" target="_blank">
                 <BsInstagram className="in" />
               </a>
-              <a href="">
+              <a href="https://twitter.com/Energiccrop" target="_blank">
                 <BsTwitter className="tw" />
               </a>
             </div>

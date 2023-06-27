@@ -12,7 +12,15 @@ import { Global } from "../../App";
 
 function AppBar() {
   const navigate = useNavigate();
-  const { getProductPage } = useContext(Global);
+  const { getProductPage, getPopup, postPopup } = useContext(Global);
+
+  const popup_handler = () => {
+    if (postPopup) {
+      getPopup(false);
+    } else {
+      getPopup(true);
+    }
+  };
   return (
     <Navbar expand="lg" className="user-navbar">
       <div className="nav-container-for-web for-web">
@@ -84,12 +92,7 @@ function AppBar() {
           </Link>
         </div>
         <div className="btns">
-          <Button
-            className="contact-btn"
-            onClick={() => {
-              navigate("/contact");
-            }}
-          >
+          <Button className="contact-btn" onClick={popup_handler}>
             Contact Us
           </Button>
         </div>
