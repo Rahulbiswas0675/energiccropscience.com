@@ -897,6 +897,7 @@ $text_font: "DM Sans", sans-serif;
     }
   }
 }
+
 @media screen and (max-width: 1280px) {
   .home-components {
     .home-container {
@@ -2217,6 +2218,197 @@ $text_font: "DM Sans", sans-serif;
         width: 2rem;
       }
 
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home-components {
+    .home-container {
+      margin-top: 70px;
+      .body-section {
+        .heading-box {
+          .header {
+            font-size: 10px;
+          }
+          .tag {
+            margin-top: 0.5rem;
+            font-size: 10px;
+          }
+          .knomore-btn {
+            margin-top: 0.5rem;
+            width: 100px;
+            font-size: 8px;
+          }
+        }
+
+        .scroolimg {
+          right: 3rem;
+          bottom: 34rem;
+          .bg-div {
+            img {
+              width: 4rem;
+            }
+          }
+        }
+      }
+    }
+
+    .about-components {
+      .about-container {
+        .left {
+          h3 {
+            font-size: 8px;
+          }
+          h2 {
+            font-size: 8px;
+          }
+          .tags {
+            font-size: 6px;
+          }
+          .p-tag {
+            font-size: 6px;
+          }
+          .p {
+            margin: 0;
+            margin-top: 10px;
+          }
+          button {
+            font-size: 8px;
+          }
+        }
+        .right {
+          .item {
+            p {
+              font-size: 6px;
+            }
+            h3 {
+              font-size: 8px;
+            }
+          }
+          .item1 {
+            margin-left: 4rem;
+          }
+          .item2 {
+            margin-left: 1rem;
+          }
+          .item3 {
+            margin-left: 4rem;
+          }
+        }
+      }
+      .treeimg {
+        top: 3rem;
+        width: 5rem;
+      }
+      .aboutus-text {
+        top: 0rem;
+        width: 1.5rem;
+      }
+    }
+
+    .product-components {
+      .products-container {
+        top: 2rem;
+        .heading {
+          .head {
+            font-size: 8px;
+          }
+          .paragraph {
+            font-size: 6px;
+          }
+        }
+
+        .products-items {
+          margin-top: 0rem;
+        }
+      }
+      .producttext {
+        width: 1.5rem;
+      }
+    }
+
+    .review-components {
+      .review-container {
+        .container-div {
+          .item {
+            h3 {
+              font-size: 8px;
+            }
+            p {
+              font-size: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .home-components {
+    .home-container {
+      .body-section {
+        .heading-box {
+          .header {
+            font-size: 8px;
+          }
+          .tag {
+            font-size: 8px;
+          }
+          .knomore-btn {
+            width: 90px;
+            font-size: 8px;
+          }
+        }
+
+        .scroolimg {
+          right: 2.5rem;
+          bottom: 35rem;
+          .bg-div {
+            img {
+              width: 3rem;
+            }
+          }
+        }
+        .page-counter-box {
+          .counter-container {
+            .icons {
+              font-size: 8px;
+            }
+            .page {
+              font-size: 8px;
+              .count {
+                font-size: 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .about-components {
+      .about-container {
+        .right {
+          .item1 {
+            margin-left: 3rem;
+            margin-bottom: 1.3rem;
+          }
+          .item2 {
+            margin-left: 1rem;
+          }
+          .item3 {
+            margin-left: 3rem;
+          }
+        }
+      }
+      .treeimg {
+        top: 2.5rem;
+        width: 4rem;
+      }
+      .aboutus-text {
+        top: 0rem;
+        width: 1.3rem;
+      }
     }
   }
 }
