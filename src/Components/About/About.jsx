@@ -37,7 +37,7 @@ function About() {
             <div className="left">
               <h3 className="heading">We Are The Leader In</h3>
               <h4 className="tags">Manufacturer of Pesticides & Fertilizer</h4>
-              <p className="para">
+              <p className="para para">
                 Energic Crop Science was well-established in the year 2022 with
                 more than 20 years of experience in agro chemical industries
                 with energetic people, the company is dealing in all kinds of

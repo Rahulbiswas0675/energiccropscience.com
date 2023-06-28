@@ -124,8 +124,8 @@ function Contact() {
                         placeholder="Your Name"
                         name="name"
                         {...register("name")}
+                        required
                       />
-                      <p>{errors.name?.message}</p>
                     </div>
 
                     <div className="input-box">
@@ -134,8 +134,8 @@ function Contact() {
                         placeholder="Your Email"
                         name="email"
                         {...register("email")}
+                        required
                       />
-                      <p>{errors.email?.message}</p>
                     </div>
                   </div>
 
@@ -146,8 +146,8 @@ function Contact() {
                       className="number"
                       name="number"
                       {...register("number")}
+                      required
                     />
-                    <p>{errors.number?.message}</p>
                   </div>
 
                   <div className="textarea-box">
@@ -155,8 +155,8 @@ function Contact() {
                       name="message"
                       placeholder="How can we help ?"
                       {...register("message")}
+                      required
                     ></textarea>
-                    <p>{errors.message?.message}</p>
                   </div>
 
                   <button type="submit">SEND MESSAGE</button>
