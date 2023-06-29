@@ -15,7 +15,7 @@ $text_font: "DM Sans", sans-serif;
     margin-top: 99px;
 
     .top-div {
-      height: 445px;
+      padding: 2rem 0rem;
       width: 100%;
       display: flex;
       align-items: center;
@@ -25,7 +25,7 @@ $text_font: "DM Sans", sans-serif;
       .header-container {
         width: 80%;
         display: flex;
-        margin-top: 5rem;
+        align-items: center;
 
         .left {
           width: 50%;
@@ -58,6 +58,9 @@ $text_font: "DM Sans", sans-serif;
         }
         .right {
           width: 50%;
+          img {
+            width: 100%;
+          }
         }
       }
     }
@@ -118,27 +121,27 @@ $text_font: "DM Sans", sans-serif;
         }
       }
       .list-items {
+        margin-top: 1rem;
         margin-bottom: 8rem;
         width: 80%;
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
         justify-content: space-between;
-        gap: 49px;
+        gap: 40px;
 
         .item {
-          height: 546px;
-          width: 344px;
+          height: 500px;
+          width: 22%;
           .img-box {
-            width: 343px;
-            height: 423px;
+            width: 100%;
+            padding: 2rem;
             display: flex;
             align-items: center;
             justify-content: center;
             background: #f4f4f4;
             border-radius: 10px;
             img {
-              height: 318px;
+              height: 310px;
             }
           }
 
@@ -220,21 +223,422 @@ $text_font: "DM Sans", sans-serif;
   }
 }
 
-@media screen and (max-width : 1440px) {
-  
+@media screen and (max-width: 1440px) {
+  .product-components {
+    .product-containerr {
+      .top-div {
+        .header-container {
+          .left {
+            .items {
+              gap: 20px;
+              h3 {
+                font-size: 50px;
+              }
+              .links {
+                .icons {
+                  font-size: 24px;
+                }
+                p {
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .product-list {
+        .list-head {
+          margin-top: 3rem;
+          h3 {
+            font-size: 40px;
+          }
+        }
+        .tabs {
+          padding: 1rem 0rem;
+          width: 80%;
+          gap: 2rem;
+
+          .deactive {
+            font-size: 20px;
+          }
+          .active {
+            font-size: 20px;
+          }
+        }
+        .list-items {
+          width: 80%;
+          gap: 30px;
+
+          .item {
+            height: 420px;
+            .img-box {
+              padding: 1.5rem;
+              img {
+                height: 260px;
+              }
+            }
+
+            .details {
+              margin-top: 16px;
+              .name {
+                font-size: 16px;
+              }
+              .tag {
+                font-size: 14px;
+              }
+            }
+
+            .para {
+              font-size: 14px;
+            }
+
+            .button {
+              height: 60px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
-@media screen and (max-width : 1280px) {
-  
+@media screen and (max-width: 1280px) {
+  .product-components {
+    .product-containerr {
+      .top-div {
+        .header-container {
+          .left {
+            .items {
+              gap: 0;
+              h3 {
+                font-size: 40px;
+              }
+              .links {
+                .icons {
+                  font-size: 24px;
+                }
+                p {
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .product-list {
+        .list-head {
+          margin-top: 3rem;
+          h3 {
+            font-size: 30px;
+          }
+        }
+        .tabs {
+          padding: 1rem 0rem;
+          width: 80%;
+          gap: 1.5rem;
+
+          .deactive {
+            font-size: 16px;
+          }
+          .active {
+            font-size: 18px;
+          }
+        }
+        .list-items {
+          width: 80%;
+          gap: 30px;
+          .item {
+            width: 30%;
+            height: 450px;
+            .img-box {
+              padding: 2rem;
+              img {
+                height: 270px;
+              }
+            }
+
+            .details {
+              margin-top: 16px;
+              .name {
+                font-size: 16px;
+              }
+              .tag {
+                font-size: 14px;
+              }
+            }
+
+            .para {
+              font-size: 14px;
+            }
+
+            .button {
+              height: 60px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
-@media screen and (max-width : 1080px) {
-  
+@media screen and (max-width: 1080px) {
+  .product-components {
+    .product-containerr {
+      .top-div {
+        .header-container {
+          .left {
+            .items {
+              h3 {
+                font-size: 30px;
+              }
+              // .links {
+              //   .icons {
+              //     font-size: 24px;
+              //   }
+              //   p {
+              //     font-size: 18px;
+              //   }
+              // }
+            }
+          }
+        }
+      }
+
+      .product-list {
+        .list-head {
+          width: 85%;
+          margin-top: 3rem;
+          h3 {
+            font-size: 26px;
+          }
+        }
+        .devider {
+          width: 85%;
+        }
+        .tabs {
+          width: 85%;
+          gap: 0.5rem;
+          .deactive {
+            font-size: 15px;
+          }
+          .active {
+            font-size: 15px;
+          }
+        }
+        .list-items {
+          width: 85%;
+          gap: 30px;
+          .item {
+            width: 30%;
+            height: 440px;
+            .button {
+              height: 50px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
-@media screen and (max-width : 925px) {
-  
+@media screen and (max-width: 925px) {
+  .product-components {
+    .product-containerr {
+      .top-div {
+        .header-container {
+          .left {
+            .items {
+              h3 {
+                font-size: 26px;
+              }
+              .links {
+                .icons {
+                  font-size: 18px;
+                }
+                p {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .product-list {
+        .list-head {
+          width: 85%;
+          margin-top: 3rem;
+          h3 {
+            font-size: 20px;
+          }
+        }
+        .devider {
+          width: 85%;
+        }
+        .tabs {
+          width: 85%;
+          .deactive {
+            font-size: 12px;
+          }
+          .active {
+            font-size: 12px;
+          }
+        }
+        .list-items {
+          width: 85%;
+          gap: 30px;
+          .item {
+            width: 30%;
+            height: 370px;
+            .img-box {
+              padding: 2rem;
+              img {
+                height: 210px;
+              }
+            }
+
+            .details {
+              margin-top: 8px;
+              .name {
+                font-size: 14px;
+              }
+              .tag {
+                font-size: 12px;
+              }
+            }
+
+            .para {
+              font-size: 12px;
+            }
+
+            .button {
+              height: 50px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
-@media screen and (max-width : 768px) {
-  
+@media screen and (max-width: 780px) {
+  .product-components {
+    .product-containerr {
+      .product-list {
+        .list-head {
+          width: 85%;
+          h3 {
+            font-size: 18px;
+          }
+        }
+        .devider {
+          width: 85%;
+        }
+        .tabs {
+          width: 85%;
+          .deactive {
+            font-size: 10px;
+          }
+          .active {
+            font-size: 10px;
+          }
+        }
+        .list-items {
+          width: 85%;
+          gap: 26px;
+          .item {
+            width: 45%;
+            height: 370px;
+            .para {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
-@media screen and (max-width : 500px) {
-  
+@media screen and (max-width: 600px) {
+  .product-components {
+    .product-containerr {
+      .product-list {
+        .tabs {
+          width: 85%;
+          gap: 0;
+          .deactive {
+            font-size: 8px;
+          }
+          .active {
+            font-size: 10px;
+          }
+        }
+        .list-items {
+          width: 85%;
+          gap: 26px;
+          .item {
+            width: 45%;
+            height: 350px;
+            .img-box {
+              padding: 2rem;
+              img {
+                height: 200px;
+              }
+            }
+            .details {
+              .name {
+                font-size: 12px;
+              }
+              .tag {
+                font-size: 10px;
+              }
+            }
+
+            .para {
+              font-size: 12px;
+            }
+
+            .button {
+              height: 45px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .product-components {
+    .product-containerr {
+      .product-list {
+        .list-items {
+          gap: 30px;
+          justify-content: center;
+          .item {
+            width: 80%;
+            .details {
+              .name {
+                font-size: 14px;
+              }
+              .tag {
+                font-size: 12px;
+              }
+            }
+
+            .para {
+              font-size: 14px;
+            }
+
+            .button {
+              height: 50px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

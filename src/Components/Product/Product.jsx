@@ -109,10 +109,10 @@ function Product() {
                   <img src={item.product_img} alt={item.product_name} />
                 </div>
                 <div className="details">
-                  <h5>{item.product_name}</h5>
-                  <h6>{item.product_name}</h6>
+                  <h5 className="name">{item.product_name}</h5>
+                  <h6 className="tag">{item.product_name}</h6>
                 </div>
-                <p>{item.product_tag}</p>
+                <p className="para">{item.product_tag}</p>
                 <Link to="/product/details" className="button" onClick={() => {
                   getProductItem(item);
                 }}> 

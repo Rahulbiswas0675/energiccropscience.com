@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase / 
+    # Set the base URL to https://energiccropscience.com
+    RewriteCond %{HTTP_HOST} !^energiccropscience\.com$ [NC]
+    RewriteRule ^(.*)$ https://energiccropscience.com/$1 [L,R=301]
+</IfModule>
