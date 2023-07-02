@@ -30,7 +30,27 @@ function Contact() {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    const body = `Name: ${data.name}\nNumber: ${data.number}\nEmail: ${data.email}\nMessage: ${data.message}`;
+    const config = {
+      SecureToken: "8e07b459-b6d4-46a6-9f08-9d11e2dfab18",
+      To: "energiccropscience@gmail.com",
+      From: "support@energiccropscience.com",
+      Subject: "New Contact from Website",
+      Body: body,
+    };
+    const formIs = document.getElementById("form");
+    if (window.Email) {
+      window.Email.send(config)
+        .then(() => {
+          alert("Message Send Success");
+          formIs.reset();
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+  };
 
   return (
     <div className="contact-components" id="contact">
@@ -109,12 +129,13 @@ function Contact() {
               <div className="form-container">
                 <h3>Get In Touch</h3>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
+                  Have a question? Just fill in the form and our representative
+                  will answer your query in 10 hours
                 </p>
                 <form
                   action=""
                   className="form"
+                  id="form"
                   onSubmit={handleSubmit(onSubmit)}
                 >
                   <div className="input-grup">

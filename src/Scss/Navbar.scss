@@ -19,7 +19,7 @@ $error-color: red;
   height: 99px;
   display: flex;
   justify-content: center !important;
-  background-color: $primary_color;
+  background-color: $white_color;
   z-index: 10000;
 
   .nav-container-for-web {
@@ -47,7 +47,7 @@ $error-color: red;
         font-size: 18px;
         line-height: 22px;
         text-align: center;
-        color: $white_color;
+        color: $primary_color;
         font-family: $secondary_font;
         transition: 0.5s;
 
@@ -57,7 +57,7 @@ $error-color: red;
       }
 
       .links:hover {
-        color: $secondary_color;
+        // color: $secondary_color;
         transform: scale(1.1);
         transition: 0.5s;
       }
@@ -75,7 +75,7 @@ $error-color: red;
           left: -5px;
           padding: 0.5rem;
           position: absolute;
-          background-color: $primary_color;
+          background-color: $white_color;
           z-index: 1000;
           border-radius: 4px;
           display: flex;
@@ -98,9 +98,9 @@ $error-color: red;
         line-height: 22px;
         width: 201px;
         height: 60px;
-        color: $white_color;
-        background-color: $primary_color;
-        border: 2px solid $white_color;
+        color: $primary_color;
+        background-color: $white_color;
+        border: 2px solid $primary_color;
         border-radius: 30px;
         cursor: pointer;
         transition: 0.5s;
@@ -150,7 +150,8 @@ $error-color: red;
       display: flex !important;
       justify-content: space-between !important;
       width: 100%;
-      background-color: $primary_color;
+      background-color: $white_color;
+      padding: 0rem 2rem;
 
       .brand {
         .brand-logo {
@@ -172,8 +173,8 @@ $error-color: red;
             font-size: 1.125rem;
             font-family: $secondary_font;
             text-align: center;
-            border: 1px solid $border_color;
-            color: $text_color;
+            border: 1px solid $primary_color;
+            color: $primary_color;
             border-radius: 4px;
           }
 

@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./ContactPopup.scss";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-
+import { Global } from "../App";
 const schema = yup
   .object({
     name: yup.string().required("Name is a required field"),
@@ -14,6 +14,7 @@ const schema = yup
   .required();
 
 function ContactPopup() {
+  const { getPopup } = useContext(Global);
   const {
     register,
     handleSubmit,
@@ -22,7 +23,26 @@ function ContactPopup() {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    const body = `Name: ${data.name}\nNumber: ${data.number}\nEmail: ${data.email}\nMessage: ${data.message}`;
+    const config = {
+      SecureToken: "8e07b459-b6d4-46a6-9f08-9d11e2dfab18",
+      To: "energiccropscience@gmail.com",
+      From: "support@energiccropscience.com",
+      Subject: "New Contact from Website",
+      Body: body,
+    };
+    if (window.Email) {
+      window.Email.send(config)
+        .then(() => {
+          alert("Message Send Success");
+          getPopup(false);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+  };
 
   return (
     <div className="contact-popup">
@@ -30,10 +50,10 @@ function ContactPopup() {
         <div className="form-container">
           <h3>Get In Touch</h3>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's
+            Have a question? Just fill in the form and our representative will
+            answer your query in 10 hours
           </p>
-          <form action="" className="form" onSubmit={handleSubmit(onSubmit)}>
+          <form className="form" onSubmit={handleSubmit(onSubmit)}>
             <div className="input-grup">
               <div className="input-box">
                 <input
