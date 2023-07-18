@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { AiOutlineHome } from "react-icons/ai";
 import "../../Scss/Contact.scss";
 import call from "../../Image/Logos/call.png";
@@ -29,6 +29,10 @@ function Contact() {
   } = useForm({
     resolver: yupResolver(schema),
   });
+
+  useEffect(() => {
+    window.scrollTo(0,0);
+  },[])
 
   const onSubmit = (data) => {
     const body = `Name: ${data.name}\nNumber: ${data.number}\nEmail: ${data.email}\nMessage: ${data.message}`;

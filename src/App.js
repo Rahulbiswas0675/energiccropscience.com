@@ -1,4 +1,4 @@
-import React, { useState, createContext } from "react";
+import React, { useState, createContext, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppBar from "./Components/Navbar/AppBar";
 import HomePage from "./Pages/HomePage";
@@ -7,6 +7,7 @@ import AboutPage from "./Pages/AboutPage";
 import ContactPage from "./Pages/ContactPage";
 import CertificatePage from "./Pages/CertificatePage";
 import ProductDetailsPage from "./Pages/ProductDetailsPage";
+import PageNotFound from "./Container/PageNotFound";
 import "./App.scss";
 import ContactPopup from "./Container/ContactPopup";
 export const Global = createContext();
@@ -18,6 +19,15 @@ function App() {
   const [productpage, setProductpage] = useState("All-Products");
   const [productItem, setProductItem] = useState();
   const [popup, setPopus] = useState(false);
+
+  useEffect(() => {
+    const message = localStorage.getItem("message");
+    if (!message) {
+      setTimeout(() => {
+        setPopus(true);
+      }, 10000);
+    }
+  }, []);
 
   const getPageName_handler = (value) => {
     setPageName(value);
@@ -37,7 +47,7 @@ function App() {
 
   const popup_handler = (value) => {
     setPopus(value);
-  }
+  };
   return (
     <div className="App">
       <Global.Provider
@@ -47,14 +57,14 @@ function App() {
           postClsName: className,
           postProductPage: productpage,
           postproductItem: productItem,
-          postPopup : popup,
+          postPopup: popup,
 
           getPageName: getPageName_handler,
           getProductName: getProductName_handler,
           getClsName: className_handler,
           getProductPage: productpage_haldler,
           getProductItem: productId_handler,
-          getPopup : popup_handler,
+          getPopup: popup_handler,
         }}
       >
         <BrowserRouter>
@@ -66,12 +76,9 @@ function App() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/certificates" element={<CertificatePage />} />
             <Route path="/product/details" element={<ProductDetailsPage />} />
+            <Route path="*" element={<PageNotFound />} />
           </Routes>
-          {
-            popup ? <ContactPopup/> : null
-          }
-          
-          {/* Page Not Found Page Add */}
+          {popup ? <ContactPopup /> : null}
         </BrowserRouter>
       </Global.Provider>
     </div>

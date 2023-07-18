@@ -17,10 +17,15 @@ function ProductDetails() {
   const [similar, setSimilar] = useState();
 
   useEffect(() => {
-    if(!postproductItem){
-      navigate('/product')
+    if (!postproductItem) {
+      navigate("/product");
     }
-  })
+    window.scrollTo(0,0);
+  });
+
+  const scroll_handler = () => {
+    window.scrollTo(0,0);
+  }
 
   useEffect(() => {
     if (postproductItem.type === "Insecticide") {
@@ -34,7 +39,6 @@ function ProductDetails() {
     }
   }, [postproductItem]);
 
-  
   return (
     <div className="product-details-components" id="details">
       <div className="product-details-container">
@@ -54,21 +58,26 @@ function ProductDetails() {
               <h6>{postproductItem.product_tag}</h6>
             </div>
 
-            <div className="details">
-              <div className="blank"></div>
+            {postproductItem.packege ? (
+              <div className="details">
+                <div className="blank"></div>
 
-              <div className="item">
-                <p>Price</p>
-                <h6>₹580.25</h6>
+                <div className="heading-item">
+                  <h6>Packing Size</h6>
+                  <h6>Price</h6>
+                </div>
+
+                <div className="blank"></div>
+
+                {postproductItem.packege.map((item, index) => (
+                  <div className="item" key={index}>
+                    <p>{item.size}</p>
+                    <p>₹ {item.mrp}.00</p>
+                  </div>
+                ))}
               </div>
+            ) : null}
 
-              <div className="blank"></div>
-
-              <div className="item">
-                <p>Delivery time</p>
-                <h6>4-5 days</h6>
-              </div>
-            </div>
             <button
               onClick={() => {
                 navigate("/contact");
@@ -194,15 +203,15 @@ function ProductDetails() {
                       <h6 className="tag">{item.product_name}</h6>
                     </div>
                     <p>{item.product_tag}</p>
-                    <a
-                      href="#details"
+                    <button
                       className="button"
                       onClick={() => {
                         getProductItem(item);
+                        scroll_handler();
                       }}
                     >
                       VIEW DETAILS
-                    </a>
+                    </button>
                   </div>
                 ))
               : null}

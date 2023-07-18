@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 // import { Global } from '../App';
 import Home from '../Components/Home/Home';
 import About from '../Components/Home/About';
@@ -10,7 +10,9 @@ import '../Scss/HomePage.scss';
 
 
 function HomePage() {
-
+  useEffect(() => {
+    window.scrollTo(0,0);
+  })
   return (
     <div className='home-components' id='home'>
       <Home/>

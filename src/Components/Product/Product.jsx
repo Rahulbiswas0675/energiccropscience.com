@@ -14,8 +14,13 @@ import { Link } from "react-router-dom";
 import { Global } from "../../App";
 
 function Product() {
-  const { getProductPage, postProductPage, getProductItem } = useContext(Global);
+  const { getProductPage, postProductPage, getProductItem } =
+    useContext(Global);
   const [productItem, setProductItem] = useState(allproducts);
+  useEffect(() => {
+    setProductItem(allproducts);
+    window.scrollTo(0,0);
+  }, []);
 
   useEffect(() => {
     if (postProductPage === "Insecticide") {
@@ -61,7 +66,9 @@ function Product() {
 
           <div className="tabs">
             <p
-              className={postProductPage === "All-Products" ? "active" : "deactive"}
+              className={
+                postProductPage === "All-Products" ? "active" : "deactive"
+              }
               onClick={() => {
                 getProductPage("All-Products");
               }}
@@ -69,7 +76,9 @@ function Product() {
               All Products
             </p>
             <p
-              className={postProductPage === "Insecticide" ? "active" : "deactive"}
+              className={
+                postProductPage === "Insecticide" ? "active" : "deactive"
+              }
               onClick={() => {
                 getProductPage("Insecticide");
               }}
@@ -77,7 +86,9 @@ function Product() {
               Insecticide
             </p>
             <p
-              className={postProductPage === "Fungicide" ? "active" : "deactive"}
+              className={
+                postProductPage === "Fungicide" ? "active" : "deactive"
+              }
               onClick={() => {
                 getProductPage("Fungicide");
               }}
@@ -85,7 +96,9 @@ function Product() {
               Fungicide
             </p>
             <p
-              className={postProductPage === "Herbicide" ? "active" : "deactive"}
+              className={
+                postProductPage === "Herbicide" ? "active" : "deactive"
+              }
               onClick={() => {
                 getProductPage("Herbicide");
               }}
@@ -110,19 +123,21 @@ function Product() {
                 </div>
                 <div className="details">
                   <h5 className="name">{item.product_name}</h5>
-                  <h6 className="tag">{item.product_name}</h6>
+                  <h6 className="tag">{item.type}</h6>
                 </div>
                 <p className="para">{item.product_tag}</p>
-                <Link to="/product/details" className="button" onClick={() => {
-                  getProductItem(item);
-                }}> 
+                <Link
+                  to="/product/details"
+                  className="button"
+                  onClick={() => {
+                    getProductItem(item);
+                  }}
+                >
                   VIEW DETAILS
                 </Link>
               </div>
             ))}
           </div>
-
-          {/* <button className="load-more">Load more</button> */}
         </div>
 
         <Footer top={"#product"} />

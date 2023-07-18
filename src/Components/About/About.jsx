@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../Scss/About.scss";
 import { AiOutlineHome } from "react-icons/ai";
 import productimg from "../../Image/SectionImage/aboutus-page.png";
@@ -11,6 +11,9 @@ import { useNavigate } from "react-router-dom";
 
 function About() {
   const navigate = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0,0);
+  },[])
   return (
     <div className="aboutus-components" id="about">
       <div className="about-container">

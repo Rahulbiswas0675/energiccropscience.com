@@ -23,7 +23,7 @@ $text_font: "DM Sans", sans-serif;
       margin-bottom: 2rem;
       width: 80%;
       display: flex;
-      align-items: center;
+      // align-items: center;
       justify-content: space-between;
       .left {
         height: 660px;
@@ -41,6 +41,7 @@ $text_font: "DM Sans", sans-serif;
         width: 45%;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         gap: 2rem;
         .header {
           display: flex;
@@ -65,25 +66,28 @@ $text_font: "DM Sans", sans-serif;
         }
 
         .details {
-          margin-top: 2rem;
+          .heading-item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 0rem;
+
+            h6{
+              margin: 0;
+              font-weight: 600;
+              font-size: 26px;
+            }
+          }
 
           .item {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 2rem 0rem;
-
+            padding: 1rem 0rem;
             p {
               margin: 0;
               font-family: $text_font;
               font-size: 20px;
-              color: #664444;
-            }
-
-            h6 {
-              margin: 0;
-              font-family: $text_font;
-              font-size: 26px;
               color: #664444;
             }
           }
@@ -337,39 +341,40 @@ $text_font: "DM Sans", sans-serif;
       .hero-section {
         // border: 1px solid red;
         margin-top: 1.5rem;
-        // width: 80%;
+        width: 80%;
         .left {
           height: 550px;
         }
         .right {
           .header {
             h3 {
-              font-size: 40px;
+              font-size: 38px;
               span {
                 font-size: 26px;
               }
             }
             h6 {
-              font-size: 26px;
+              font-size: 22px;
             }
           }
 
-          // .details {
-          //   margin-top: 2rem;
-          //   .item {
-          //     p {
-          //       font-size: 20px;
-          //     }
-
-          //     h6 {
-          //       font-size: 26px;
-          //     }
-          //   }
-          // }
+          .details {
+            .heading-item{
+              h6{
+                font-size: 20px;
+              }
+            }
+            .item {
+              padding: 0.5rem 0;
+              p {
+                font-size: 20px;
+              }
+            }
+          }
 
           button {
             height: 70px;
-            // font-size: 24px;
+            font-size: 24px;
           }
         }
       }
@@ -512,6 +517,7 @@ $text_font: "DM Sans", sans-serif;
           height: 400px;
         }
         .right {
+          gap: 0;
           .header {
             h3 {
               font-size: 26px;
@@ -525,13 +531,14 @@ $text_font: "DM Sans", sans-serif;
           }
 
           .details {
-            margin-top: 2rem;
-            .item {
-              p {
+            .heading-item{
+              padding: 0.5rem 0;
+              h6{
                 font-size: 18px;
               }
-
-              h6 {
+            }
+            .item {
+              p {
                 font-size: 18px;
               }
             }
@@ -569,14 +576,13 @@ $text_font: "DM Sans", sans-serif;
   .product-details-components {
     .product-details-container {
       .hero-section {
-        margin-top: 1.5rem;
         .left {
           height: 350px;
         }
         .right {
-          gap: 1rem;
+          gap: 0;
           .header {
-            gap: 0.5rem;
+            gap: 0.2rem;
             h3 {
               font-size: 18px;
               span {
@@ -589,20 +595,22 @@ $text_font: "DM Sans", sans-serif;
           }
 
           .details {
-            margin-top: 0;
-            .item {
-              p {
+            margin-top: 0.5rem;
+            .heading-item{
+              padding: 0.3rem 0;
+              h6{
                 font-size: 16px;
               }
-
-              h6 {
+            }
+            .item {
+              p {
                 font-size: 16px;
               }
             }
           }
 
           button {
-            height: 60px;
+            height: 50px;
             font-size: 18px;
           }
         }
@@ -651,34 +659,38 @@ $text_font: "DM Sans", sans-serif;
   .product-details-components {
     .product-details-container {
       .hero-section {
-        margin-top: 1.5rem;
+        flex-direction: column;
+        gap: 2rem;
         .left {
-          height: 300px;
+          width: 100%;
         }
         .right {
+          width: 100%;
           gap: 1rem;
           .header {
+            gap: 0.5rem;
             h3 {
-              font-size: 16px;
+              font-size: 26px;
               span {
-                font-size: 14px;
+                font-size: 18px;
               }
             }
             h6 {
-              font-size: 12px;
+              font-size: 16px;
             }
           }
 
           .details {
-            margin-top: 1rem;
-            .item {
+            .heading-item{
               padding: 1rem 0;
-              p {
-                font-size: 14px;
+              h6{
+                font-size: 18px;
               }
+            }
 
-              h6 {
-                font-size: 14px;
+            .item {
+              p {
+                font-size: 18px;
               }
             }
           }
@@ -720,47 +732,9 @@ $text_font: "DM Sans", sans-serif;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .product-details-components {
     .product-details-container {
-      .hero-section {
-        flex-direction: column;
-        gap: 2rem;
-        .left {
-          width: 100%;
-        }
-        .right {
-          width: 100%;
-          .header {
-            h3 {
-              font-size: 26px;
-              span {
-                font-size: 18px;
-              }
-            }
-            h6 {
-              font-size: 16px;
-            }
-          }
-
-          .details {
-            .item {
-              p {
-                font-size: 16px;
-              }
-
-              h6 {
-                font-size: 18px;
-              }
-            }
-          }
-
-          button {
-            height: 60px;
-            font-size: 18px;
-          }
-        }
-      }
       .similar-item {
         h3 {
           font-size: 26px;

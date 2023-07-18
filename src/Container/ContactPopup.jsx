@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import "./ContactPopup.scss";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { AiOutlineCloseCircle } from "react-icons/ai";
 import * as yup from "yup";
 import { Global } from "../App";
 const schema = yup
@@ -36,6 +37,7 @@ function ContactPopup() {
       window.Email.send(config)
         .then(() => {
           alert("Message Send Success");
+          localStorage.setItem("message", "Done")
           getPopup(false);
         })
         .catch((err) => {
@@ -48,6 +50,7 @@ function ContactPopup() {
     <div className="contact-popup">
       <div className="right">
         <div className="form-container">
+          <AiOutlineCloseCircle className="close_btn" onClick={()=> getPopup(false)}/>
           <h3>Get In Touch</h3>
           <p>
             Have a question? Just fill in the form and our representative will
